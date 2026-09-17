@@ -1,7 +1,36 @@
 {
-  "approvedDate": null,
-  "freeWindowDays": 7,
-  "earlyBirdPrice": 299,
-  "earlyBirdEndDate": "2026-10-10",
-  "standardPriceP1": 999
+  "currency": "INR",
+  "billingProvider": "Google Play Billing v7",
+  "paymentModel": "One-time lifetime purchase (Zero subscriptions)",
+  "tiers": {
+    "freeTrial": {
+      "price": 0,
+      "formattedPrice": "₹0",
+      "description": "Sample test sets, summary study guides, 7 preview audio masterclasses"
+    },
+    "paper1_pro_pass": {
+      "sku": "easyctet_p1_pro_pass",
+      "title": "Paper 1 Pro Pass",
+      "scope": "Primary Classes I–V (750 Qs, 25 Practice Sets, 25 Audio Masterclasses, Full 150-Q Mock)",
+      "billing": "One-time lifetime access"
+    },
+    "paper2_pro_pass": {
+      "sku": "easyctet_p2_pro_pass",
+      "title": "Paper 2 Pro Pass",
+      "scope": "Upper Primary Classes VI–VIII (1,050 Qs, Stream A & B, 28 Audio Masterclasses + 25 Foundational P1 Audio, Full 150-Q Mock)",
+      "billing": "One-time lifetime access"
+    },
+    "combo_pro_pass": {
+      "sku": "easyctet_combo_pro_pass",
+      "title": "All-in-One Combo Pass",
+      "scope": "Both Paper 1 & Paper 2 (1,800 Qs, 60 Sets, All 53 Audio Masterclasses, Both 150-Q Mock Blueprints)",
+      "billing": "One-time lifetime access"
+    },
+    "combo_upgrade": {
+      "sku": "easyctet_combo_stepup_upgrade",
+      "title": "Combo Step-Up Upgrade",
+      "scope": "Upgrade single-paper pass to full Combo Pass",
+      "billing": "One-time upgrade difference"
+    }
+  }
 }

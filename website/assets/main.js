@@ -2,7 +2,7 @@
 
 // ---- Countdown to exam date ----
 // Single editable constant: update this if CBSE reschedules again.
-const EXAM_DATE = new Date("2026-10-09T09:00:00+05:30");
+const EXAM_DATE = new Date("2026-12-12T09:30:00+05:30");
 
 function updateCountdown(){
   const el = document.getElementById("countdown");
