@@ -1,0 +1,2800 @@
+ [ uksV uksV uksV uksV    %%%% d`i;k bl iqfLrdk ds vUr esa fn, x, 'ks"k funsZ'kksa dks i<+saA  / Please read other remaining instructions given on the last page of this booklet. ]  
+izFke izFke izFke izFke 10     feuV esa vH;FkhZ viuh iz'u&iqfLrdk ds Øekad dk feyku vksfeuV esa vH;FkhZ viuh iz'u&iqfLrdk ds Øekad dk feyku vksfeuV esa vH;FkhZ viuh iz'u&iqfLrdk ds Øekad dk feyku vksfeuV esa vH;FkhZ viuh iz'u&iqfLrdk ds Øekad dk feyku vks-- --,e ,e ,e ,e-- --vkj vkj vkj vkj-- --    mÙkj i=d ds Øekad ls vo'; dj ysaA ;fn vksmÙkj i=d ds Øekad ls vo'; dj ysaA ;fn vksmÙkj i=d ds Øekad ls vo'; dj ysaA ;fn vksmÙkj i=d ds Øekad ls vo'; dj ysaA ;fn vks-- --,e ,e ,e ,e-- --vkj vkj vkj vkj-- --    mÙkj i=d o iz'u&iqfLrdk mÙkj i=d o iz'u&iqfLrdk mÙkj i=d o iz'u&iqfLrdk mÙkj i=d o iz'u&iqfLrdk 
+ds Øekad fHkUu ds Øekad fHkUu ds Øekad fHkUu ds Øekad fHkUu    gSagSa gSagSa    ;k dksbZ i`"B ;k dksbZ i`"B ;k dksbZ i`"B ;k dksbZ i`"B missing     ;k ;k ;k ;k misprint     gksgks gksgks    rks dsUnz v/kh{kd ls fuosnu djds iz'u&iqfLrdk cny ysaA rks dsUnz v/kh{kd ls fuosnu djds iz'u&iqfLrdk cny ysaA rks dsUnz v/kh{kd ls fuosnu djds iz'u&iqfLrdk cny ysaA rks dsUnz v/kh{kd ls fuosnu djds iz'u&iqfLrdk cny ysaA    
+Sub. Code No. –  1210 Level – 2 
+[ TGT – For Classes : VI to VIII ]  Exam., 2023  
+MATHEMATICS 
+bl iz'u&iqfLrdk esa i`"Bksa dh la[;kbl iz'u&iqfLrdk esa i`"Bksa dh la[;kbl iz'u&iqfLrdk esa i`"Bksa dh la[;kbl iz'u&iqfLrdk esa i`"Bksa dh la[;k 
+No. of Pages in this Question Booklet – 48  
+iz'uksa dh la[;kiz'uksa dh la[;kiz'uksa dh la[;kiz'uksa dh la[;k 
+No. of Questions – 150  
+le; le; le; le;  
+Time – 2.30 hours  
+vuqØekad  ¼vadksa esa½  / Roll No. (In Figures) ...................................................................................................................................................................  
+vuqØekad  ¼'kCnksa esa½  / Roll No. (In Words) .....................................................................................................................................................................  
+ijh{kk dsUnz dk uke  / Name of Examination Centre ........................................................................................................................................................  
+vH;FkhZ dk uke  / Name of Candidate ..........................................................................................................................................................................  
+vH;FkhZ ds vH;FkhZ ds vH;FkhZ ds vH;FkhZ ds gLrk{kj gLrk{kj gLrk{kj gLrk{kj  / Signature of Candidate  fujh{kd fujh{kd fujh{kd fujh{kd  dsds dsds gLrk{kj gLrk{kj gLrk{kj gLrk{kj  / Signature of Invigilator 
+........................................................................... ......................................................................... 
+vH;FkhZ dks vH;FkhZ dks vH;FkhZ dks vH;FkhZ dks 10     feuV dk le; feuV dk le; feuV dk le; feuV dk le;    iz'u iz'u iz'u iz'u&& &&iqfLr iqfLr iqfLr iqfLrdk ij Nis funsZ'kksa dks i<+us rFkk mÙkj i=d esadk ij Nis funsZ'kksa dks i<+us rFkk mÙkj i=d esadk ij Nis funsZ'kksa dks i<+us rFkk mÙkj i=d esadk ij Nis funsZ'kksa dks i<+us rFkk mÙkj i=d esa    viusviusviusvius    fooj.k Hkjus ds fy, fn;k tk,xkA ;fn fooj.k Hkjus ds fy, fn;k tk,xkA ;fn fooj.k Hkjus ds fy, fn;k tk,xkA ;fn fooj.k Hkjus ds fy, fn;k tk,xkA ;fn iz'u&iqfLrdkiz'u&iqfLrdkiz'u&iqfLrdkiz'u&iqfLrdk    oo oo    mÙkj i=d mÙkj i=d mÙkj i=d mÙkj i=d     
+dh Øe la[;k dh Øe la[;k dh Øe la[;k dh Øe la[;k xyr vafdr xyr vafdr xyr vafdr xyr vafdr    gksagksa gksagksa    ;k dksbZ i`"B ;k dksbZ i`"B ;k dksbZ i`"B ;k dksbZ i`"B missing     ;k ;k ;k ;k misprint     gksgks gksgks    rks rqjUr dsUnz v/kh{kd ls fuosnu djds rks rqjUr dsUnz v/kh{kd ls fuosnu djds rks rqjUr dsUnz v/kh{kd ls fuosnu djds rks rqjUr dsUnz v/kh{kd ls fuosnu djds iz'u&iqfLrdkiz'u&iqfLrdkiz'u&iqfLrdkiz'u&iqfLrdk    cny ysaA cny ysaA cny ysaA cny ysaA bl bl bl blds i'pkr~ dksbZ nkok ds i'pkr~ dksbZ nkok ds i'pkr~ dksbZ nkok ds i'pkr~ dksbZ nkok 
+Lohdkj ugha fd;k tk,xkA bu Lohdkj ugha fd;k tk,xkA bu Lohdkj ugha fd;k tk,xkA bu Lohdkj ugha fd;k tk,xkA bu 10     feuVksa ds vfrfjDr] iz'uksa ds mÙkj vafdr djus ds fy, iwjs feuVksa ds vfrfjDr] iz'uksa ds mÙkj vafdr djus ds fy, iwjs feuVksa ds vfrfjDr] iz'uksa ds mÙkj vafdr djus ds fy, iwjs feuVksa ds vfrfjDr] iz'uksa ds mÙkj vafdr djus ds fy, iwjs 2.30     ?kaVs dk le; fn;k tk,xkA ?kaVs dk le; fn;k tk,xkA ?kaVs dk le; fn;k tk,xkA ?kaVs dk le; fn;k tk,xkA    ;fn fdlh vH;FkhZ dks ;fn fdlh vH;FkhZ dks ;fn fdlh vH;FkhZ dks ;fn fdlh vH;FkhZ dks 
+iz'u& iz'u& iz'u& iz'u&iqfLrdkiqfLrdkiqfLrdkiqfLrdk    esa esa esa esa fn, x, fdlh Hkh iz'u eas dksbZ =qfV gksus dk lansg gks rks blds fy, vH;fFkZ;kafn, x, fdlh Hkh iz'u eas dksbZ =qfV gksus dk lansg gks rks blds fy, vH;fFkZ;kafn, x, fdlh Hkh iz'u eas dksbZ =qfV gksus dk lansg gks rks blds fy, vH;fFkZ;kafn, x, fdlh Hkh iz'u eas dksbZ =qfV gksus dk lansg gks rks blds fy, vH;fFkZ;kas dks ijh{kk lekfIr ds mijkUr izfrosnu nsus ds fy, volj fn;k s dks ijh{kk lekfIr ds mijkUr izfrosnu nsus ds fy, volj fn;k s dks ijh{kk lekfIr ds mijkUr izfrosnu nsus ds fy, volj fn;k s dks ijh{kk lekfIr ds mijkUr izfrosnu nsus ds fy, volj fn;k 
+tk,xkA vr% vH;FkhZ fu/kkZfjr volj ds nkSjku bl lEcU/k eas viuk izfrosnu cksMZ dk;kZy; eas ntZ djok ldrs gStk,xkA vr% vH;FkhZ fu/kkZfjr volj ds nkSjku bl lEcU/k eas viuk izfrosnu cksMZ dk;kZy; eas ntZ djok ldrs gStk,xkA vr% vH;FkhZ fu/kkZfjr volj ds nkSjku bl lEcU/k eas viuk izfrosnu cksMZ dk;kZy; eas ntZ djok ldrs gStk,xkA vr% vH;FkhZ fu/kkZfjr volj ds nkSjku bl lEcU/k eas viuk izfrosnu cksMZ dk;kZy; eas ntZ djok ldrs gSaaaaA bl volj ds ckn] bl lEcU/k esa izkIr A bl volj ds ckn] bl lEcU/k esa izkIr A bl volj ds ckn] bl lEcU/k esa izkIr A bl volj ds ckn] bl lEcU/k esa izkIr 
+izfrosnuksa ij dksbZ fopkj ugha fd;k tk,xkA izfrosnuksa ij dksbZ fopkj ugha fd;k tk,xkA izfrosnuksa ij dksbZ fopkj ugha fd;k tk,xkA izfrosnuksa ij dksbZ fopkj ugha fd;k tk,xkA    
+;fn ;fn ;fn ;fn fdlh iz'u esa fgUnh o vaxzsth ek/;e esa fHkUurk gS rks vaxzsth ek/;e dk iz'u Bhd ekuk tk,xkA fdlh iz'u esa fgUnh o vaxzsth ek/;e esa fHkUurk gS rks vaxzsth ek/;e dk iz'u Bhd ekuk tk,xkA fdlh iz'u esa fgUnh o vaxzsth ek/;e esa fHkUurk gS rks vaxzsth ek/;e dk iz'u Bhd ekuk tk,xkA fdlh iz'u esa fgUnh o vaxzsth ek/;e esa fHkUurk gS rks vaxzsth ek/;e dk iz'u Bhd ekuk tk,xkA   
+If there is any variance between Hindi and English Version of any question then English Version would be considered correct. 
+vH;fFkZ;ksa ds fy, funsZ'kvH;fFkZ;ksa ds fy, funsZ'kvH;fFkZ;ksa ds fy, funsZ'kvH;fFkZ;ksa ds fy, funsZ'k / Instructions for the Candidates :– 
+1. vks-,e-vkj- mÙkj i=d bl iz'u&iqfLrdk ds vUnj j[kk gSA tc vkidks iz'u&iqfLrdk i<+us dks dgk tk,] rks mÙkj i=d fudky dj /;ku ls dsoy dkys ckWy 
+IokbaV iSu ls fooj.k HkjsaA  / The OMR Answer Sheet is inside this Question Booklet. When you are directed to read the Question Booklet, take 
+out the OMR Answer Sheet and fill in the particulars carefully with black ball point pen only. 
+2. ijh{kk dh vof/k 2.30     ?kaVs?kaVs ?kaVs?kaVs gS ,oa iz'u&iqfLrdk esa 150  iz'u gSaA dksbZ _.kkRed vadu ugha gSA dksbZ _.kkRed vadu ugha gSA dksbZ _.kkRed vadu ugha gSA dksbZ _.kkRed vadu ugha gSA  / The test is of 2.30 hours  duration and consists of 
+150 questions. There is no negative marking.  
+3. vius fooj.k vafdr djus ,oa mÙkj i=d ij fu'kku yxkus ds fy, dsoy dkys ckWy IokbaV iSu dkys ckWy IokbaV iSu dkys ckWy IokbaV iSu dkys ckWy IokbaV iSu dk iz;ksx djsaA vH;FkhZ iz'u&iqfLrdk dk mi;ksx djus ,oa 
+mÙkj i=d dks Hkjus esa lko/kkuh cjrsaA  / Use Black Ball Point Pen  only for writing particulars on this page/darkening responses in the 
+Answer Sheet. The candidate should remain careful in handling the question paper and in darkening the responses on the answer 
+sheet. 
+4. izFke 10  feuV esa] ;g Hkh lqfuf'pr dj ysa fd iz'u&iqfLrdk Øekad vkSj mÙkj i=d Øekad ,d gh gSaA vxj ;g fHkUu gksa ;k iz'u&iqfLrdk esa dksbZ i`"B 
+missing  ;k misprint gks rks vH;FkhZ nwljh iz'u&iqfLrdk vkSj mÙkj i=d ysus ds fy, i;Zos{kd dks rqjUr voxr djok,¡A  / Within first 10 minutes, 
+also ensure that your Question Booklet Serial No. and Answer Sheet Serial No. are the same. In case of discrepancy or any page 
+missing/misprint in test booklet, then the candidate should immediately report the matter to the Invigilator for replacement of both 
+the Question Booklet and the Answer Sheet. 
+5. ysoy& ysoy& ysoy& ysoy& 2    [ d{kk d{kk d{kk d{kk VI     ls ls ls ls VIII     ds fy, ds fy, ds fy, ds fy,  ]    
+Hkkx& I  % cky fodkl o f'k{kk 'kkL= [ç'u  1 ls ç'u  30]    
+Hkkx& II   % Hkk"kk % [ç'u  31  ls ç'u  60] 
+  ¼fgUnh % 15 iz'u o vaxzsth % 15 iz'u½ 
+Hkkx& III  % lkekU; v/;;u % [ç'u  61  ls ç'u  90] 
+  ¼ek=kRed ;ksX;rk % 10 iz'u] rkfdZd vfHk{kerk % 10 iz'u] lkekU; 
+Kku ,oa vfHkKku  % 10 iz'u½ 
+Hkkx& IV  % xf.kr  [ç'u  91  ls ç'u  150] 
+        5. Level–2 [ For Classes VI to VIII ] 
+PART–I : Child Development and 
+                                      Pedagogy  
+[Qn. 1 to Qn. 30] 
+PART–II  : Language : [Qn. 31 to Qn. 60] 
+  (Hindi : 15 Qn. & English : 15 Qn.)  
+PART–III : General Studies : 
+[Qn. 61 to Qn. 90] 
+  (Quantitative Aptitude : 10 Qn, Reasoning 
+Ability : 10 Qn, G. K. & Awareness  : 10 Qn.) 
+PART–IV : Mathematics [Qn. 91 to Qn. 150] 
+iz'u&iqfLrdk Øekad ,oa vks-,e -vkj - Øekad  
+Question-Booklet Serial No. & O. M. R. Serial No.  
+SET – A  
+jQ dk;Z ds fy, jQ dk;Z ds fy, jQ dk;Z ds fy, jQ dk;Z ds fy,  [FOR ROUGH WORK] 
+  [ 3 / A ] 
+[ Level-2 / 1210 ]  P. T. O. 
+Hkkx Hkkx Hkkx Hkkx  – I / PART – I  
+cky fodkl o f'k{kk'kkL= cky fodkl o f'k{kk'kkL= cky fodkl o f'k{kk'kkL= cky fodkl o f'k{kk'kkL=  / CHILD DEVELOPMENT AND PEDAGOGY 
+funsZ'k % funsZ'k % funsZ'k % funsZ'k % fuEufyf[kr iz'uksa ds mÙkj nsus ds fy, lclslclslclslcls mfpr mfpr mfpr mfpr fodYi pqfu,A 
+Direction :   Answer the following questions by selecting the most appropriate option. 
+1. fuEufyf[kr esa ls dkSu&lk fu;e 
+vkuqoaf'kdrk ls lacaf/kr ughaugha ughaugha  gS \ 
+1) lekurk dk fu;e 
+2) fHkUurk dk fu;e 
+3) izfrxeu dk fu;e 
+4) izxfr dk fu;e 
+  
+1. Which of the following laws is not  
+related to heredity ? 
+1) Law of Similarity 
+2) Law of Variation 
+3) Law of Regression 
+4) Law of Progression 
+ 
+2. fuEufyf[kr esa ls dkSu&lk cqf) dk ,d 
+fØ;kRed ijh{k.k ughaugha ughaugha  gS \ 
+1) dksg~ dk CykWd fMtkbu ijh{k.k 
+2) ,ysDtsaMj dk ikl&,yk¡x ijh{k.k 
+3) lsxqbu QkWeZ cksMZ ijh{k.k 
+4) LVsuQksMZ&fcus ijh{k.k 
+  
+2. Which of the following is not  a 
+performance test of intelligence ? 
+1) Koh's Block Design Test 
+2) Alexander's Pass Along Test 
+3) Saguine Form Board Test 
+4) Stanford-Binet Test 
+ 
+3. fuEufyf[kr esa ls dkSu& lk oLrqfu"B izdkj 
+dk iz'u ughaugha ughaugha  gS \ 
+1) feyku iz'u 
+2) fo'ys"k.kkRed iz'u 
+3) cgqoSdfYid iz'u 
+4) fjDr LFkku iz'u 
+  
+3. Which of the following is not  an 
+objective type question ? 
+1) Matching questions 
+2) Analytical questions 
+3) Multiple choice questions 
+4) Blank space questions 
+ 
+4. fi;kts ds uSfrd fodkl fl)kar ds vuqlkj] 
+fd'kksjkoLFkk gS % 
+1) uSfrd ;FkkFkZokn dh voLFkk 
+2) ckf/kd uSfrdrk dh voLFkk 
+3) ijk;Ùk uSfrdrk dh voLFkk 
+4) Lok;Ùk uSfrdrk dh voLFkk 
+  
+4. According to Moral Development 
+theory of Piaget, adolescent period 
+is : 
+1) Stage of moral realism 
+2) Stage of morality constraint 
+3) Stage of heteronomous morality 
+ 
+4) Stage of autonomous morality  
+[ 4 / A ] 
+[ Level-2 / 1210 ]   
+5.
+ fuEufyf[kr esa ls dkSu& lh fo'ks"krk fi;kts 
+}kjk izfrikfnr laKkukRed fodkl fl)kUr 
+dh ewrZ lafØ;kRed voLFkk ls lacaf/kr ughaugha ughaugha 
+gS \ 
+ 
+1) mRØe.kh;rk ¼iyVko dh {kerk½ 
+2) Øec)rk 
+3) thookn 
+4) laj{k.k 
+  
+5. Which of the following 
+characteristics is not  related to the 
+concrete operational stage of the 
+Cognitive Development theory 
+propounded by Piaget ? 
+1) Reversibility 
+2) Serialization 
+3) Animism 
+4) Conservation 
+ 
+6. oS;fDrd fHkUurkvksa ds lUnHkZ esa dkSu&lk 
+dFku lgh ughaugha ughaugha  gS \ 
+1) dksbZ Hkh nks O;fDr fcydqy ,d&leku 
+ugha gksrsA 
+2) oS;fDrd fHkUurk,¡ fo'ks"krkvksa ds laca/k 
+esa fopyu gSaA 
+ 
+3) oS;fDrd fHkUurk,¡ viuh lexzrk esa 
+O;fDr;ksa dks vyx djrh gSaA 
+ 
+4) oS;fDrd fHkUurk,¡ dsoy vkuqoaf'kdrk 
+dk gh ifj.kke gksrh gSaA 
+  
+6. Which statement is not  correct in 
+context of individual differences ? 
+1) Two persons are not exactly 
+same. 
+2) Individual differences are 
+deviation in regards to 
+characteristics. 
+3) Individual differences 
+distinguish individuals in their 
+totality. 
+4) Individual differences are the 
+sole result of heredity. 
+ 
+7. tc ,d cPps }kjk lh[kk tkus okyk ikB 
+yack vkSj dfBu gks rFkk mlesa le> dh 
+t:jr Hkh vf/kd gks] rks lh[kus dh 
+dkSu&lh fof/k mi;qDr gksxh \ 
+ 
+1) fojke fof/k 
+2) iw.kZ fof/k 
+3) vfojke fof/k 
+4) izklafxd fof/k 
+  
+7. When the lesson to be learned by 
+a child is long and difficult and 
+requires a lot of understanding, 
+then which method of learning will 
+be appropriate ? 
+1) Spaced method 
+2) Whole method 
+3) Massed method 
+4) Incidental method 
+ 
+  [ 5 / A ] 
+[ Level-2 / 1210 ]  P. T. O. 
+8. vf/kxe fu;ksZX; cPpksa ds fy, dkSu& lk 
+f'k{k.k lw= ykHkizn ughaugha ughaugha  gksxk \ 
+1) ljy ls tfVy 
+2) vewrZ ls ewrZ 
+3) izR;{k ls vizR;{k 
+4) Kkr ls vKkr 
+  
+8. Which teaching maxim is not  
+beneficial for the learning 
+disabled children ? 
+1) Simple to complex 
+2) Abstract to concrete 
+3) Direct to indirect 
+4) Known to unknown 
+ 
+9. fuEufyf[kr esa ls dkSu&lk fodkl dk ,d 
+fl)kar ughaugha ughaugha  gS \ 
+1) fodkl vkuqoaf'kdrk ,oa i;kZoj.k dk 
+mRikn gSA 
+2) fodklkRed iSVuZ iwokZuqes; gksrk gSA 
+ 
+3) fodkl jSf[kd iFk dk vuqlj.k djrk 
+gSA 
+4) fodkl lkekU; ls fof'k"V dh vksj 
+c<+rk gSA 
+  
+9. Which of the following is not  a 
+principle of development ? 
+1) Development is the product of 
+heredity and environment. 
+2) Developmental pattern is 
+predictable. 
+3) Development follows linear 
+path. 
+4) Development proceeds from 
+general to specific. 
+ 
+10. fdl euksoSKkfud ds vuqlkj cPpksa ds 
+laKkukRed fodkl esa lkekftd ,oa lkaLÑfrd 
+dkjdksa dh Hkwfedk egÙoiw.kZ gksrh gS \ 
+1) okW;xksV~Ldh 2) fi;kts 
+3) czwuj 4) gy 
+  
+10. According to which psychologist, 
+the role of social and cultural factors 
+are important in the cognitive 
+development of children ? 
+1) Vygotsky 2) Piaget 
+3) Bruner 4) Hull 
+ 
+11. fuEufyf[kr esa ls dkSu&lh fd'kksjkoLFkk esa 
+lkekftd fodkl dh ,d lkekU; fo'ks"krk 
+ughaugha ughaugha  gS \ 
+1) ekrk&firk ds lkFk lkeatL;iw.kZ   
+laca/k 
+2) u;k lkekftd lewgu 
+3) igpku dh [kkst 
+4) ohj&iwtk 
+  
+11. Which of the following is not  a 
+common characteristic of social 
+development in adolescence ? 
+1) Harmonious relationship with 
+parents 
+2) New social grouping 
+3) Search for identity 
+4) Hero-worship 
+ 
+[ 6 / A ] 
+[ Level-2 / 1210 ]   
+12.
+ dksg~ycxZ ds uSfrd fodkl fl)kar dh 
+dkSu&lh voLFkk,¡ ikjEifjd uSfrdrk ds 
+Lrj ls lacaf/kr ughaugha ughaugha  gSa \ 
+(a) O;fDrokn ,oa fofue; 
+(b) vPNs vUroSZ;fDrd laca/k 
+(c) lkekftd O;oLFkk cuk, j[kuk 
+(d) lkekftd vuqca/k vkSj oS;fDrd 
+vf/kdkj 
+lghlgh lghlgh dwV dk p;u dhft, % 
+dwV % dwV % dwV % dwV %     
+1) (a)  ,oa (b)  
+2) (b)  ,oa (c)  
+3) (a)  ,oa (d)  
+4) (c)  ,oa (d) 
+  
+12. Which stages of Kohlberg's Moral 
+Development theory are not  related 
+to level of conventional morality ? 
+(a) Individualism and exchange 
+ 
+(b) Good interpersonal relations  
+(c) Maintaining the social order 
+(d) Social contracts and individual 
+rights 
+ 
+Choose the correct  code : 
+Code :   
+1) (a)  &  (b)  
+2) (b)  &  (c)  
+3) (a)  &  (d)  
+4) (c)  &  (d)  
+13. vo/kku ,oa fparu tSlh ekufld izfØ;kvksa 
+ds }kjk lh[kuk dgykrk gS % 
+ 
+1) vuqdj.kkRed lh[kuk 
+2) xked lh[kuk 
+3) laKkukRed lh[kuk 
+4) HkkokRed lh[kuk 
+  
+13. Learning through mental 
+processes like attention and 
+reflection is called : 
+1) Imitative learning 
+2) Motor learning 
+3) Cognitive learning 
+4) Affective learning 
+ 
+14. lkekftd vf/kxe ds lUnHkZ esa dkSu&lh 
+f'k{k.k& vf/kxe j.kuhfr fo|kfFkZ;ksa ds fy, 
+lokZf/kd mi;ksxh gS \ 
+1) {ks= Hkze.k 
+2) Hkk"k.k 
+3) iz;ksx 
+4) ekufld m}syu 
+  
+14. Which teaching learning strategy is 
+most useful for students in context 
+of social learning ? 
+1) Field trip 
+2) Lecture 
+3) Experiment 
+4) Brain storming 
+ 
+  [ 7 / A ] 
+[ Level-2 / 1210 ]  P. T. O. 
+15. iSoykWo ds vuqca/ku fl)kar esa LokHkkfod 
+,oa Ñf=e míhidksa ds e/; vuqca/ku dks 
+dkSu&lk dkjd /kukRed :i ls izHkkfor 
+ughaugha ughaugha  djrk gS \ 
+1) míhidksa ds izLrqrhdj.k dk mi;qDr 
+le; 
+2) míhidksa    dh    iqujko`fÙk 
+3) fu;af=r okrkoj.k 
+4) izsjd dh deh 
+  
+15. In Pavlov's Conditioning theory, 
+which factor does not  positively 
+affect the conditioning between 
+natural and artificial stimuli ? 
+1) Appropriate timing of stimuli 
+presentation 
+2) Repetition of stimuli 
+3) Controlled environment 
+4) Lack of motive 
+ 
+16. fuEufyf[kr esa ls dkSu&lk dkjd f'k{k.k 
+vf/kxe izfØ;k dks izHkkfor ughaugha ughaugha  djrk   
+gS \ 
+1) f'k{kd dk 'kkjhfjd :i 
+2) f'k{kd dk ekufld LokLF; 
+3) f'k{kd dk fo"k;oLrq Kku 
+4) f'k{kd dk laizs"k.k dkS'ky 
+  
+16. Which of the following factors does 
+not  affect the teaching learning 
+process ? 
+1) Physical appearance of teacher 
+2) Mental health of teacher 
+3) Content knowledge of teacher 
+4) Communication skills of teacher 
+ 
+17. fuEufyf[kr esa ls dkSu& lk dkjd 
+i;kZoj.kh; dkjdksa ds vUrxZr cPpksa ds 
+fodkl dks izHkkfor ughaugha ughaugha  djrk \ 
+1) iks"k.k 
+2) xHkkZoLFkk ds nkSjku ek¡ dk ekufld 
+ruko 
+3) nq?kZVuk,¡ 
+4) vUr% òkoh xzafFk;k¡ 
+  
+17. Which of the following factor does 
+not  influence the development of 
+child under environmental factors ? 
+1) Nutrition 
+2) Mental stress of the mother 
+during pregnancy 
+3) Accidents 
+4) Endocrine glands 
+ 
+18. ^mi;ksx dk fu;e* ,oa ^vuqi;ksx dk fu;e* 
+FkkWuZMkbd ds vf/kxe fl)kar ds vuqlkj 
+fdl lh[kus ds fu;e ls lacaf/kr gS \ 
+1) rRijrk dk fu;e 
+2) vH;kl dk fu;e 
+3) izHkko dk fu;e 
+4) cgq izfrfØ;k dk fu;e 
+  18. 'Law of use' and 'Law of disuse' is 
+related with which law of learning 
+according to Thorndike's learning 
+theory ?  
+1) Law of readiness 
+2) Law of exercise 
+3) Law of effect 
+4) Law of multiple response 
+ 
+[ 8 / A ] 
+[ Level-2 / 1210 ]   
+19.
+ fuEufyf[kr esa ls dkSu&lk ;qXe vfHkizsj.kk 
+ds fl)karksa ,oa muds izfrikndksa ds laca/k esa 
+lgh ughaugha ughaugha  gS \ 
+vfHkizsj.kkRed fl)kar vfHkizsj.kkRed fl)kar vfHkizsj.kkRed fl)kar vfHkizsj.kkRed fl)kar    izfriknd izfriknd izfriknd izfriknd    
+1) ewy izo`fÙk fl)kar 
+2) vko';drk inkuqØe 
+fl)kar 
+3) iz.kksn fl)kar 
+4) miyfC/k vfHkizsj.kk 
+fl)kar 
+ ,Vfdalu 
+ eSlyks 
+ 
+ oqMoFkZ 
+ eSDyhySaM 
+ 
+  
+19. Which of the following pair is not  
+correct regarding motivational 
+theories and their proponents ? 
+Motivational Theories  Proponent  
+1) Instinct theory 
+2) Need Hierarchical 
+theory 
+3) Drive theory 
+4) Achievement 
+Motivation theory 
+Atkinson 
+Maslow 
+ 
+Woodworth 
+ 
+Mc'Clelland  
+ 
+20. lekos'kh f'k{kk ls rkRi;Z gS % 
+1) lkekftd :i ls oafpr cPpksa ds fy, 
+f'k{kk 
+2) fnO;kax cPpksa ds fy, f'k{kk 
+3) lkekU; ,oa fnO;kax cPpksa ds fy, 
+f'k{kk 
+4) lHkh cPpksa ds fy, f'k{kk 
+  
+20. Inclusive Education means : 
+1) Education for socially deprived 
+children 
+2) Education for disabled children 
+3) Education for normal and 
+disabled children 
+4) Education for all children 
+ 
+21. fuEufyf[kr esa ls dkSu& lk izHkkoh vf/kxe 
+dk ,d fl)kar ughaugha ughaugha  gS \ 
+1) vfHkizsj.kk 
+2) oS;fDrd igq¡p 
+3) fuf"Ø; mifLFkfr 
+4) izfriqf"V 
+  
+21. Which of the following is not  a 
+principle of effective learning ? 
+1) Motivation 
+2) Individual approach 
+3) Passive attendance 
+4) Feedback 
+ 
+22. xSus ds vuqlkj] ,d f'k{kd }kjk fo|kfFkZ;kas 
+dks fdl mPpre Lrj ds vf/kxe rd ys 
+tkus dk iz;kl djuk pkfg, \ 
+1) laizR;; vf/kxe 
+2) leL;k lek/kku vf/kxe 
+3) fu;e vf/kxe 
+4) foHksnu vf/kxe 
+  
+22. According to Gagne, to what 
+highest level of learning should a 
+teacher strive to take students ? 
+1) Concept learning 
+2) Problem solving learning 
+3) Rule learning 
+4) Discrimination learning 
+ 
+  [ 9 / A ] 
+[ Level-2 / 1210 ]  P. T. O. 
+23. LVuZcxZ ds f=ra=h; fl)kar esa cqf) ds  
+fdu rhu igyqvksa ij cy fn;k x;k gS \ 
+ 
+(a) ?kVdh;  
+(b) vuqHkotU; 
+(c) lafØ;kRed  
+(d) lanHkkZRed 
+lghlgh lghlgh dwV dk p;u dhft, % 
+dwV % dwV % dwV % dwV %     
+1) (a), (b)  ,oa (c) 
+2) (b), (c)  ,oa (d)  
+3) (a), (b)  ,oa (d)  
+4) (a), (c)  ,oa (d) 
+  
+23. Which three aspects of 
+intelligence are emphasized in the 
+triarchic theory of Sternberg ? 
+(a) Componential  
+(b) Experiential 
+ 
+(c) Operational      
+(d) Contextual 
+ 
+Choose the correct  code : 
+Code :   
+1) (a), (b)  &  (c) 
+2) (b), (c)  &  (d)  
+3) (a), (b)  &  (d)  
+4) (a), (c)  &  (d)  
+24. /kheh xfr ds vf/kxedrkZ ds fy, dkSu&lk 
+'kSf{kd gLr{ksi mi;qDr ughaugha ughaugha  gS \ 
+1) Roj.k 
+2) mipkjkRed f'k{k.k 
+3) vH;kl dk;Z 
+4) lgdkjh f'k{k.k fof/k 
+  
+24. Which educational intervention is 
+not  suitable for slow learners ? 
+1) Acceleration 
+2) Remedial teaching 
+3) Drill work 
+4) Cooperative teaching method 
+ 
+25. fd'kksjkoLFkk esa LohÑr lkekftd O;ogkj 
+iSVuZ ds fy, lghlgh lghlgh  dwV dk p;u dhft, % 
+ 
+(a) usr`Ro dq'kyrk 
+(b) ijkuqHkwfr 
+(c) vga&dsfUnzrrk 
+(d) :f<+okfnrk 
+dwV % dwV % dwV % dwV %    
+1) (a)  ,oa (b)  
+2) (b)  ,oa (d)  
+3) (a), (b) ,oa (c)  
+4) (a), (c) ,oa (d)  
+  
+25. Choose the correct  code for the 
+approved social behaviour pattern 
+in adolescence : 
+(a) Leadership skills 
+ 
+(b) Empathy  
+(c) Ego-centrism  
+(d) Stereotyping  
+Codes : 
+1) (a) 
+ &  (b)    
+2) (b)  &  (d)  
+3) (a), (b)  &  (c)  
+4) (a), (c)  &  (d)  
+[ 10 / A ] 
+[ Level-2 / 1210 ]   
+26.
+ lrr~ ,oa O;kid ewY;kadu dk lghlgh lghlgh vFkZ   
+gS % 
+(a) yxkrkj ijh{kk,¡ ysuk 
+(b) mi;qDr varjky ds ckn fujUrj 
+ijh{kk,¡ ysuk 
+(c) 'kSf{kd rFkk lg&'kSf{kd nksuksa i{kksa dk 
+ewY;kadu djuk 
+(d) dsoy 'kSf{kd miyfC/k ekiuk 
+ 
+lghlgh lghlgh dwV dk p;u dhft, % 
+dwV % dwV % dwV % dwV %     
+1) (b)  ,oa (d) 
+2) (b)  ,oa (c)  
+3) (a), (b)  ,oa (c)  
+4) (b), (c)  ,oa (d) 
+  
+26. The true  meaning of continuous 
+and comprehensive evaluation is : 
+(a) Taking frequent tests 
+ 
+(b) Taking continuous tests at 
+appropriate intervals  
+(c) To evaluate scholastic and co-
+scholastic both aspects 
+(d) Measuring only educational 
+achievements  
+Choose the correct  code : 
+Code :   
+1) (b)  &  (d) 
+2) (b)  & (c)  
+3) (a), (b)  & (c)  
+4) (b), (c)  & (d)  
+27. og f'k{kk tks ^djds lh[kus* dks c<+kok nsrh 
+gS vkSj lh[kus ds fy, fo|kfFkZ;ksa dh muds 
+okrkoj.k ds lkFk var%fØ;k lqfuf'pr 
+djrh gS] og dgykrh gS % 
+1) fof'k"V f'k{kk 
+2) izxfr'khy f'k{kk 
+3) ,dhÑr f'k{kk 
+4) lekos'kh f'k{kk 
+  
+27. The education which promotes 
+'learning by doing' and ensures the 
+student's interaction with their 
+environment to learn, that is known as : 
+1) Special education 
+2) Progressive education 
+3) Integrated education 
+4) Inclusive education 
+ 
+  [ 11 / A ] 
+[ Level-2 / 1210 ]  P. T. O. 
+28. n`f"Vckf/kr fo|kfFkZ;ksa ds fy, dkSu&lh 
+f'k{k.k lgk;d lkexzh mi;ksxh ughaugha ughaugha     
+gksxh \ 
+1) czsy lkexzh 
+2) cksyrh fdrkcsa 
+3) fQYe fLVªIl 
+4) mHkjs gq, ekufp= 
+  
+28. Which teaching support material is 
+not  useful for visually impaired 
+students ? 
+1) Braille materials 
+2) Talking books 
+3) Film strips 
+4) Embossed map 
+ 
+29. vf/kxe dks izHkkfor djus okys fuEufyf[kr 
+dkjdksa ds lghlgh lghlgh dwV dk p;u dhft, % 
+ 
+(a) vfHkizsj.kk  
+(b) vfHk{kerk 
+(c) vfHk#fp   
+(d) vo/kku  
+dwV % dwV % dwV % dwV %     
+1) (c) ,oa (d) 
+2) (a), (b) ,oa (d) 
+3) (a) ,oa (c) 
+4) (a), (b), (c) ,oa (d)  
+  
+29. Choose the correct  code of the 
+following factors, which affects 
+learning : 
+(a) Motivation  
+(b) Aptitude 
+(c) Interest  
+(d) Attention 
+Code : 
+1) (c) & (d) 
+2) (a), (b) & (d) 
+3) (a) & (c) 
+4) (a), (b), (c) & (d) 
+ 
+30. ,d vf/kxe dfBukbZ tks cPps ds fy, o.kkZsa 
+vkSj 'kCnksa esa varj djus esa leL;k mRiUu 
+djrh gS % 
+1) fMLIykfLVfl;k 
+2) fMLysfDl;k 
+3) fMLxzkfQ;k 
+4) fMLdSydqfy;k 
+  
+30. A learning difficulty that create 
+problem for a child to distinguish 
+letters and words is : 
+1) Dysplasticia 
+2) Dyslexia 
+3) Dysgraphia 
+4) Dyscalculia 
+ 
+ 
+[ 12 / A ] 
+[ Level-2 / 1210 ]   
+Hkkx Hkkx Hkkx Hkkx  – II / PART – II  
+Hkk"kk ¼fgUnh ,oa vaxzsth½ Hkk"kk ¼fgUnh ,oa vaxzsth½ Hkk"kk ¼fgUnh ,oa vaxzsth½ Hkk"kk ¼fgUnh ,oa vaxzsth½  / LANGUAGES (HINDI & ENGLISH)  
+fgUnhfgUnhfgUnhfgUnh (HINDI)  
+funsZ'k % funsZ'k % funsZ'k % funsZ'k % fuEufyf[kr iz'uksa ds mÙkj nsus ds fy, lcls mfpr lcls mfpr lcls mfpr lcls mfpr fodYi pqfu,A 
+31.  foykse 'kCn ds laca/k esa dkSu&lk ;qXe 
+vlaxr vlaxr vlaxr vlaxr   gS \ 
+1) ?ke.Mh & fouhr  
+2) fpjk;q & nh?kkZ;q 
+3) rk#.; & ok/kZD;  
+4) rstLoh & fuLrst  
+32. rRiq#"k lekl dk dkSu&lk leLrin vius 
+;qXe ls lgh lqesfyr ughaugha ughaugha  gS \ 
+1) xq#nf{k.kk & laca/k rRiq#"k 
+2) ns'kkVu & vf/kdj.k rRiq#"k 
+3) js[kkafdr & dj.k rRiq#"k 
+4) ns'kfuokZflr & viknku rRiq#"k 
+33. fuEu esa ls dkSu&lk laf/k 'kCn vius ;qXe 
+ls lqesfyr ughaugha ughaugha  gS \ 
+1) vtar & O;atu laf/k 
+2) o;kso`) & folxZ laf/k 
+3) egkSnk;Z & o`f) Loj laf/k 
+4) rstksiqat & xq.k Loj laf/k 
+34.  ^x*] ^y* rFkk ^c* mDr o.kksZa dk Øe'k% 
+mPpkj.k LFkku gS % 
+1) rkyq] d.B] vks"B  
+2) nUr] d.B] rkyq 
+3) d.B] nUr] vks"B  
+4) vks"B] d.B] rkyq 
+35.  fdl fodYi dk okD; iwoZdkfyd fØ;k dk 
+mnkgj.k ughaugha ughaugha  gS \ 
+1) jke [ksydj pyk x;kA  
+2) rqEgsa ,slk djuk 'kksHkk ugha nsrk gSA  
+3) lhrk [kkuk cukdj t;iqj tk,xhA  
+4) v/;kid mnkgj.k nsdj Nk=ksa dks 
+i<+krs gSaA  
+36.  ^uhe gdhe [k+rjs tku* mDr yksdksfDr dk 
+lghlgh lghlgh  vFkZ gS % 
+1) igys LokFkZ ckn esa ijekFkZ djukA  
+2) vYiKku [k+rjukd gksrk gSA  
+3) nks"kh ds lkFk funksZ"k dks lt+k feyukA  
+4) vR;Ur /khjs dke pyukA  
+37.  okD;ka'k ds fy, ,dy 'kCn ds laca/k esa 
+dkSu&lk ;qXe vlaxr vlaxr vlaxr vlaxr   gS \ 
+1) ftls ogu djuk dfBu gks & nqfoZHkkO;  
+2) ftls fdlh us u lw¡?kk gks & vuk?kzkr  
+3) dksbZ dke djus dh bPNk & fpdh"kkZ 
+4) fot; izkfIr dh rhoz bPNk & fothfx"kk 
+38. fdl fodYi ds 'kCnksa esa okrZfud v'kqf) 
+ughaugha ughaugha  gS \ 
+1) lq/khtu] 'krkCnh 
+2) lk/kwokn] lqjljh 
+3) 'kwHks"kh] Hkk;kZifr  
+4) pUnzeksfy] iq=s"k.kk 
+  [ 13 / A ] 
+[ Level-2 / 1210 ]  P. T. O. 
+39.  fdl Øekad esa ^dknacjh&dknafcuh* 
+'kCn&;qXe dk Øe'k% lghlgh lghlgh vFkZ gS \ 
+1) 'kjkc] ?kVk 
+2) dq'ky] lsod  
+3) fouhr] cqjkbZ 
+4) dq'ky] ifo=  
+40.  fuEu esa ls dkSu&lk 'kCn ^/kuq"k* dk 
+i;kZ;okph ughaugha ughaugha  gS \ 
+1) pki 2) dkeqZd  
+3) 'kjklu 4) dklkj  
+41.  fo'ks"k.k ds laca/k esa dkSu&lk dFku vlaxr vlaxr vlaxr vlaxr  
+gS \ 
+1) ftl fodkjh 'kCn ls laKk dh O;kfIr 
+e;kZfnr gksrh gS] mls fo'ks"k.k dgrs gSaA  
+2) ^Hkyk] nkuh] nq"V* mDr 'kCn] 
+xq.kokpd fo'ks"k.k ds mnkgj.k gSaA  
+3) ^d{kk esa lkB  Nk= i<+rs gSa* & 
+la[;kokpd fo'ks"k.k dk mnkgj.k gSA  
+4) ladsrokpd fo'ks"k.k esa fdlh oLrq dh 
+uki ;k rkSy dk cks/k gksrk gSA  
+42.  laKk ds laca/k esa dkSu&lk dFku laxr ughaugha ughaugha  
+gS \ 
+1) O;fDrokpd laKkvksa dk iz;ksx lnSo 
+¼vknjkFkZd ds vfrfjDr½ ,dopu esa 
+gksrk gSA  
+2) ns'k] R;ksgkj] unh mDr O;fDrokpd 
+laKk ds mnkgj.k gSaA  
+3) ^nzO;okpd* rFkk ^lewgokpd*] 
+tkfrokpd laKk ds gh Hksn ekus tkrs 
+gSaA  
+4) ^fo}Ùkk*] ^ikafMR;* mDr ;kSfxd 
+Hkkookpd laKk ds mnkgj.k gSaA  
+43.  loZuke ds laca/k esa dkSu&lk ;qXe laxr 
+ughaugha ughaugha  gS \ 
+1) eSaus vkt O;kdj.k i<+k & iq#"kokpd  
+loZuke  
+2) dejs esa dksbZ g¡l jgk gS &  
+vfu'p;okpd loZuke  
+3) blh us esjh ftanxh cpkbZ Fkh &  
+iz'uokpd loZuke  
+4) og Lo;a dks lq/kkj jgk gS &  
+futokpd loZuke  
+44.  fuEu esa ls dkSu&lk 'kCn ^viR;okpd 
+rf)r izR;;* ls fufeZr ughaugha ughaugha  gS \ 
+1) oSurs;  
+2) dkSjo  
+3) oklqnso  
+4) oS/kO;  
+45. milxZ dh n`f"V ls fdl fodYi dk 
+'kCn&;qXe vlaxr vlaxr vlaxr vlaxr   gS \ 
+1) fuj~ & fujkdj.k] fujijk/k 
+2) vuq & vuwfnr] vUoh{k.k 
+3) ijk & ijkFkZ] ijkfJr  
+4) lq & lqnwj] lqÑr  
+ 
+[ 14 / A ] 
+[ Level-2 / 1210 ]   
+vaxzsthvaxzsthvaxzsthvaxzsth / ENGLISH 
+Direction :  Answer the following questions by selecting the most appropriate  option. 
+46.  Choose the correct  option that 
+gives the correct passive voice of 
+the given sentence : 
+Have they done the work ? 
+1) Have the work been done ? 
+2) Has the work been done ? 
+3) Had the work been done ? 
+4) Will the work be done ? 
+47. 
+ Choose the option that gives the 
+correct  meaning of the phrasal 
+verb : 
+Turn out 
+1) to evict someone 
+2) to kill someone 
+3) to ridicule someone 
+4) to give legal notice to someone 
+ 
+48.  Fill in the blank with the most 
+appropriate modal auxiliary : 
+Your mother is seriously ill. You 
+........... leave for home at once. 
+(obligation) 
+1) needs 2) might 
+3) could 4) must 
+49. 
+ Choose the option that gives the 
+correct  meaning of the given 
+phrasal verb : 
+Send for 
+1) start on a journey 
+2) reach to a decision 
+3) call someone in 
+4) improve 
+50. 
+ Change the narration to Reported 
+speech and choose the right  option : 
+ 
+I said to him, "Do you know when 
+she will go home ?" 
+1) I told him if he knew when she 
+will go home ? 
+2) I said to him that did he knew 
+when she would go home. 
+3) I asked him if he knew when 
+she would go home. 
+4) I said to him that did he know 
+when will she go home ? 
+51. 
+ Choose the part of sentence which 
+is incorrect  : 
+Has Sachin 
+ / not breaked  / the  
+      (A)    (B) 
+record held 
+ / by Bradman who  
+   (C)            (D) 
+made 10,000 runs in his career ? 
+ 
+1) A 2) B 
+3) C 4) D 
+52. 
+ Choose the correct  option for the 
+given one word : 
+Sinecure 
+1) one who lives by himself 
+2) an office with no work but high 
+pay 
+3) surgery without anesthesia 
+4) cure by naturopathy 
+  [ 15 / A ] 
+[ Level-2 / 1210 ]  P. T. O. 
+53.  Fill in the blank with the most 
+appropriate meaning of the 
+underlined idiom : 
+Rakesh had to deal with all his 
+problems by himself, because he 
+didn't want to depend on his fair 
+weather friends . 
+1) Friends who come from rich 
+family. 
+2) Friends who are loyal only 
+during a time of success. 
+3) Friends with whom one lived in 
+one's college time. 
+4) Friends who no longer live 
+with you. 
+54.  Choose the correct  tense form to 
+fill in the blank : 
+She jumped off the train while it 
+.............. . 
+1) moved  
+2) had moved 
+3) has moved  
+4) was moving 
+55. 
+ Choose the correct  tense form to 
+fill in the blank : 
+The Headmaster ............ to meet 
+you. 
+1) want 
+2) wants 
+3) is wanting 
+4) was wanting 
+56.
+ Choose the correct  option to fill in 
+the blank : 
+........... had the police reached 
+than the thieves fled. 
+1) As soon as 
+2) No sooner 
+3) Scarcely 
+4) As well 
+57.
+ Choose the correct  preposition to 
+fill in the blank : 
+He told all .......... the incident. 
+1) between 2) among 
+3) beside 4) about 
+58.
+ Choose the most appropriate 
+preposition to fill in the blank : 
+I am going home the day ........... 
+tomorrow. 
+1) in 2) on 
+3) after 4) at 
+59. 
+ Choose the most appropriate 
+preposition to fill in the blank : 
+Mohan gazed ............ the sky in 
+the hope of rain. 
+1) at 2) unto 
+3) besides 4) into 
+60. 
+ Choose the option that gives the 
+correct  meaning of the given 
+phrasal verb : 
+Give in 
+1) distribute 2) deposit 
+3) donate 4) surrender 
+ 
+[ 16 / A ] 
+[ Level-2 / 1210 ]   
+Hkkx Hkkx Hkkx Hkkx  – III / PART – III  
+lkekU; v/;;u lkekU; v/;;u lkekU; v/;;u lkekU; v/;;u  / GENERAL STUDIES 
+ek=kRed ;ksX;rk] rkfdZd vfHk{kerk rFkk lkekU; Kku ,oa vfHkKku ek=kRed ;ksX;rk] rkfdZd vfHk{kerk rFkk lkekU; Kku ,oa vfHkKku ek=kRed ;ksX;rk] rkfdZd vfHk{kerk rFkk lkekU; Kku ,oa vfHkKku ek=kRed ;ksX;rk] rkfdZd vfHk{kerk rFkk lkekU; Kku ,oa vfHkKku  / Quantitative Aptitude, Reasoning 
+Ability and G. K. & Awareness 
+funsZ'kfunsZ'kfunsZ'kfunsZ'k    %% %% fuEufyf[kr iz'uksa ds mÙkj nsus ds fy, lclslclslclslcls mfpr mfpr mfpr mfpr fodYi pqfu,A 
+Direction :   Answer the following questions by selecting the most appropriate  option. 
+61. A,  iwoZ fn'kk ls if'pe esa 8 fdeh pyrk 
+gS rFkk nk;sa eqM+dj 2 fdeh pyrk gS iqu% 
+nk;sa eqM+dj 5 fdeh pyrk gS] rks og 
+'kq#vkr fcUnq ds lanHkZ esa vc fdl fn'kk 
+esa fLFkr gS \ 
+1) nf{k.k&if'pe  
+2) mÙkj&if'pe 
+3) mÙkj&iwoZ  
+4) nf{k.k&iwoZ 
+  
+61. A travels 8 km from East to West and 
+turns right and travel 2 km. Now 
+again he turn right and travel 5 km. In 
+which direction is he now positioned 
+with reference to starting point ? 
+1) South-West  
+2) North-West 
+3) North-East  
+4) South-East 
+ 
+62. ;fn fdlh dwV Hkk"kk esa 'PROJECT' dks 
+'CEOPRT' rFkk 'PLANE' dks 'ELNP' 
+fy[kk tkrk gS] rks 'ORGANISED' dks mlh 
+dwV Hkk"kk esa fdl izdkj fy[kk tk,xk \ 
+1) ADEGIOSR  
+2) ADEGIROS 
+3) ADEGOIRS  
+4) ADEGIORS 
+ 
+  
+62. If 'PROJECT' is coded as 'CEOPRT' 
+and 'PLANE' is coded as 'ELNP' then 
+the 'ORGANISED' will be coded     
+as : 
+1) ADEGIOSR  
+2) ADEGIROS 
+3) ADEGOIRS  
+4) ADEGIORS 
+ 
+63. yM+dksa dh ,d iafDr esa] A  ck;ha rjQ ls 
+7osa rFkk B nk;ha rjQ ls 12 osa LFkku ij 
+gS] ;fn muds LFkkuksa esa ijLij ifjorZu 
+fd;k tkrk gS] rks A  dk ck;ha rjQ ls 
+22 ok¡ LFkku gks tkrk gS] rks iafDr esa dqy 
+yM+dksa dh la[;k gS % 
+1) 27 2) 31  
+3) 33 4) 34  
+  
+63. In a row of boys, A is 7th from the 
+left and B is 12th from the right. If 
+they interchange their positions A 
+becomes 22nd from the left. How 
+many total boys are there in a    
+row ? 
+1) 27 2) 31 
+ 
+3) 33 4) 34  
+  [ 17 / A ] 
+[ Level-2 / 1210 ]  P. T. O. 
+64. ,d ifjokj esa] A, X dk firk gS] B, Y  dh 
+ekrk gS] rFkk X o Z dh cgu Y gks] rks 
+fuEufyf[kr dFkuksa esa ls dkSu&lk dFku 
+fuf'pr :i ls lgh ughaugha ughaugha  gS \ 
+1) B, A  dh iRuh gS 
+2) B dh ,d iq=h gS 
+3) X, A  dk iq= gS 
+4) Y, Z  dh cgu gS 
+  
+64. In a family, A is the father of X, B is 
+the mother of Y. The sister of X and 
+Z is Y. Which of the following 
+statement is definitely not  true ? 
+1) B is the wife of A 
+2) B has a daughter 
+3) X is the son of A 
+4) Y is the sister of Z 
+ 
+65. nh xbZ Üka`[kyk esa xyr xyr xyr xyr  la[;k gS % 
+ 
+ 0, 3, 9, 12, 36, 39, 42, 120, 360 
+1) 12 2) 39 
+ 
+3) 42 4) 360  
+  
+65. Find the wrong  number in the 
+given series : 
+ 0, 3, 9, 12, 36, 39, 42, 120, 360 
+1) 12 2) 39 
+ 
+3) 42 4) 360  
+66. ;fn A  nf{k.k fn'kk esa 8 fdeh tkdj rc 
+nkfgus rjQ eqM+dj 6 fdeh pyrk gS rFkk 
+iqu% mÙkj&iwoZ fn'kk esa eqM+dj 10  fdeh 
+pyrk gS] rks A  izkjfEHkd fcUnq ls fdruh 
+nwjh ij gS \ 
+1) 0  fdeh  
+2) 8 fdeh 
+3) 10  fdeh  
+4) 12  fdeh 
+  
+66. If A walks 8 km South then turn 
+right and walks 6 km and again 
+turns North-East and walks 10 km. 
+How far is A from the starting   
+point ? 
+1) 0 km  
+2) 8 km 
+3) 10 km  
+4) 12 km 
+ 
+67. ;fn 10  O;fDr fdlh dk;Z dk 
+
+
+
+
+5
+2
+ ok¡ 
+Hkkx djus esa 8 fnu yxkrs gSa] rks mlh dk;Z 
+ds 'ks"k dk;Z dks 12  fnuksa esa iw.kZ djus ds 
+fy, fdrus O;fDr;ksa dh vko';drk gksxh \ 
+1) 6 2) 8  
+3) 10 4) 12  
+  
+67. If 10 persons can complete 
+
+
+
+
+5
+2
+th 
+ 
+of a work in 8 days, then how many 
+persons are required to complete 
+the remaining work in 12 days ? 
+ 
+1) 6 2) 8  
+3) 10 4) 12  
+[ 18 / A ] 
+[ Level-2 / 1210 ]   
+68.
+ ,d yEc fizTe dk vk/kkj ,d f=Hkqt gS] 
+ftldk ifjeki 32  lseh gS vkSj f=Hkqt dh 
+var% f=T;k 6 lseh gS] ;fn fizTe dk vk;ru 
+576  ?ku lseh gS] rks bldh Å¡pkbZ gS % 
+1) 4  lseh 2) 5 lseh 
+3) 6 lseh 4) 8  lseh 
+  68. The base of a right prism is a 
+triangle whose perimeter is 32 cm 
+and the inradius of the triangle is    
+6 cm. If the volume of the prism is 
+576 cc, then its height is : 
+1) 4
+ cm 2) 5  cm  
+3) 6 cm 4) 8  cm  
+69. ;fn ,d fu;fer cgqHkqt esa fod.kksaZ dh 
+la[;k 27  gks] rks bldh Hkqtkvksa dh   
+la[;k gksxh % 
+1) 6 2) 9 
+3) 10 4) 12 
+ 
+  
+69. If the number of diagonals of a 
+regular polygon is 27, then the 
+number of sides is : 
+1) 6 2) 9 
+3) 10 4) 12 
+ 
+70. nks feJ /kkrqvkas A  rFkk B esa] rk¡ck rFkk 
+tLrk dk vuqikr Øe'k% 5 : 2  rFkk 3 : 4  
+gS] bu feJ /kkrqvksa esa ls A  dk 7 fdxzk 
+,oa B dk 21  fdxzk feykdj ,d ubZ feJ 
+/kkrq cukbZ tkrh gS] bl ubZ feJ /kkrq esa 
+rk¡cs rFkk tLrk dk vuqikr D;k gS \ 
+1) 1 : 2 2) 2 : 1 
+3) 2 : 3 4) 1 : 1 
+ 
+  70. In two alloys A and B, the ratio of 
+copper and zinc is 5 : 2 and 3 : 4 
+respectively. 7 kg of alloy A and 21 
+kg of the alloy B are mixed 
+together to form a new alloy. What 
+will be the ratio of copper and zinc 
+in the new alloy ? 
+1) 1 : 2 2) 2 : 1 
+3) 2 : 3 4) 1 : 1 
+ 
+71. ;fn 7 cosec θ  – 3 cot θ  = 7  tgk¡ θ  
+izFke prqFkkZa'k esa gks] rks 7 cot θ  – 3 
+cosec θ  dk eku gS % 
+1) 3 2) 5 
+3) 3/7 4) 5/7 
+ 
+  
+71. If 7 cosec θ  – 3 cot θ  = 7 where θ  is 
+in first quadrant, then the value of       
+7 cot θ  – 3 cosec θ  is equal to : 
+1) 3 2) 5 
+3) 3/7 4) 5/7 
+ 
+72. ;fn ,d o`Ùk esa] ,d leckgq f=Hkqt ABC  
+varfuZfgr fd;k tkrk gS] f=Hkqt ds 'kh"kksZa ls 
+[khaph xbZ Li'kZ js[kkvksa ls cuus okyk 
+f=Hkqt gksxk % 
+1) fo"keckgq f=Hkqt 
+2) lef}ckgq f=Hkqt 
+3) leckgq f=Hkqt 
+4) ledks.kh; f=Hkqt 
+  
+72. If an equilateral triangle ABC be 
+inscribed in a circle, then the 
+tangents at their vertices will form 
+another triangle is : 
+1) Scalene triangle 
+2) Isosceles triangle 
+3) Equilateral triangle 
+4) Right angled triangle 
+ 
+  [ 19 / A ] 
+[ Level-2 / 1210 ]  P. T. O. 
+73. ,d nqdkunkj] ,d oLrq 15%  ykHk ij 
+csprk gS] vxj mlus mls 18  #i;s vf/kd 
+esa cspk gksrk] rks ykHk 18%  gks tkrkA ml 
+oLrq dk Ø; ewY; ¼#i;s esa½ gS % 
+1) 600 2) 540 
+3) 350 4) 380 
+ 
+  
+73. A shopkeeper sells an article at 15% 
+gain. Had he sold it for Rs. 18 more; 
+he would have gained 18%. The 
+cost price (in Rs.) of the article is : 
+1) 600 2) 540 
+3) 350 4) 380 
+ 
+74. fuEufyf[kr Js.kh dk yqIr in gS % 
+ 
+ 
+DBC, KIJ, QOP, __?__ , ZXY 
+1) VUW  2) USV 
+3) UTV 4) VTU  
+  
+74. The missing term of the following 
+series is : 
+ DBC, KIJ, QOP, __?__ , ZXY 
+1) VUW  2) USV 
+3) UTV 4) VTU  
+75. nks /kukRed la[;kvksa dk vUrj 3 gS] ;fn 
+muds oxksZa dk ;ksx 369  gks] rks mu 
+la[;kvksa dk ;ksx gS % 
+ 
+1) 25 2) 27 
+3) 31 4) 33 
+ 
+  
+75. The difference between two 
+positive numbers is 3. If the sum of 
+their squares is 369, then sum of 
+the numbers is : 
+1) 25 2) 27 
+3) 31 4) 33 
+ 
+76. foHkktu ds ,d ;ksxQy esa foHkktd] 
+HkkxQy dk 12  xquk rFkk 'ks"kQy dk 5 
+xquk gS] rks ;fn mlesa 'ks"kQy 36  gks] rks 
+HkkT; gS % 
+1) 2706 2) 2736  
+3) 2796 4) 2766  
+  
+76. In a division sum, the divisor is 12 
+times the quotient and 5 times the 
+remainder. If the remainder is 36, 
+then the dividend is : 
+1) 2706 2) 2736 
+ 
+3) 2796 4) 2766  
+77. ;fn A  ^foHkktu dks*] B ^;ksx dks*] C  
+^?kVkus dks* rFkk D ^xq.ku dks* iznf'kZr 
+djrs gSa] rks 20 C 12 B 8 A 2 D 6  
+cjkcj gSa % 
+1) 16 2) 18 
+3) 32 4) 36 
+ 
+  77. If A denotes 'divided by', B denotes 
+'added to', C denotes 'subtracted 
+from' and D denotes 'multiplied 
+by', then 20 C 12 B 8 A 2 D 6 is 
+equal to : 
+1) 16 2) 18 
+3) 32 4) 36 
+ 
+[ 20 / A ] 
+[ Level-2 / 1210 ]   
+78.
+ ,d O;fDr 12  fdyksehVj dh nwjh 3 fdeh 
+izfr ?k.Vk] 18  fdyksehVj dh nwjh 9 fdeh 
+izfr ?k.Vk rFkk 24  fdyksehVj dh nwjh 4  
+fdeh izfr ?k.Vk ls r; djrk gS] rks lEiw.kZ 
+nwjh r; djus dh vkSlr pky gS % 
+1) 4  fdeh@?k.Vk   
+2) 4.2  fdeh@?k.Vk 
+3) 4.4  fdeh@?k.Vk   
+4) 4.5  fdeh@?k.Vk 
+  
+78. A person covers 12 km at 3 km/hr, 
+18 km at 9 km/hr and 24 km at 4 
+km/hr. The average speed in 
+covering the whole distance is : 
+ 
+1) 4 km/hr  
+2) 4.2 km/hr 
+3) 4.4 km/hr  
+4) 4.5 km/hr 
+ 
+79. fn, x, fodYiksa esa ls fo"ke dks Kkr 
+dhft, % 
+1) lkjaxh 2) oh.kk 
+3) fxVkj 4) ckalqjh 
+  
+79. Find the odd word from the given 
+alternatives : 
+1) Violin 2) Harp 
+3) Guitar 4) Flute 
+ 
+80. ;fn 16 – 4 = 2, 9 – 3 = 2, 81 – 3 = 4  
+gks] rks 64 – 4 dk eku gS % 
+1) 3 2) 2 
+3) 4 4) 6
+ 
+  
+80. If 16 – 4 = 2, 9 – 3 = 2, 81 – 3 = 4, 
+then the value of 64 – 4 is : 
+1) 3 2) 2 
+3) 4 4) 6
+ 
+81.  1857 ds fonzksg ds nkSjku] fuEufyf[kr eas 
+ls fdlus jksgrd esa fczfV'k fBdkukas ij 
+vkØe.k fd;k \ 
+1) rQ ðt+y gqlSu  
+2) beke vyh 
+3) eksgj flag  
+4) gjlq[k jk; 
+  
+81.  During the revolt of 1857, who 
+among the following attacked 
+British establishments in Rohtak ? 
+1) Tafzal Husain  
+2) Imam Ali 
+3) Mohar Singh  
+4) Harsukh Rai 
+82.  gfj;k.kk dh eksjuh igkfM+;ksa dk lEca/k gS % 
+ 
+1) vjkoyh Ük`a[kyk ls 
+2) fganqdq'k Ük`a[kyk ls 
+3) fgeky; dh cká Ük`a[kyk ls 
+4) fgeky; dh vkUrfjd Ük`a[kyk ls 
+  
+82.  The Morni hills of Haryana belongs 
+to : 
+1) Aravalli range 
+2) Hindukush range 
+3) Outer range of Himalayas 
+4) Inner range of Himalayas 
+  [ 21 / A ] 
+[ Level-2 / 1210 ]  P. T. O. 
+83.  gfj;k.kk eas fx) laj{k.k dsUnz dgk¡ fLFkr 
+gS \ 
+1) than  
+2) fiatkSj  
+3) egsUnzx<+  
+4) vEckyk 
+  
+83.  In Haryana, where the Vulture 
+Conservation Centre is located ? 
+1) Jind   
+2) Pinjore 
+3) Mahendragarh  
+4) Ambala 
+84.  gfj;k.kk eas fdruh rglhy gSa \ 
+ 
+1) 95  
+2) 49 
+3) 143  
+4) 74 
+ 
+  
+84.  How many Tehsils are there in 
+Haryana ? 
+1) 95  
+2) 49 
+3) 143  
+4) 74 
+85.  gfj;k.kk ds fdl ftys eas] [ksyks bafM;k 
+efgyk rhjankth jSafdax izfr;ksfxrk dk 
+vk;kstu fd;k x;k \ 
+1) lksuhir  
+2) ikuhir  
+3) djuky  
+4) ;equkuxj 
+  
+85.  In which district of Haryana, the 
+Khelo India Women's Archery 
+ranking competition was organised ? 
+1) Sonipat  
+2) Panipat 
+3) Karnal  
+4) Yamunanagar 
+86.  ;w0ih0,l0lh0 ds ps;jeSu] tks dkykUrj 
+esa gfj;k.kk ds jkT;iky cus gSa % 
+ 
+1) MkW0 ,0 vkj0 fdnobZ 
+2) Jh eqt+¶Qj gqlSu cuhZ 
+3) Jh ch0 ,u0 pØorhZ 
+4) Jh egkchj izlkn 
+  
+86.  The UPSC Chairman, who 
+subsequently became the Governor 
+of Haryana  : 
+1) Dr. A. R. Kidwai 
+2) Shri Muzaffar Husain Berney 
+3) Shri B. N. Chakravarti 
+4) Shri Mahabir Prasad 
+[ 22 / A ] 
+[ Level-2 / 1210 ]   
+87. 
+ pkoy dh Qly dks vf/kd ijEijkxr 
+Qlyksa ls izfrLFkkfir djus gsrq gfj;k.kk 
+ljdkj }kjk pykbZ tk jgh ;kstuk gS % 
+ 
+1) esjh Qly esjk C;kSjk 
+2) esjh fojklr  
+3) esjk ikuh esjh fojklr  
+4) gekjk /ku 
+  
+87.  The Scheme, which is being run by 
+the Haryana government to 
+replace paddy crop with more 
+tradition crops is : 
+1) Meri Fasal Mera Byora 
+2) Meri Virasat 
+3) Mera Pani Meri Virasat 
+4) Hamara Dhan 
+88.  gfj;k.kk esa us'kuy bfULVV~;wV vkWQ QS'ku 
+VsDuksykWth laLFkku dgk¡ fLFkr gS \ 
+ 
+1) ikuhir  
+2) vEckyk 
+3) iapdqyk  
+4) dq#{ks= 
+  
+88.  Where in the Haryana, the National 
+Institute of Fashion Technology is 
+located ? 
+1) Panipat  
+2) Ambala 
+3) Panchkula  
+4) Kurukshetra 
+89.  gfj;k.kk ds eq[; lwpuk vf/kdkjh dkSu gSa \ 
+ 
+1) Jherh T;ksfr vjksM+k 
+2) MkW0 txchj flag  
+3) Jh fot; o/kZu  
+4) Jherh deynhi Hk.Mkjh 
+  
+89.  Who is the Chief Information 
+Officer of Haryana ? 
+1) Smt. Jyoti Arora 
+2) Dr. Jagbir Singh 
+3) Shri Vijay Vardhan 
+4) Smt. Kamaldeep Bhandari 
+90.  gfj;k.kk ds fuEufyf[kr larkas eas ls dkSu 
+iwj.k Hkxr ds uke ls yksdfiz; Fks \ 
+ 
+1) ckck eLr ukFk 
+2) ckck xksj[k ukFk 
+3) ckck pkSjaxh ukFk 
+4) ckck iwj.k ukFk 
+  
+90.  Who among the following Sages of 
+Haryana was popularly known as 
+Puran Bhagat ? 
+1) Baba Mast Nath 
+2) Baba Gorakh Nath 
+3) Baba Chaurangi Nath 
+4) Baba Puran Nath 
+ 
+  [ 23 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+Hkkx Hkkx Hkkx Hkkx  – IV / PART – IV  
+xf.kr xf.kr xf.kr xf.kr  / MATHEMATICS 
+funsZ'k % funsZ'k % funsZ'k % funsZ'k % fuEufyf[kr iz'uksa ds mÙkj nsus ds fy, lcls mfpr lcls mfpr lcls mfpr lcls mfpr fodYi pqfu,A 
+Direction :   Answer the following questions by selecting the most appropriate  option. 
+91. 
+7616
+271243
++
+−−  dk eku gS %  
+ 
+1) 1 2) 3  
+3) 5 4) 6  
+  
+91. The value of 
+7616
+271243
++
+−−  
+is : 
+1) 1 2) 3
+ 
+3) 5 4) 6  
+92. ;fn nks la[;kvksa dk ;ksx 40  gS rFkk 
+mudk xq.kuQy 375  gS] rks os la[;k,¡   
+gSa % 
+1) 16, 24  2) 20, 20  
+3) 25, 15  4) 30, 10  
+  
+92. If the sum of two numbers is 40 and 
+their product is 375, then those 
+numbers are : 
+1) 16, 24 
+ 2) 20, 20  
+3) 25, 15  4) 30, 10  
+93.  ;fn ,d ?kukHk ds vk/kkj dk {ks=Qy 80  oxZ 
+lseh] vU; nks vklUu i`"Bksa dk {ks=Qy 72  
+oxZ lseh rFkk 40  oxZ lseh gS] rks ml ?kukHk 
+dk vk;ru gS % 
+ 
+1) 480  ?ku lseh 
+2) 360  ?ku lseh 
+3) 240  ?ku lseh 
+4) 80  ?ku lseh 
+  93.  If the area of the base of a cuboid 
+is 80 square cm, the area of the 
+other two adjacent faces are         
+72 square cm and 40 square cm, 
+then the volume of that cuboid is : 
+1) 480 cm 
+3 
+2) 360 cm 3 
+3) 240 cm 3 
+4) 80 cm 3 
+[ 24 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+94. ;fn 7293 =n ] rc n dk eku gS % 
+1) 6 2) 8 
+3) 10 4) 12 
+ 
+  
+94. If 7293 =n , then the value of n is : 
+1) 6 2) 8 
+3) 10 4) 12 
+ 
+95.  ;fn ,d ?ku ds fod.kZ dh yEckbZ   
+17.32  lseh gS] rks ?ku dk vk;ru gS % 
+ 
+1) 10  ?ku lseh 2) 100  ?ku lseh 
+3) 1000  ?ku lseh 4) 10000  ?ku lseh 
+  
+95.  If the length of the diagonal of a 
+cube is 17.32 cm, then the volume 
+of the cube is : 
+1) 10 cm 
+3 2) 100 cm 3 
+3) 1000 cm 3 4) 10000 cm 3 
+96.  fuEufyf[kr vk¡dM+ksa dh ekf/;dk gS % 
+25, 34, 31, 23, 22, 26, 35, 29, 18, 32 
+1) 26 2) 27 
+ 
+3) 27.5 4) 28.5  
+  
+96.  The median of the following data is :  
+25, 34, 31, 23, 22, 26, 35, 29, 18, 32 
+1) 26 2) 27 
+ 
+3) 27.5 4) 28.5 
+97.  ,d cxhpk 84  ehVj yEck rFkk 64  ehVj 
+pkSM+k gSA blds vUnj pkjksa vksj ,d jkLrk 
+gS ftldk {ks=Qy 1632  oxZ ehVj gSA ml 
+jkLrs dh pkSM+kbZ gS % 
+ 
+1) 5 ehVj 2) 6 ehVj 
+3) 8 ehVj 4) 10  ehVj 
+  
+97.  A garden is 84 meters long and   
+64 meters wide. There is a path   
+all around inside it whose area is 
+1632 square meters. The width of 
+that path is : 
+1) 5 meters 2) 6 meters 
+3) 8 meters 4) 10 meters 
+  [ 25 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+98.  ;fn ,d leckgq f=Hkqt dh Å¡pkbZ 18  lseh 
+gS] rks mldk {ks=Qy gS % 
+1) 336  lseh
+2
+ 
+2) 372  lseh
+2
+ 
+3) 396  lseh
+2
+ 
+4) 3108  lseh
+2
+ 
+  
+98.  If the height of an equilateral 
+triangle is 18 cm, then its area is : 
+1) 
+336  cm 2 
+2) 372  cm 2 
+3) 396  cm 2 
+4) 3108  cm 2 
+99. ;fn n ,d iw.kZ oxZ ds vykok ,d izkÑr 
+la[;k gS] rks la[;k n gS % 
+ 
+1) ifjes; 
+2) vifjes; 
+3) iw.kkZad   
+4) izkÑr 
+  
+99. If n is a natural number other than 
+a perfect square, then the number 
+n is : 
+1) Rational 
+2) Irrational 
+3) Integer  
+4) Natural 
+ 
+100.  ;fn α  rFkk β ] lehdj.k 0122 =−− xx  
+ds ewy gSa] rc (α 2β  + αβ
+2
+) dk eku gS % 
+ 
+1) –2 
+2) 3 
+3) 2 
+4) 1
+ 
+  
+100.  If α  and β  are the roots of the 
+equation 0122 =−− xx , then the 
+value of (α 2β  + αβ
+2
+) is : 
+1) –2 
+2) 3
+ 
+3) 2 
+4) 1 
+[ 26 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+101.  ,d rkj dh f=T;k dks ?kVkdj ,d -frgkbZ 
+dj fn;k x;k gSA ;fn mldk vk;ru igys 
+ftruk gh gS] rks mldh yEckbZ esa o`f) gS %  
+ 
+1) 2 xquk 
+2) 3 xquk 
+3) 6 xquk 
+4) 9 xquk 
+  
+101.  The radius of a wire has been 
+reduced to one-third. If its volume 
+remains the same, then the 
+increase in its length is : 
+1) 2 times 
+ 
+2) 3 times  
+3) 6 times  
+4) 9 times 
+102. ;fn sin θ  + cosec θ  = 2 ] rc (sin 11 θ  + 
+cosec 11 θ ) dk eku gS % 
+1) 3 
+2) 1 
+3) 2 
+4) 2
+11 
+ 
+  
+102. If sin θ  + cosec θ  = 2, then the value 
+of (sin 11 θ  + cosec 11 θ ) is : 
+1) 3 
+2) 1 
+3) 2 
+4) 2
+11 
+ 
+103. ;fn tan 2 θ .tan 4 θ  = 1 ] rc tan 3 θ  dk 
+eku gS % 
+1) 0 
+2) 1
+ 
+3) 3   
+4) ∞  
+  
+103. If tan 2 θ .tan 4 θ  = 1, then the value 
+of tan 3 θ  is : 
+1) 0 
+2) 1
+ 
+3) 3   
+4) ∞  
+  [ 27 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+104.  fuEufyf[kr vk¡dM+ksa dk cgqyd gS % 
+4, 6, 5, 7, 9, 8, 10, 4, 7, 6, 6, 8, 8, 7, 7 
+1) 6 2) 7
+ 
+3) 8 4) 9  
+  
+104.  The mode of the following data is : 
+4, 6, 5, 7, 9, 8, 10, 4, 7, 6, 6, 8, 8, 7, 7 
+1) 6 2) 7
+ 
+3) 8 4) 9 
+105. la[;k 45
+16−  dk n'keyo :i gS % 
+ 
+1) 53 . 0  
+2) 53 . 1 
+3) 53 . 1−   
+4) 53 . 0−  
+  
+105. The decimal representation of 
+45
+16−  is : 
+1) 53 . 0  
+2) 53 . 1 
+3) 53 . 1−   
+4) 53 . 0−  
+106. ;fn ,d mnxz ehukj ds lk;s dh yEckbZ] 
+mldh Å¡pkbZ dk 
+3
+1  xquk gS] rks lw;Z dk 
+mUu;u dks.k gS % 
+ 
+1) 30 ° 
+2) 45 ° 
+3) 60 ° 
+4) 90 ° 
+  
+106. If the length of the shadow of a 
+vertical tower is 
+3
+1  times its 
+height, then the angle of elevation 
+of the sun is : 
+1) 30 
+° 
+2) 45 ° 
+3) 60 ° 
+4) 90 ° 
+[ 28 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+107.  ...........444 +++  dk eku gS % 
+ 
+1) 1 
+2) 2
+171−  
+3) 
+2
+171+  
+4) 4  
+  
+107.  The value of ...........444 +++  
+is : 
+1) 1
+ 
+2) 2
+171−  
+3) 
+2
+171+  
+4) 4 
+108. (3 sin 2 θ  + 4 cos 2 θ ) dk U;wure eku  
+gS % 
+1) 0 
+2) 1 
+3) 2 
+4) 3
+ 
+  
+108. Minimum value of (3 sin 2 θ  + 4 cos 2 θ ) 
+is : 
+1) 0 
+2) 1 
+3) 2 
+4) 3
+ 
+109. ;fn nks la[;kvksa dk ;ksx 352  gS rFkk 
+mudk e0l0i0 32  gS] rks ,slh la[;kvksa 
+ds lEHko tksM+s gSa % 
+1) ik¡p   
+2) N% 
+3) pkj   
+4) rhu 
+  
+109. If the sum of two numbers is 352 
+and their H.C.F. is 32, then the 
+possible pairs of such numbers are : 
+1) Five  
+2) Six 
+3) Four  
+4) Three 
+ 
+  [ 29 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+110. n la[;kvksa dk vkSlr m gS rFkk m 
+la[;kvksa dk vkSlr n gSA lHkh la[;kvksa 
+dks ,d lkFk ysus ij vkSlr gS % 
+ 
+1) m + n 2) mn  
+3) nm
+mn
++  4) nm
+mn
++
+2  
+  
+110. The average of n numbers is m and 
+the average of m numbers is n. 
+Taking all the numbers together 
+the average is : 
+1) 
+m + n 2) mn  
+3) nm
+mn
++  4) nm
+mn
++
+2  
+111.  8 la[;kvksa dk ek/; 22  gSA ;fn ,d la[;k 
+gVk nh tk,] rks mudk ek/; 16  gSA fudkyh 
+xbZ la[;k gS % 
+1) 16  
+2) 22  
+3) 32  
+4) 64  
+  
+111.  The mean of 8 numbers is 22. If one 
+number is excluded, then their mean 
+is 16. The excluded number is : 
+1) 16 
+2) 22 
+3) 32 
+4) 64 
+112.  fuEufyf[kr caVu dk ek/; gS % 
+ 
+x : 4 6 9 10 15 
+f : 5 10 10 7 8 
+1) 8 
+2) 9 
+3) 10  
+4) 12  
+  
+112.  The mean of the following 
+distribution is : 
+x : 4 6 9 10 15 
+f : 5 10 10 7 8 
+1) 8 
+2) 9 
+3) 10  
+4) 12 
+[ 30 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+113.  ,d yEc o`Ùkh; 'kadq ds vk/kkj dh f=T;k 
+rFkk mldh Å¡pkbZ 5 : 12  ds vuqikr esa gSA  
+;fn 'kadq dk vk;ru 2512  ?ku lseh gks] 
+rks mldh fr;Zd Å¡pkbZ gS % 
+ 
+1) 22  lseh 
+2) 24  lseh 
+3) 26  lseh 
+4) 28  lseh 
+  
+113.  The radius of the base of a right 
+circular cone and its height are in 
+the ratio 5 : 12. If the volume of the 
+cone is 2512 cm 
+3, then its oblique 
+height is :  
+1) 22 cm 
+ 
+2) 24 cm  
+3) 26 cm  
+4) 28 cm 
+114. n la[;kvksa a1, a2, …., an dk vkSlr a 
+gSA ∑
+=
+−
+n
+i
+i aa
+1
+)(  dk eku gS %  
+ 
+1) 0 
+2) 1 
+3) n 
+4) a 
+  
+114. The average of n numbers a1, a2, 
+…, an is a. The value of ∑
+=
+−
+n
+i
+i aa
+1
+)(  
+is : 
+1) 0
+ 
+2) 1 
+3) n 
+4) a 
+  [ 31 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+115. 90  ehVj Å¡ph ,d pêku ds f'k[kj ls 
+ns[kus ij] ,d ehukj ds f'k[kj rFkk ry ds 
+voueu dks.k Øe'k% 30 ° rFkk 60 ° gSa] 
+rks ml ehukj dh Å¡pkbZ gS % 
+ 
+1) 45  ehVj   
+2) 60  ehVj 
+3) 75  ehVj 
+4) 30  ehVj 
+  
+115. When seen from the top of a 90 
+meter high rock, the angles of 
+depression of the top and bottom of 
+a tower are 30 ° and 60 °, respectively, 
+then the height of that tower is : 
+1) 45 meter  
+2) 60 meter 
+3) 75 meter 
+4) 30 meter 
+ 
+116.  35  lseh O;kl okyh ,d csyukdkj Vadh 
+ikuh ls iwjh Hkjh gqbZ gSA ;fn Vadh esa ls 
+11  yhVj ikuh fudky fy;k tk,] rks Vadh 
+dk Lrj fdruk de gks tk;sxk \ 
+ 
+1) 9.428  lseh 
+2) 10.428  lseh 
+3) 11.428  lseh 
+4) 12.428  lseh 
+  
+116.  A cylindrical tank of diameter 35 cm 
+is completely filled with water. If 
+11 liters of water is taken out from 
+the tank, then how much will the 
+level of the tank decrease ? 
+1) 9.428 cm 
+ 
+2) 10.428 cm  
+3) 11.428 cm  
+4) 12.428 cm 
+[ 32 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+117.  ,d vlefer caVu ds fy,] ;fn ekf/;dk 
+7 gS rFkk ek/; 10  gS] rks cgqyd gS % 
+ 
+1) 11  
+2) 4 
+3) 3 
+4) 1 
+  
+117.  For an asymmetrical distribution, 
+if the median is 7 and the mean is 
+10, then the mode is : 
+1) 11 
+ 
+2) 4 
+3) 3 
+4) 1 
+118. 3 3 3431+  dk eku gS % 
+1) 1  
+2) 2
+ 
+3) 3  
+4) 7
+ 
+  
+118. The value of 3 3 3431+  is : 
+1) 1  
+2) 2 
+3) 3  
+4) 7
+ 
+119.  ;fn 1
+2
+ + 2 
+2
+ + 3 
+2
+ + ……… + x2 = 
+6
+) 12 ( ) 1( ++ xxx , rc (1
+2
+ + 3 
+2
+ + 5 
+2
+ + 
+……… + 19 
+2
+) dk eku gS % 
+1) 2500  
+2) 2485  
+3) 2100  
+4) 1330  
+  
+119.  If 1
+2
+ + 2 
+2
+ + 3 
+2
+ + ……… + x2 = 
+6
+) 12 ( ) 1( ++ xxx , then the value of 
+(1
+2
+ + 3 
+2
+ + 5 
+2
+ + ……… + 19 
+2
+) is : 
+1) 2500  
+2) 2485  
+3) 2100  
+4) 1330 
+  [ 33 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+120.  20  lseh yEch ,d [kks[kyh csyukdkj V~;wc 
+yksgs dh cuh gSA ;fn mldk ckgjh rFkk 
+vkUrfjd O;kl Øe'k% 8 lseh rFkk 6 lseh 
+gS] rks V~;wc cukus esa iz;qDr yksgs dk 
+vk;ru gS % 
+1) 440  ?ku lseh 
+2) 880  ?ku lseh 
+3) 1760  ?ku lseh 
+4) 240  ?ku lseh 
+  
+120.  A hollow cylindrical tube of 20 cm 
+long is made of iron. If its outer 
+and inner diameters are 8 cm and 
+6 cm respectively, then the volume 
+of iron used in making the tube is : 
+1) 440 cm 
+3 
+2) 880 cm 3 
+3) 1760 cm 3 
+4) 240 cm 3 
+121. A, B  ls nksxquk vPNk dkjhxj gS rFkk ,d 
+lkFk feydj os fdlh dk;Z dks 26  fnu esa 
+iwjk djrs gSaA mlh dk;Z dks A vdsyk fdrus 
+le; esa iwjk djsxk \ 
+1) 33  fnu   
+2) 35  fnu 
+3) 37  fnu   
+4) 39  fnu 
+  
+121. A is twice as good a workman as B 
+and together they complete a work 
+in 26 days. In how much time will 
+A alone complete the same work ? 
+ 
+1) 33 days  
+2) 35 days 
+ 
+3) 37 days  
+4) 39 days 
+ 
+[ 34 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+122.  ;fn ,d Hkw[k.M dk {ks=Qy 212  oxZ xt 
+gS] rks oxZ QqV esa og {ks=Qy gS % 
+ 
+1) 636 
+2) 1272 
+3) 1908 
+4) 2120 
+ 
+  
+122.  If the area of a plot is 212 square 
+yards, then the area in square feet 
+is :  
+1) 636 
+2) 1272 
+3) 1908 
+4) 2120 
+123.  
+
+
+
+ −
+
+
+
+ −
+
+
+
+ −
+
+
+
+ − n
+11........4
+113
+112
+11
+ 
+dk eku gS % 
+1) n
+1 
+2) n
+2  
+3) n
+n ) 1( 2−  
+4) ) 1(
+2
++nn  
+  
+123.  The value of  
+
+
+
+
+ −
+
+
+
+ −
+
+
+
+ −
+
+
+
+ − n
+11........4
+113
+112
+11
+ is 
+: 
+1) 
+n
+1 
+2) n
+2  
+3) n
+n ) 1( 2−  
+4) ) 1(
+2
++nn  
+  [ 35 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+124. ,d FkSys esa 9 yky] 7 lQsn rFkk 4 dkyh 
+xsansa gSaA ;fn 2 xsansa vuk;kl fudkyh tkrh 
+gSa] rks nksuksa xsanksa ds leku jax ds gksus dh 
+izkf;drk gS % 
+1) 190
+36  
+2) 190
+57  
+3) 190
+63  
+4) 190
+81 
+  
+124. There are 9 red, 7 white and 4 black 
+balls in a bag. If 2 balls are drawn 
+randomly, then the probability that 
+both balls are of the same colour is : 
+ 
+1) 190
+36  
+2) 190
+57  
+3) 190
+63  
+4) 190
+81 
+125.  ;fn fdlh Bksl csyu dh f=T;k ,oa Å¡pkbZ 
+dk ;ksxQy 20  lseh gS rFkk mldk dqy 
+i`"Bh; {ks=Qy 880  oxZ lseh gS] rks mldk 
+vk;ru gS % 
+1) 1760  ?ku lseh 
+2) 8800  ?ku lseh 
+3) 2002  ?ku lseh 
+4) 4804  ?ku lseh 
+  
+125.  If the sum of the radius and height 
+of a solid cylinder is 20 cm and its 
+total surface area is 880 square 
+cm, then its volume is : 
+1) 1760 cm 
+3 
+2) 8800 cm 3 
+3) 2002 cm 3 
+4) 4804 cm 3 
+[ 36 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+126.  ;fn ,d cPps dh ekufld vk;q 6 o"kZ 
+rFkk dkykuqØfed vk;q 5 o"kZ gS] rks ml 
+cPps dh ckSf)d -yfC/k (IQ)  gS % 
+ 
+1) 80 
+2) 100 
+3) 120 
+4) 140 
+ 
+  
+126.  If a child has a mental age of 6 
+years and a chronological age of 5 
+years, then the Intelligent Quotient 
+(IQ) of the child is :  
+1) 80 
+2) 100 
+3) 120 
+4) 140 
+127. ,d ?kM+h 20%  ds ykHk ij csph xbZA ;fn 
+og ` 400  de esa csph tkrh] rks 20%  
+dh gkfu gksrhA ?kM+h dk Ø; -ewY; gS % 
+ 
+1) ` 1000 
+2) ` 2000 
+3) ` 3000 
+4) ` 4000 
+  
+127. A watch was sold at a profit of 20%. 
+If it had been sold for ` 400 less, 
+there would have been a loss of 
+20%. The cost price of the watch is : 
+ 
+1) ` 1000 
+2) ` 2000 
+3) ` 3000 
+4) ` 4000  
+  [ 37 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+128. nks la[;k,¡ ,d rhljh la[;k ls Øe'k% 
+30%  rFkk 44%  de gSaA nwljh la[;k 
+igyh la[;k ls fdrus izfr'kr de gS \ 
+ 
+1) 10%  
+2) 20%  
+3) 30%  
+4) 40%  
+  
+128. Two numbers are respectively 30% 
+and 44% less than a third number. 
+By what percent is the second 
+number less than the first number ? 
+ 
+1) 10%  
+2) 20%  
+3) 30%  
+4) 40%  
+129.  n'kZu'kkL= dh og 'kk[kk tks okLrfodrk dh 
+izÑfr ij /;ku dsfUnzr djrh gS] gS % 
+1) lEcU/kokn 
+2) Kkuehekalk 
+3) rÙoehekalk 
+4) f'k{kk'kkL=  
+  
+129.  The branch of philosophy that 
+focuses on the nature of reality is : 
+1) Connectionism  
+2) Epistemology 
+3) Metaphysics  
+4) Pedagogy  
+[ 38 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+130.  ,d f=Hkqt dh rhu Hkqtk,¡ 10  ehVj]   
+12  ehVj rFkk 14  ehVj gSaA ml f=Hkqt ds 
+vUr%o`Ùk dk {ks=Qy gS % 
+1) 21
+1133  oxZ ehVj 
+2) 21
+1122  oxZ ehVj  
+3) 21
+1111  oxZ ehVj  
+4) 21
+119  oxZ ehVj 
+  
+130.  The three sides of a triangle are     
+10 meter, 12 meter and 14 meter. The 
+area of the incircle of that triangle is : 
+ 
+1) 21
+1133  square meter  
+2) 21
+1122  square meter 
+3) 21
+1111  square meter 
+4) 21
+119   square meter 
+131. ;fn 24  oLrqvksa dk Ø; ewY; 18  oLrqvksa 
+ds foØ; ewY; ds cjkcj gS] rc izfr'kr 
+ykHk gS % 
+1) %3
+125   
+2) %3
+131  
+3) %3
+216  
+4) %3
+133  
+  
+131. If the cost price of 24 articles is equal 
+to the selling price of 18 articles, 
+then the percentage profit is : 
+1) 
+%3
+125   
+2) %3
+131  
+3) %3
+216  
+4) %3
+133  
+  [ 39 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+132.  nks cjkcj ds o`Ùk ,d -nwljs ds dsUnz ls 
+xqtjrs gSaA ;fn muesa izR;sd o`Ùk dh f=T;k 
+5 lseh gS] rks mudh mHk;fu"B thok dh 
+yEckbZ gS % 
+1) 5 
+2) 35  
+3) 310  
+4) 2
+35  
+  
+132.  Two equal circles pass through the 
+center of each other. If the radius of 
+each circle is 5 cm, then the length 
+of their common chord is : 
+1) 5
+ 
+2) 35  
+3) 310  
+4) 2
+35  
+133.  tkWu Msoh ds vuqlkj] Ldwyksa dks Nk=ksa dks 
+rS;kj djuk pkfg, % 
+1) 'kks/k ds fy,  
+2) Hkfo"; ds thou ds fy, 
+3) m|e'khyrk ds fy,  
+4) orZeku thou ds fy, 
+  
+133.  According to John Dewey, schools 
+must prepare students for : 
+1) Research  
+2) Future life  
+3) Entrepreneurship  
+4) Present Life  
+[ 40 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+134.  ;fn 21 =
+
+
+
+
++ xx ] rc 
+
+
+
+ +
+x
+x 1
+ dk 
+eku gS % 
+ 
+1) 2 
+2) 2 
+3) 1 
+4) 
+21+  
+  
+134.  If 21 =
+
+
+
+ + xx
+, then the value of  
+
+
+
+
+
++
+x
+x 1  is :  
+1) 2 
+2) 2 
+3) 1 
+4) 
+21+  
+135. ;fn ,d lekUrj Js.kh ds n inksa dk 
+;ksxQy (3 n2 + 5 n) gS] rc 158  gS % 
+1) 26 ok¡ in 
+2) 27 ok¡ in 
+3) 28 ok¡ in 
+4) 29 ok¡ in 
+  
+135. If the sum of n terms of an arithmetic 
+progression is (3 n2 + 5 n), then 158 is :  
+1) 26 th  term  
+2) 27 th  term  
+3) 28 th  term  
+4) 29 th  term  
+  [ 41 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+136.  ;fn 1191
+4
+4 =
+
+
+
+ +
+x
+x
+ rFkk x > 1 ] rc 
+
+
+
+
+
+− 3
+3 1
+x
+x  dk eku gS % 
+1) 18 2) 36  
+3) 54 4) 72  
+  
+136.  If 1191
+4
+4 =
+
+
+
+ +
+x
+x
+ and x > 1, then 
+the value of 
+
+
+
+
+− 3
+3 1
+x
+x is : 
+1) 18 2) 36  
+3) 54 4) 72 
+137.  ;fn S] f=Hkqt ABC  dk vUr%dsUnz gS rFkk 
+∠ A = 30 °] rc ∠ BSC  dk eku gS % 
+ 
+1) 90 ° 
+2) 100 ° 
+3) 105 ° 
+4) 110 ° 
+  
+137.  If S is the incentre of triangle ABC 
+and ∠ A = 30 °, then the value of 
+∠ BSC is :  
+1) 90 ° 
+2) 100 ° 
+3) 105 ° 
+4) 110 ° 
+138. ;fn 
+15
+15
+−
++=a  rFkk 
+15
+15
++
+−=b ] rc 
+22
+22
+baba
+baba
++−
+++  dk eku gS % 
+1) 31  2) 32  
+3) 1 4) 34  
+  
+138. If 
+15
+15
+−
++=a  and 
+15
+15
++
+−=b , then 
+the value of 22
+22
+baba
+baba
++−
+++  is : 
+1) 31  2) 32  
+3) 1 4) 34  
+[ 42 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+139. 3, 5, 6, 7  izR;sd la[;k esa ls dkSu -lh la[;k 
+?kVkbZ tk,] rkfd izkIr pkjksa la[;k,¡ 
+lekuqikrh gks tk,¡ \  
+ 
+1) 5 
+2) 7 
+3) 9 
+4) 11 
+ 
+  
+139. Which number is to be subtracted 
+from each of the numbers 3, 5, 6, 7 
+so that the four numbers obtained 
+become proportional ?  
+1) 5 
+2) 7 
+3) 9 
+4) 11 
+ 
+140. fdlh uxj dh tula[;k 3 o"kZ iwoZ 
+40960  FkhA ;fn ml uxj dh orZeku 
+tula[;k 49130  gks] rks izfr'kr okf"kZd 
+o`f) gS % 
+1) %4
+12   
+2) %4
+15  
+3) %4
+16   
+4) %4
+17  
+  
+140. The population of a city 3 years ago 
+was 40960. If the present population 
+of that city is 49130, then the 
+percentage annual increase is : 
+1) 
+%4
+12   
+2) %4
+15  
+3) %4
+16   
+4) %4
+17  
+  [ 43 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+141. ;fn 12  vkneh fdlh dke dks 20  fnu esa 
+djrs gSa] rc 60  vkneh mlh dke dks 
+fdrus fnu esa djsaxs \ 
+1) 4 2) 3  
+3) 2 4) 6  
+  
+141. If 12 men do a piece of work in 20 
+days, then in how many days will 60 
+men do the same work ? 
+1) 4 2) 3
+ 
+3) 2 4) 6  
+142.  izxfr'khy f'k{kk lh[kus ij tksj nsrh gS % 
+ 
+1) i<+dj 
+2) fy[kdj 
+3) dk;Z djds 
+4) vkuUn ysdj 
+  
+142.  Progressive education emphasizes 
+learning by : 
+1) Reading 
+2) Writing 
+3) Doing 
+4) Enjoying  
+143. ,d ia[ks dk vafdr ewY; ` 1500  gS rFkk 
+vafdr ewY; ij 20%  dk cêk fn;k tkrk 
+gSA vc] fdlh xzkgd dks ml ia[ks dk 'kq) 
+ewY; ` 1116  j[kus ds fy, fn;k x;k 
+vfrfjDr cêk gS % 
+1) 5% 
+2) 6% 
+3) 7% 
+4) 8% 
+ 
+  
+143. The marked price of a fan is ` 1500 
+and a discount of 20% is given on the 
+marked price. Now, the additional 
+discount given to a customer to keep 
+the net price of that fan at 
+` 1116 is :  
+1) 5% 
+2) 6% 
+3) 7% 
+4) 8% 
+ 
+[ 44 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+144. ;fn vaxzsth o.kZekyk esa ls 2 v{kjksa dks 
+pquk x;k gS] rks nksuksa v{kjksa ds Loj gksus 
+dh izkf;drk gS % 
+1) 651  
+2) 652  
+3) 653  
+4) 654  
+  
+144. If 2 letters are chosen from the English 
+alphabet, then the probability of 
+both the letters being vowels is : 
+1) 
+651  
+2) 652  
+3) 653  
+4) 654  
+145. ;fn 11009
+1009
+2
+2
+1
+1 =+++++ zyx ] rc 
+100921 +++++ z
+z
+y
+y
+x
+x  dk eku gS % 
+1) 1 
+2) 2 
+3) 3 
+4) 6  
+  
+145. If , 11009
+1009
+2
+2
+1
+1 =+++++ zyx
+ then the 
+value of  100921 +++++ z
+z
+y
+y
+x
+x  is : 
+1) 1 
+2) 2 
+3) 3 
+4) 6  
+  [ 45 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]  P. T. O. 
+146.  ;fn S] f=Hkqt ABC  dk ifjdsUnz gS rFkk 
+∠ A = 50 °] rc ∠ BCS  dk eku gS % 
+ 
+1) 30 ° 
+2) 40 ° 
+3) 50 ° 
+4) 60 ° 
+  
+146.  If S is the circumcentre of triangle 
+ABC and ∠ A = 50 °, then the value 
+of ∠ BCS is :  
+1) 30 ° 
+2) 40 ° 
+3) 50 ° 
+4) 60 ° 
+147. ;fn (3 x – y) : (x + 5 y) = 5 : 7 ] rc     
+(x + y) : ( x – y) dk eku gS %  
+1) 1 : 2  
+2) 2 : 1 
+ 
+3) 3 : 1  
+4) 1 : 3 
+ 
+  
+147. If (3 x – y) : (x + 5 y) = 5 : 7, then the 
+value of ( x + y) : ( x – y) is :  
+1) 1 : 2  
+2) 2 : 1 
+ 
+3) 3 : 1  
+4) 1 : 3 
+ 
+148.  fo'ks"k f'k{kk dk lEcU/k gS % 
+1) izfrHkk'kkyh Nk=ksa ls  
+2) fnO;kaxksa ds fy, f'k{kk ls 
+3) v/;kidksa ls  
+4) detksj Nk=ksa ls  
+  
+148.  Special Education is related to : 
+1) Talented students  
+2) Education for disabled  
+3) Teachers  
+4) Weak students  
+[ 46 / A ] 
+jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg jQ dk;Z ds fy, txg  / Space For Rough Work 
+[ Level-2 / 1210 ]   
+149. ;fn 51 =
+
+
+
+ + xx
+] rc 
+
+
+
+ +
+3
+3 1
+x
+x  dk 
+eku gS % 
+ 
+1) 125  
+2) 110 
+ 
+3) 25  
+4) 5
+ 
+  
+149. If 51 =
+
+
+
+ + xx
+, then the value of  
+
+
+
+
+
++ 3
+3 1
+x
+x  is :  
+1) 125  
+2) 110 
+ 
+3) 25  
+4) 5
+ 
+150. rhu vadksa dh 5 ls foHkkftr gksus okyh 
+lHkh la[;kvksa dk ;ksx gS % 
+1) 98560 
+2) 98540 
+ 
+3) 98520  
+4) 98550 
+ 
+  
+150. The sum of all three digit numbers 
+divisible by 5 is : 
+1) 98560 
+2) 98540 
+ 
+3) 98520  
+4) 98550 
+ 
+ 
+jQ dk;Z ds fy, jQ dk;Z ds fy, jQ dk;Z ds fy, jQ dk;Z ds fy,  [FOR ROUGH WORK] 
+  
+ 
+6. iz'uksa ds mÙkj] mÙkj i=d esa fu/kkZfjr [kkuksa dks dkys ckWy IokbaV iSu ls 
+iw.kZr;k Hkjuk gS] tSlk fd uhps fn[kk;k x;k gS % 
+1     /circle7    3     4  
+vki }kjk fn;k x;k mÙkj xyr ekuk tk,xk] ;fn mÙkj okys [kkus dks 
+fuEu izdkj ls Hkjrs gSa % 
+/moonfull    /circlex    /moonfull    /moonfull 
+;fn ,d ls T;knk [kkuksa dks Hkj nsrs gSa rks vkidk mÙkj xyr ekuk 
+tk,xkA  
+  6. Answers   to  questions  in answer sheet are  to  be  given by 
+darkening complete circle using Black ball point pen as shown 
+below : 
+1     /circle7    3     4  
+The answer will be treated wrong, if it is marked, as given below : 
+/moonfull    /circlex    /moonfull    /moonfull 
+If you fill more than one circle it will be treated as a wrong 
+answer. 
+7. jQ dk;Z iz'u&iqfLrdk esa bl iz;kstu ds fy, nh xbZ [kkyh txg ij gh djsaA  / Rough work should be done only in the space provided in the 
+Question Booklet for the same. 
+8. lHkh mÙkj dsoy OMR  mÙkj i=d ij gh vafdr djsaA vius mÙkj /;kuiwoZd vafdr djsaA mÙkj cnyus gsrq 'osr jatd ¼lQsn ¶Y;wM½ dk iz;ksx fuf"k) gSA  / 
+The answers are to be recorded on the OMR Answer Sheet only. Mark your responses carefully. Whitener (white fluid) is not 
+allowed for changing answers. 
+9. izR;sd iz'u ds fy, fn, x, pkj fodYiksa esa ls mfpr fodYi ds fy, OMR  mÙkj i=d ij dsoy ,d o`Ùk dks gh iwjh rjg dkys ckWy IokbaV iSu ls HkjsaA 
+,d ckj mÙkj vafdr djus ds ckn mls cnyk ugha tk ldrk gSA  / Out of the four alternatives for each question, only one circle for the most 
+appropriate answer is to be darkened completely with Black Ball Point Pen on the OMR Answer Sheet. The answer once marked is 
+not allowed to be changed. 
+10. vH;FkhZ lqfuf'pr djsa fd bl mÙkj i=d dks eksM+k u tk, ,oa ml ij dksbZ vU; fu'kku u yxk,¡A vH;FkhZ viuk vuqØekad mÙkj i=d esa fu/kkZfjr LFkku 
+ds vfrfjDr vU;= u fy[ksaA  / The candidates should ensure that the Answer Sheet is not folded. Do not make any stray mark on the 
+Answer Sheet. Do not write your Roll No. anywhere else except in the specified space in the Answer Sheet. 
+11.  iz'u&iqfLrdk ,oa mÙkj i=d dk /;kuiwoZd iz;ksx djsa] D;ksafd fdlh Hkh ifjfLFkfr esa [iz'u&iqfLrdk ,oa mÙkj i=d ds Øekad esa fHkUurk dh fLFkfr dks 
+NksM+dj ] nwljh iz'u iqfLrdk lSV miyC/k ugha djokbZ tk,xhA nwljh iz'u iqfLrdk lSV miyC/k ugha djokbZ tk,xhA nwljh iz'u iqfLrdk lSV miyC/k ugha djokbZ tk,xhA nwljh iz'u iqfLrdk lSV miyC/k ugha djokbZ tk,xhA  / Handle the Question Booklet and Answer Sheet with care, as under no 
+circumstances [except for discrepancy in Question Booklet and Answer Sheet Serial No., another set of Question Booklet will not 
+be provided.] 
+12. iz'u&iqfLrdk@mÙkj i=d esa fn, x, Øekad dks vH;FkhZ lgh rjhds ls gLrk{kj pkVZ esa fy[ksaA  / The candidates should write the correct Number as 
+given in the Question Booklet/Answer Sheet in the Signature Chart. 
+13. vH;FkhZ dks ijh{kk gkWy@d{k esa izos'k i= vkSj igpku i= ds vfrfjDr fdlh izdkj dh ikB~;&lkexzh] eqfnzr ;k gLrfyf[kr dkxt dh ifpZ;k¡] istj] eksckby 
+Qksu] bysDVªkWfud midj.k ;k fdlh vU; izdkj dh lkexzh dks ys tkus ;k mi;ksx djus dh vuqefr ugha gSA  / Candidates are not allowed to carry any 
+textual material, printed or written, bits of papers, pager, mobile phone, electronic device or any other material except the Admit 
+Card and Identity Card inside the examination hall/room. 
+14. i;Zos{kd }kjk iwNs tkus ij izR;sd vH;FkhZ viuk izos'k dkMZ [jksy ua0 ] vkSj igpku i= fn[kk,¡A  / Each candidate must show on demand his/her 
+Admit Card [Roll No.] and identity card to the Invigilator. 
+15. dsUnz v/kh{kd ;k i;Zos{kd dh fo'ks"k vuqefr ds fcuk dksbZ vH;FkhZ viuk LFkku u NksMa+sA  / No candidate, without special permission of the 
+Superintendent or Invigilator, should leave his/her seat. 
+16.  dk;Zjr i;Zos{kd dks viuk mÙkj i=d fn, fcuk ,oa gLrk{kj pkVZ ij nksckjk gLrk{kj fd, fcuk vH;FkhZ ijh{kk gkWy ugha NksMa+sxsA ;fn fdlh vH;FkhZ us 
+nwljh ckj gLrk{kj pkVZ ij gLrk{kj ugha fd, rks ;g ekuk tk,xk fd mlus mÙkj i=d ugha ykSVk;k gS vkSj ;g vuqfpr lk/ku dk ekeyk ekuk tk,xkA 
+OMR     mÙkj i=d esa fu/kkZfjr LFkku ij lHkh vH;fFkZ;ksa }kjk ck;sa gkFkmÙkj i=d esa fu/kkZfjr LFkku ij lHkh vH;fFkZ;ksa }kjk ck;sa gkFkmÙkj i=d esa fu/kkZfjr LFkku ij lHkh vH;fFkZ;ksa }kjk ck;sa gkFkmÙkj i=d esa fu/kkZfjr LFkku ij lHkh vH;fFkZ;ksa }kjk ck;sa gkFk    ds vaxwBs dk fu'kku yxk;k tkuk gSA vaxwBs dk fu'kku yxkrs le; bl ckr dk ds vaxwBs dk fu'kku yxk;k tkuk gSA vaxwBs dk fu'kku yxkrs le; bl ckr dk ds vaxwBs dk fu'kku yxk;k tkuk gSA vaxwBs dk fu'kku yxkrs le; bl ckr dk ds vaxwBs dk fu'kku yxk;k tkuk gSA vaxwBs dk fu'kku yxkrs le; bl ckr dk 
+/;ku j[kk tk, fd L;kgh lgh ek=k esa gh yxkbZ tk, vFkkZr~ L;kgh dh ek=k u rks cgqr vf/kd gks o u gh cgqr deA /;ku j[kk tk, fd L;kgh lgh ek=k esa gh yxkbZ tk, vFkkZr~ L;kgh dh ek=k u rks cgqr vf/kd gks o u gh cgqr deA /;ku j[kk tk, fd L;kgh lgh ek=k esa gh yxkbZ tk, vFkkZr~ L;kgh dh ek=k u rks cgqr vf/kd gks o u gh cgqr deA /;ku j[kk tk, fd L;kgh lgh ek=k esa gh yxkbZ tk, vFkkZr~ L;kgh dh ek=k u rks cgqr vf/kd gks o u gh cgqr deA  / The candidates should not 
+leave the Examination Hall without handing over their Answer Sheet to the Invigilator on duty and signing the Signature Chart 
+twice. Cases where a candidate has not signed the Signature Chart second time will be deemed not to have handed over the 
+Answer Sheet and dealt with as an unfair means case. All candidates have to affix left hand thumb impression on the OMR 
+answer sheet at the place specified which should be properly inked i.e. they should not be either over inked or dried in 
+nature.  
+17.  bysDVªkWfud@gLrpkfyr ifjdyd dk mi;ksx oftZr gSA  / Use of Electronic/Manual Calculator is prohibited. 
+18.  ijh{kk gkWy esa vkpj.k ds fy,] vH;FkhZ foojf.kdk esa nh xbZ izfØ;k@fn'kk&funsZ'k o cksMZ ds lHkh fu;eksa ,oa fofu;eksa dk fo'ks"k /;ku j[ksaA vuqfpr lk/kuksa ds 
+lHkh ekeyksa dk QSlyk cksMZ ds fu;eksa ,oa fofu;eksa ds vuqlkj gksxkA  / The candidates are governed by Guidelines/Procedure given in the 
+Information Bulletin, all Rules and Regulations of the Board with regard to their conduct in the Examination Hall. All cases of unfair 
+means will be dealt with as per Rules and Regulations of the Board. 
+19.  fdlh gkyr esa iz'u&iqfLrdk vkSj mÙkj i=d dk dksbZ Hkkx vyx u djsaA (No part of the Question Booklet and Answer Sheet shall be detached 
+under any circumstances. 
+20.  ijh{kk lEiUu gksus ij] vH;FkhZ d{k@gkWy NksM+us ls iwoZ mÙkj i=d d{k&i;Zos{kd dks vo'; lkSai nsaA vH;FkhZ vius lkFk bl iz'u&iqfLrdk dks ys tk ldrs 
+gSaA  / On completion of the test, the candidate must hand over the Answer Sheet to the Invigilator in the Room/Hall. The candidates 
+are allowed to take away this Question Booklet with them.  
+✓  ✓  
