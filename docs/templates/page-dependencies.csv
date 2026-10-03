@@ -1,29 +1,29 @@
 ﻿page_id,link,target_page_id,target_status,anchor_found,verdict
 P001,/,P000,PUBLISHED,,ok
-P001,/ctet/passing-marks/,P020,READY,,ship together
-P001,/compare-all-tets.html,P010,READY,,ship together
-P001,/ctet-vs-ktet.html,P011,READY,,ship together
+P001,/ctet/passing-marks/,P020,PUBLISHED,,ok
+P001,/compare-all-tets.html,P010,PUBLISHED,,ok
+P001,/ctet-vs-ktet.html,P011,PUBLISHED,,ok
 P010,/,P000,PUBLISHED,,ok
-P010,/ctet/passing-marks/,P020,READY,,ship together
-P010,ctet-vs-ktet.html,P011,READY,,ship together
-P010,#ctet-accepted,P010,READY,yes,ok
+P010,/ctet/passing-marks/,P020,PUBLISHED,,ok
+P010,ctet-vs-ktet.html,P011,PUBLISHED,,ok
+P010,#ctet-accepted,P010,PUBLISHED,yes,ok
 P011,/,P000,PUBLISHED,,ok
-P011,/ctet/passing-marks/,P020,READY,,ship together
-P011,/compare-all-tets.html#ctet-accepted,P010,READY,yes,ship together
-P011,/compare-all-tets.html,P010,READY,,ship together
+P011,/ctet/passing-marks/,P020,PUBLISHED,,ok
+P011,/compare-all-tets.html#ctet-accepted,P010,PUBLISHED,yes,ok
+P011,/compare-all-tets.html,P010,PUBLISHED,,ok
 P020,/,P000,PUBLISHED,,ok
-P020,/ctet/,P001,READY,,ship together
-P020,/compare-all-tets.html#ctet-accepted,P010,READY,yes,ship together
-P020,/compare-all-tets.html,P010,READY,,ship together
+P020,/ctet/,P001,PUBLISHED,,ok
+P020,/compare-all-tets.html#ctet-accepted,P010,PUBLISHED,yes,ok
+P020,/compare-all-tets.html,P010,PUBLISHED,,ok
 P021,/,P000,PUBLISHED,,ok
-P021,/compare-all-tets.html,P010,READY,,ship together
+P021,/compare-all-tets.html,P010,PUBLISHED,,ok
 P021,https://play.google.com/store/apps/details?id=com.easyctet.app,X001,PLANNED,,BLOCK: target is PLANNED
 P022,/,P000,PUBLISHED,,ok
-P022,/compare-all-tets.html,P010,READY,,ship together
+P022,/compare-all-tets.html,P010,PUBLISHED,,ok
 P022,https://play.google.com/store/apps/details?id=com.easyctet.app,X001,PLANNED,,BLOCK: target is PLANNED
 P023,/,P000,PUBLISHED,,ok
-P023,/compare-all-tets.html,P010,READY,,ship together
+P023,/compare-all-tets.html,P010,PUBLISHED,,ok
 P023,https://play.google.com/store/apps/details?id=com.easyctet.app,X001,PLANNED,,BLOCK: target is PLANNED
 P024,/,P000,PUBLISHED,,ok
-P024,/compare-all-tets.html,P010,READY,,ship together
+P024,/compare-all-tets.html,P010,PUBLISHED,,ok
 P024,https://play.google.com/store/apps/details?id=com.easyctet.app,X001,PLANNED,,BLOCK: target is PLANNED

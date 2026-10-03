@@ -114,8 +114,8 @@ def main():
         print(f"\n{pid}  {page['file']}  [{status}]")
         blockers, together = [], set()
 
-        if status != "READY":
-            blockers.append(f"page status is {status}, not READY")
+        if status not in {"READY", "PUBLISHED"}:
+            blockers.append(f"page status is {status}, not READY or PUBLISHED")
         if parsed[pid] is None:
             print("  ! file not found in site-drafts")
             continue
