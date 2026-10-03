@@ -16,13 +16,13 @@ import json
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DOCS_DIR = os.path.dirname(SCRIPT_DIR)
-SITE_DIR = os.path.join(DOCS_DIR, "site-drafts")
+SITE_DIR = os.path.join(DOCS_DIR, "site-drafts", "programmatic")
 DB_PATH = os.path.join(DOCS_DIR, "research", "all_india_tet_master.db")
 
-# High-priority Pillar 1 & 2 Page Configurations
+# High-priority Programmatic Test Configurations (isolated from canonical site-drafts)
 PAGES_TO_GENERATE = [
     {
-        "slug": "ctet-passing-marks-for-obc",
+        "slug": "ctet-passing-marks-programmatic-sample",
         "exam": "CTET",
         "title": "CTET Passing Marks for OBC / SC / ST / General (2026 Official Rules)",
         "desc": "Official CTET passing marks out of 150. Learn the CBSE 60% rule vs 55% state relaxation, 82 marks validity for KVS, DSSSB, BPSC TRE, and Supreme Court in-service teacher norms.",
