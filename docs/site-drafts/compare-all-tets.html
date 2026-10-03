@@ -34,12 +34,16 @@ th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-alig
 .meter .na{color:var(--mut);font-weight:500}
 .heat small{display:block;font-weight:500;font-size:.72rem;opacity:.85}
 .cat3{border:1px solid var(--line);border-radius:10px;padding:12px 16px;background:var(--soft)}
-header.site{border-bottom:1px solid var(--line)} header.site div{max-width:900px;margin:0 auto;padding:12px 16px} header.site a{font-weight:800;font-size:1.05rem;color:var(--fg);text-decoration:none}
+header.site{border-bottom:1px solid var(--line)} header.site div{max-width:900px;margin:0 auto;padding:12px 16px;display:flex;justify-content:space-between;align-items:center} header.site a.brand{font-weight:800;font-size:1.05rem;color:var(--fg);text-decoration:none}
+header.site a.back-home{font-size:.86rem;font-weight:600;color:var(--acc);text-decoration:none;padding:5px 12px;border:1px solid var(--line);border-radius:6px;background:var(--soft);transition:background .15s}
+header.site a.back-home:hover{text-decoration:none;filter:brightness(.95)}
+nav.breadcrumbs{font-size:.88rem;color:var(--mut);margin-bottom:12px} nav.breadcrumbs a{color:var(--mut);text-decoration:none} nav.breadcrumbs a:hover{color:var(--acc);text-decoration:underline}
 .cta{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-weight:700}
 @media (prefers-color-scheme:dark){.cta{color:#0b1e3f}}
 </style></head><body>
-<header class="site"><div><a href="/">EasyCTET</a></div></header>
+<header class="site"><div><a class="brand" href="/">EasyCTET</a><a class="back-home" href="/">&larr; Back to Home</a></div></header>
 <main>
+<nav class="breadcrumbs"><a href="/">Home</a> &raquo; <span>State TET Comparisons</span></nav>
 
 <h1>Is CTET preparation enough for your state TET?</h1>
 <p class="note">By EasyCTET Research Team · Last checked: 3 October 2026 · From the official bulletins, syllabus documents and recruitment notices of each exam board.</p>
