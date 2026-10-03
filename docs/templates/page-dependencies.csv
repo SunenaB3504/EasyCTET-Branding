@@ -3,14 +3,17 @@ P001,/,P000,PUBLISHED,,ok
 P001,/ctet/passing-marks/,P020,PUBLISHED,,ok
 P001,/compare-all-tets.html,P010,PUBLISHED,,ok
 P001,/ctet-vs-ktet.html,P011,PUBLISHED,,ok
+P001,/ctet/is-b-ed-eligible-for-ctet-paper-1/,P024,PUBLISHED,,ok
 P010,/,P000,PUBLISHED,,ok
 P010,/ctet/passing-marks/,P020,PUBLISHED,,ok
 P010,ctet-vs-ktet.html,P011,PUBLISHED,,ok
 P010,#ctet-accepted,P010,PUBLISHED,yes,ok
 P011,/,P000,PUBLISHED,,ok
+P011,/compare-all-tets.html,P010,PUBLISHED,,ok
 P011,/ctet/passing-marks/,P020,PUBLISHED,,ok
 P011,/compare-all-tets.html#ctet-accepted,P010,PUBLISHED,yes,ok
-P011,/compare-all-tets.html,P010,PUBLISHED,,ok
+P011,https://play.google.com/store/apps/details?id=com.easyktet.app&referrer=utm_source%3Dweb%26utm_medium%3Dseo%26utm_campaign%3Dctet-vs-ktet,X002,PUBLISHED,,ok
+P011,/ktet/ktet-cat-2-pass-mark-ethra/,P022,PUBLISHED,,ok
 P020,/,P000,PUBLISHED,,ok
 P020,/ctet/,P001,PUBLISHED,,ok
 P020,/compare-all-tets.html#ctet-accepted,P010,PUBLISHED,yes,ok
@@ -20,10 +23,10 @@ P021,/compare-all-tets.html,P010,PUBLISHED,,ok
 P021,https://play.google.com/store/apps/details?id=com.easyctet.app,X001,PLANNED,,BLOCK: target is PLANNED
 P022,/,P000,PUBLISHED,,ok
 P022,/compare-all-tets.html,P010,PUBLISHED,,ok
-P022,https://play.google.com/store/apps/details?id=com.easyctet.app,X001,PLANNED,,BLOCK: target is PLANNED
-P023,/,P000,PUBLISHED,,ok
-P023,/compare-all-tets.html,P010,PUBLISHED,,ok
-P023,https://play.google.com/store/apps/details?id=com.easyctet.app,X001,PLANNED,,BLOCK: target is PLANNED
+P022,/ctet-vs-ktet.html,P011,PUBLISHED,,ok
+P022,/ctet/passing-marks/,P020,PUBLISHED,,ok
+P022,https://play.google.com/store/apps/details?id=com.easyktet.app&referrer=utm_source%3Dweb%26utm_medium%3Dseo%26utm_campaign%3Dktet-pass-mark-ethra,X002,PUBLISHED,,ok
 P024,/,P000,PUBLISHED,,ok
+P024,/ctet/,P001,PUBLISHED,,ok
 P024,/compare-all-tets.html,P010,PUBLISHED,,ok
-P024,https://play.google.com/store/apps/details?id=com.easyctet.app,X001,PLANNED,,BLOCK: target is PLANNED
+P024,/ctet/passing-marks/,P020,PUBLISHED,,ok
