@@ -74,61 +74,72 @@ The system is organized into four discrete operational tiers:
 
 | Column Name | Data Type | Nullable | Constraints / Default | Description |
 | :--- | :--- | :--- | :--- | :--- |
-| `keyword_id` | `TEXT` | No | `PRIMARY KEY` | Unique hash/ID (e.g., `KWD_CTET_00842`). |
+| `keyword_id` | `TEXT` | No | `PRIMARY KEY` | Deterministic SHA256 hash (e.g., `KWD_CTET_A1B2C3D4E5`). |
 | `raw_query` | `TEXT` | No | None | Original unedited search string as extracted. |
 | `normalized_query` | `TEXT` | No | `UNIQUE` | Lowercase, whitespace-trimmed version for deduplication. |
-| `clean_slug` | `TEXT` | No | None | Windows/URL-safe slug for HTML filenames and web routes. |
+| `clean_slug` | `TEXT` | No | None | Windows/URL-safe slug for specific query matching. |
+| `canonical_slug` | `TEXT` | Yes | `DEFAULT NULL` | Many-to-One Intent Hub slug (prevents Scaled Content Abuse). |
 | `target_exam` | `TEXT` | No | `CHECK (target_exam IN (...))` | Primary exam entity (e.g., `CTET`, `KTET`, `UPTET`, etc.). |
 | `secondary_entity` | `TEXT` | Yes | `DEFAULT NULL` | Downstream recruitment exam (e.g., `BPSC_TRE`, `SUPER_TET`). |
 | `language_mix` | `TEXT` | No | `DEFAULT 'ENGLISH'` | Classified language (`ENGLISH`, `MANGLISH`, `HINGLISH`). |
-| `source_engine` | `TEXT` | No | None | Source (`GOOGLE_SUGGEST`, `YOUTUBE_SUGGEST`, `SITEMAP`, `PAA`). |
-| `intent_cluster` | `TEXT` | No | `DEFAULT 'UNCLUSTERED'` | Target intent bucket (`CUTOFF`, `ELIGIBILITY`, `CDP_PEDAGOGY`, `PYQ_SYLLABUS`, `RECRUITMENT_BRIDGE`). |
+| `source_engine` | `TEXT` | No | None | Source (`GOOGLE_SUGGEST`, `YOUTUBE_SUGGEST`, `JOB_GAZETTE`, `SITEMAP`). |
+| `intent_cluster` | `TEXT` | No | `DEFAULT 'UNCLUSTERED'` | Target pattern pillar (`PILLAR_1_CUTOFF`, `PILLAR_2_ELIGIBILITY`, `PILLAR_3_RECRUITMENT_BRIDGE`, `PILLAR_4_SYLLABUS_OVERLAP`, `PILLAR_5_CDP_PEDAGOGY`). |
 | `content_format` | `TEXT` | No | `DEFAULT 'UNASSIGNED'` | Recommended format (`STATIC_HTML`, `REMOTION_SHORT`, `PDF_CHEAT_SHEET`, `PILLAR_HUB`). |
-| `target_url` | `TEXT` | Yes | `DEFAULT NULL` | Relative URL on `EasyCTET.com` (e.g., `/ctet/passing-marks-for-obc/`). |
-| `video_hook` | `TEXT` | Yes | `DEFAULT NULL` | 3-second visual/voice hook for Remotion Shorts. |
-| `lifecycle_status` | `TEXT` | No | `DEFAULT 'DISCOVERED'` | Current stage (`DISCOVERED`, `PLANNED`, `GENERATED`, `PUBLISHED`). |
+| `hit_count` | `INTEGER` | No | `DEFAULT 1` | Cumulative multi-seed search frequency counter via upsert. |
+| `best_rank` | `INTEGER` | No | `DEFAULT 10` | Highest autocomplete suggestion position (1 to 10). |
+| `priority_score` | `INTEGER` | No | `DEFAULT 1` | Calculated priority metric: `(hit_count * 10) + (11 - best_rank)`. |
+| `target_url` | `TEXT` | Yes | `DEFAULT NULL` | Relative canonical URL on `EasyCTET.com` (e.g., `/ctet/ctet-passing-marks-for-obc/`). |
+| `video_hook` | `TEXT` | Yes | `DEFAULT NULL` | Calm pedagogical voice hook for Remotion Shorts. |
+| `lifecycle_status` | `TEXT` | No | `DEFAULT 'DISCOVERED'` | Stage: `DISCOVERED`, `CLUSTERED`, `FORMAT_ASSIGNED`, `GENERATED`, `REVIEWED`, `PUBLISHED`. |
 | `discovered_at` | `DATETIME` | No | `DEFAULT CURRENT_TIMESTAMP`| Timestamp of ingestion. |
 | `updated_at` | `DATETIME` | No | `DEFAULT CURRENT_TIMESTAMP`| Timestamp of last state modification. |
 
 ### 3.3 Target Exam Enumeration Set
-The `target_exam` field is strictly validated against the official 18 Indian teacher eligibility examinations:
+The `target_exam` field is validated against 18 central and state teacher eligibility examinations:
 * **National:** `CTET`
 * **South:** `KTET`, `TNTET`, `TS_TET`, `AP_TET`, `KARTET`
-* **North / Central:** `UPTET`, `REET`, `HTET`, `MPTET`, `PSTET`, `UTET`
-* **West / East:** `MAHA_TET`, `WBTET`, `OTET`, `CG_TET`, `BTET`, `ASSAM_TET`
+* **North / Central:** `UPTET` *(Note: Inactive since 2021; monitored for UP Education Commission)*, `REET`, `HTET`, `MPTET`, `PSTET`, `UTET`
+* **West / East:** `MAHA_TET`, `WBTET`, `OTET`, `CG_TET`, `BTET` *(Note: Subsumed by Bihar STET / BPSC TRE)*, `ASSAM_TET`
 
 ---
 
 ## 4. Processing & Business Logic Rules
 
 ### 4.1 Slug Sanitization Rule (Windows & Web Safe)
-All `clean_slug` values must be generated via the following strict deterministic transformation:
-1. Convert string to lowercase.
-2. Replace all ampersands (`&`) with the word `and`.
-3. Replace all non-alphanumeric characters (including spaces, slashes, punctuation, dots, quotes, question marks) with a single hyphen (`-`).
-4. Collapse multiple consecutive hyphens into a single hyphen (`--` $\rightarrow$ `-`).
-5. Strip leading and trailing hyphens.
+All `clean_slug` and `canonical_slug` values must conform to strict filesystem safety:
+1. Convert string to lowercase and strip whitespace.
+2. Expand ampersands (`&` $\rightarrow$ ` and `).
+3. Replace all non-alphanumeric characters with hyphens.
+4. Collapse consecutive hyphens and strip leading/trailing hyphens.
+5. **Non-ASCII Fallback:** If query is in non-Latin script (Malayalam/Devanagari) producing an empty string, generate a deterministic hash slug (`query-{md5[:8]}`).
+6. **Windows Reserved Word Guard:** Protect against reserved device names (`CON`, `PRN`, `AUX`, `NUL`, `COM1`-`COM9`, `LPT1`-`LPT9`) by appending `-topic`.
 
-**Regex Implementation Standard:**
-```python
-slug = re.sub(r'[^a-z0-9]+', '-', text.lower().strip())
-clean_slug = slug.strip('-')
-```
-
-### 4.2 Ingestion Deduplication Rule
-The database layer enforces idempotency. When any scraper inserts a query:
+### 4.2 Ingestion Upsert Rule (Deduplication + Frequency Counter)
+To prevent search volume loss and primary key collisions, scrapers execute an atomic SQLite **upsert**:
 ```sql
-INSERT OR IGNORE INTO tet_keyword_master (
-    keyword_id, raw_query, normalized_query, clean_slug, target_exam, source_engine, language_mix
-) VALUES (?, ?, ?, ?, ?, ?, ?);
+INSERT INTO tet_keyword_master (
+    keyword_id, raw_query, normalized_query, clean_slug, canonical_slug,
+    target_exam, secondary_entity, language_mix, source_engine,
+    intent_cluster, content_format, hit_count, best_rank, priority_score,
+    lifecycle_status
+) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1, ?, 10, 'DISCOVERED')
+ON CONFLICT(normalized_query) DO UPDATE SET
+    hit_count = tet_keyword_master.hit_count + 1,
+    best_rank = MIN(tet_keyword_master.best_rank, excluded.best_rank),
+    updated_at = CURRENT_TIMESTAMP;
 ```
-If `normalized_query` already exists, the record is discarded without error, ensuring repeated crawler runs never inflate the dataset.
+This guarantees that repeated discovery across multiple seeds increments `hit_count`, records the best SERP rank, and never creates duplicate records or silent data loss.
 
-### 4.3 Language Classification Logic
-During ingestion, the system automatically assigns the `language_mix` attribute based on regular expression lexical markers:
-* **`MANGLISH`:** Matches patterns containing `ethra`, `aano`, `aavumo`, `ezhuthamo`, `undo`, `engane`, `kazhinjal`, `cheyyamo`, `padikkanam`.
-* **`HINGLISH`:** Matches patterns containing `kitne`, `kitna`, `chahiye`, `pass ya fail`, `kya`, `kaise`, `kab tak`, `wale`, `de sakte`.
-* **`ENGLISH`:** Default classification for queries without vernacular markers.
+### 4.3 Intent Clustering & Anti-Scaled Content Abuse Architecture
+To avoid Google's March 2024 "Scaled Content Abuse" penalties for mass-generated thin pages:
+* **Many-to-One Mapping:** Distinct long-tail keyword variations (e.g., *"ctet passing marks obc"*, *"ctet cutoff 2026 obc"*, *"ctet qualifying marks for obc category"*) are grouped under a single parent `canonical_slug` (`ctet-passing-marks-for-obc`).
+* **Authoritative Hubs:** The static generator compiles comprehensive, high-utility pillar pages that answer the parent intent completely with full comparison tables and FAQs, rather than generating hundreds of fragmented micro-pages.
+
+### 4.4 Language Classification Logic
+During ingestion, the system automatically assigns `language_mix` based on lexical markers:
+* **`MANGLISH`:** Matches patterns containing `ethra`, `aano`, `aavumo`, `ezhuthamo`, `undo`, `engane`, `kazhinjal`, `cheyyamo`, `padikkanam`, `malayalam`.
+* **`HINGLISH`:** Matches patterns containing `kitne`, `kitna`, `chahiye`, `pass ya fail`, `kya`, `kaise`, `kab tak`, `wale`, `de sakte`, `kare`, `hoga`.
+* **`ENGLISH`:** Default classification for standard English queries.
 
 ---
 
@@ -141,10 +152,22 @@ During ingestion, the system automatically assigns the `language_mix` attribute 
 4. **`ingest_competitor_sitemaps.py`:** Parses public XML sitemaps of educational incumbents (Testbook, Adda247) to extract historical URL slugs.
 
 ### Module 5.2: Content Routing Engine (`tools/classify_and_route.py`)
-Applies semantic intent rules to update `intent_cluster` and `content_format`:
-* **`STATIC_HTML`:** Assigned to queries containing `passing marks`, `cut off`, `qualifying marks`, `syllabus`, `eligibility criteria`, `difference between`.
-* **`REMOTION_SHORT`:** Assigned to queries containing `questions with answers`, `pedagogy questions`, `important questions`, `repeated questions`, `vygotsky`, `piaget`, `kohlberg`.
-* **`PDF_CHEAT_SHEET`:** Assigned to queries containing `pdf download`, `previous year question paper`, `answer key pdf`, `notes pdf`.
+Applies deterministic semantic rules to assign `intent_cluster` to one of the 5 Pillars and map `content_format`:
+* **`PILLAR_1_CUTOFF` (Format: `STATIC_HTML`):**
+  * Matches queries containing `passing marks`, `cut off`, `qualifying marks`, `82 marks`, `pass ya fail`, `ethra`.
+  * Outputs: Clean category breakdown tables with FAQ schema.
+* **`PILLAR_2_ELIGIBILITY` (Format: `STATIC_HTML`):**
+  * Matches queries containing `b.ed`, `d.el.ed`, `eligibility criteria`, `supreme court`, `appearing student`, `ezhuthamo`.
+  * Outputs: Post-Supreme Court legal decision tree with verified NCTE citations.
+* **`PILLAR_3_RECRUITMENT_BRIDGE` (Format: `PILLAR_HUB`):**
+  * Matches queries containing `bpsc`, `super tet`, `kvs`, `dsssb`, `kpsc`, `lpsa`, `upsa`, `valid in all states`.
+  * Outputs: State recruitment bridge pages cross-selling EasyCTET as the common pedagogy engine.
+* **`PILLAR_4_SYLLABUS_OVERLAP` (Format: `PDF_CHEAT_SHEET`):**
+  * Matches queries containing `paper 1 paper 2 difference`, `syllabus pdf`, `malayalam medium`, `notes download`.
+  * Outputs: 2-page printable Trojan Horse PDF cheat sheets with offline app CTA footers.
+* **`PILLAR_5_CDP_PEDAGOGY` (Format: `REMOTION_SHORT`):**
+  * Matches queries containing `pedagogy questions`, `vygotsky`, `piaget`, `kohlberg`, `thorndike`, `inclusive education`.
+  * Outputs: 15-second vertical countdown quiz drills with Azure Neural TTS voiceover.
 
 ---
 
@@ -152,22 +175,22 @@ Applies semantic intent rules to update `intent_cluster` and `content_format`:
 
 ### 6.1 Programmatic Static HTML Generator Interface
 The static generator consumes records where `content_format = 'STATIC_HTML'` and outputs static HTML files adhering to the design specifications established in `compare-all-tets.html`:
-* Pure HTML/CSS (under 35 KB).
-* Embedded JSON-LD `FAQPage` schema.
-* Dedicated Call-to-Action (CTA) card linking to the offline EasyCTET/EasyKTET Google Play Store listing.
+* Pure HTML/CSS (under 35 KB, zero client-side JavaScript bloat).
+* Embedded JSON-LD `FAQPage` schema (provides structured semantic data for semantic search, without relying on deprecated SERP badge widgets).
+* Dedicated Call-to-Action (CTA) card linking to the offline EasyCTET/EasyKTET Google Play Store listing with radical privacy messaging.
 
 ### 6.2 Remotion Video Pipeline Interface
-The video automation pipeline queries records where `content_format = 'REMOTION_SHORT'` and generates a structured JSON payload:
+The video automation pipeline queries records where `content_format = 'REMOTION_SHORT'` and generates a structured JSON payload with calm, pedagogical hooks (strictly no manufactured panic or fake statistics):
 ```json
 {
   "keyword_id": "KWD_CTET_00412",
   "exam": "CTET",
-  "hook_title": "99% Fail This Vygotsky Pedagogy Question",
+  "hook_title": "A Vygotsky question that frequently trips up candidates. Try it yourself.",
   "question_text": "According to Lev Vygotsky, the zone of proximal development refers to:",
   "options": ["A", "B", "C", "D"],
   "correct_answer": "B",
   "tts_voice": "en-IN-NeerjaNeural",
-  "cta_text": "Practice 2,000+ more offline on EasyCTET"
+  "cta_text": "Practice 2,000+ official questions 100% offline on EasyCTET"
 }
 ```
 
@@ -180,9 +203,14 @@ A command-line utility (`tools/export_to_csv.py`) exports all database records i
 
 1. **HTTP Rate-Limiting Protocol:** All network requests to Google and YouTube suggest endpoints must implement an exponential backoff retry loop on `HTTP 429` (wait 3s, 6s, 12s) to prevent IP blocking.
 2. **Database Version Control:** The SQLite database file (`all_india_tet_master.db`) and its CSV mirror are stored locally in `docs/research/` within the repository.
-3. **Execution State Transition:**
-   $$\text{DISCOVERED} \longrightarrow \text{CLUSTERED} \longrightarrow \text{FORMAT\_ASSIGNED} \longrightarrow \text{PUBLISHED}$$
-   No content may be generated for a record until its state reaches `FORMAT_ASSIGNED`.
+3. **Execution State Transition (6-Stage Governance):**
+   $$\text{DISCOVERED} \longrightarrow \text{CLUSTERED} \longrightarrow \text{FORMAT\_ASSIGNED} \longrightarrow \text{GENERATED} \longrightarrow \text{REVIEWED} \longrightarrow \text{PUBLISHED}$$
+   - `DISCOVERED`: Ingested into SQLite with raw and normalized text.
+   - `CLUSTERED`: Semantic intent pillar and language mix assigned.
+   - `FORMAT_ASSIGNED`: Target media format and priority score calculated.
+   - `GENERATED`: Static HTML, Remotion JSON, or PDF compiled by script.
+   - `REVIEWED`: Factual accuracy, official notification citations, and formatting signed off by human auditor.
+   - `PUBLISHED`: Deployed to production web server, YouTube channel, or distribution channel.
 
 ---
 

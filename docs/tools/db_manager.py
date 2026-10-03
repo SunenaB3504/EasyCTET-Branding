@@ -33,19 +33,37 @@ VALID_EXAMS = {
 MANGLISH_PATTERN = re.compile(r'\b(ethra|aano|aavumo|ezhuthamo|undo|engane|kazhinjal|cheyyamo|padikkanam|kittumo|validaano)\b', re.IGNORECASE)
 HINGLISH_PATTERN = re.compile(r'\b(kitne|kitna|chahiye|pass ya fail|kya|kaise|kab tak|wale|de sakte|kare|hoga)\b', re.IGNORECASE)
 
+WINDOWS_RESERVED_NAMES = {
+    "con", "prn", "aux", "nul",
+    "com1", "com2", "com3", "com4", "com5", "com6", "com7", "com8", "com9",
+    "lpt1", "lpt2", "lpt3", "lpt4", "lpt5", "lpt6", "lpt7", "lpt8", "lpt9"
+}
+
 def clean_slug(text: str) -> str:
     r"""
     Creates a Windows-safe and URL-compliant slug.
-    Strips reserved characters (?, :, *, ", <, >, |, /, \) and collapses hyphens.
+    - Expands '&' to 'and'
+    - Strips reserved characters (?, :, *, ", <, >, |, /, \) and collapses hyphens
+    - Protects against Windows reserved filenames (CON, NUL, AUX, PRN, etc.)
+    - Handles pure non-ASCII (Malayalam/Devanagari) with deterministic hash fallback
     """
     # Convert ampersand
     text = text.replace("&", " and ")
     # Lowercase & strip
     text = text.lower().strip()
     # Replace non-alphanumeric with hyphen
-    text = re.sub(r'[^a-z0-9]+', '-', text)
-    # Strip leading/trailing hyphens
-    return text.strip('-')
+    slug = re.sub(r'[^a-z0-9]+', '-', text).strip('-')
+    
+    # Fallback if slug is empty (e.g. pure Malayalam script)
+    if not slug:
+        h = hashlib.md5(text.encode('utf-8')).hexdigest()[:8]
+        slug = f"query-{h}"
+
+    # Guard against Windows reserved names
+    if slug in WINDOWS_RESERVED_NAMES:
+        slug = f"{slug}-topic"
+
+    return slug
 
 def classify_language(query: str) -> str:
     """Detects whether query is English, Manglish, or Hinglish."""
@@ -56,8 +74,8 @@ def classify_language(query: str) -> str:
     return "ENGLISH"
 
 def generate_keyword_id(exam: str, normalized_query: str) -> str:
-    """Generates a deterministic unique ID based on exam and query hash."""
-    h = hashlib.sha256(normalized_query.encode('utf-8')).hexdigest()[:8].upper()
+    """Generates a deterministic unique ID based on exam and query SHA256 hash."""
+    h = hashlib.sha256(normalized_query.encode('utf-8')).hexdigest()[:10].upper()
     return f"KWD_{exam}_{h}"
 
 def init_db(db_path: str = DB_PATH) -> sqlite3.Connection:
@@ -72,6 +90,7 @@ def init_db(db_path: str = DB_PATH) -> sqlite3.Connection:
         raw_query           TEXT NOT NULL,
         normalized_query    TEXT NOT NULL UNIQUE,
         clean_slug          TEXT NOT NULL,
+        canonical_slug      TEXT DEFAULT NULL,
         target_exam         TEXT NOT NULL,
         secondary_entity    TEXT DEFAULT NULL,
         language_mix        TEXT NOT NULL DEFAULT 'ENGLISH',
@@ -80,6 +99,9 @@ def init_db(db_path: str = DB_PATH) -> sqlite3.Connection:
         content_format      TEXT NOT NULL DEFAULT 'UNASSIGNED',
         target_url          TEXT DEFAULT NULL,
         video_hook          TEXT DEFAULT NULL,
+        hit_count           INTEGER NOT NULL DEFAULT 1,
+        best_rank           INTEGER NOT NULL DEFAULT 10,
+        priority_score      INTEGER NOT NULL DEFAULT 1,
         lifecycle_status    TEXT NOT NULL DEFAULT 'DISCOVERED',
         discovered_at       DATETIME DEFAULT CURRENT_TIMESTAMP,
         updated_at          DATETIME DEFAULT CURRENT_TIMESTAMP
@@ -89,6 +111,8 @@ def init_db(db_path: str = DB_PATH) -> sqlite3.Connection:
     # Performance indices
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_target_exam ON tet_keyword_master(target_exam);")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_intent_cluster ON tet_keyword_master(intent_cluster);")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_canonical_slug ON tet_keyword_master(canonical_slug);")
+    cursor.execute("CREATE INDEX IF NOT EXISTS idx_priority_score ON tet_keyword_master(priority_score);")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_lifecycle_status ON tet_keyword_master(lifecycle_status);")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_language_mix ON tet_keyword_master(language_mix);")
 
@@ -102,11 +126,13 @@ def insert_keyword(
     secondary_entity: Optional[str] = None,
     intent_cluster: str = "UNCLUSTERED",
     content_format: str = "UNASSIGNED",
+    canonical_slug: Optional[str] = None,
+    rank: int = 10,
     db_path: str = DB_PATH
 ) -> bool:
     """
     Inserts a keyword with deterministic deduplication and automated slug/language assignment.
-    Returns True if inserted, False if duplicate.
+    Uses SQLite upsert to maintain true frequency counts (hit_count) and record best SERP rank.
     """
     norm = raw_query.strip().lower()
     if not norm:
@@ -121,20 +147,27 @@ def insert_keyword(
     cursor = conn.cursor()
     try:
         cursor.execute("""
-        INSERT OR IGNORE INTO tet_keyword_master (
-            keyword_id, raw_query, normalized_query, clean_slug, target_exam,
-            secondary_entity, language_mix, source_engine, intent_cluster, content_format
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+        INSERT INTO tet_keyword_master (
+            keyword_id, raw_query, normalized_query, clean_slug, canonical_slug,
+            target_exam, secondary_entity, language_mix, source_engine,
+            intent_cluster, content_format, hit_count, best_rank, priority_score,
+            lifecycle_status
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1, ?, 10, 'DISCOVERED')
+        ON CONFLICT(normalized_query) DO UPDATE SET
+            hit_count = tet_keyword_master.hit_count + 1,
+            best_rank = MIN(tet_keyword_master.best_rank, excluded.best_rank),
+            updated_at = CURRENT_TIMESTAMP;
         """, (
-            kwd_id, raw_query.strip(), norm, slug, exam_clean,
-            secondary_entity, lang, source_engine, intent_cluster, content_format
+            kwd_id, raw_query.strip(), norm, slug, canonical_slug or slug,
+            exam_clean, secondary_entity, lang, source_engine,
+            intent_cluster, content_format, rank
         ))
         conn.commit()
-        inserted = cursor.rowcount > 0
+        success = cursor.rowcount > 0
     finally:
         conn.close()
 
-    return inserted
+    return success
 
 def export_to_csv(db_path: str = DB_PATH, csv_path: str = CSV_PATH) -> int:
     """
@@ -147,11 +180,12 @@ def export_to_csv(db_path: str = DB_PATH, csv_path: str = CSV_PATH) -> int:
 
     cursor.execute("""
     SELECT 
-        keyword_id, raw_query, normalized_query, clean_slug, target_exam,
+        keyword_id, raw_query, normalized_query, clean_slug, canonical_slug, target_exam,
         secondary_entity, language_mix, source_engine, intent_cluster,
-        content_format, target_url, video_hook, lifecycle_status, discovered_at
+        content_format, target_url, video_hook, hit_count, best_rank, priority_score,
+        lifecycle_status, discovered_at
     FROM tet_keyword_master
-    ORDER BY target_exam ASC, discovered_at DESC;
+    ORDER BY priority_score DESC, hit_count DESC, target_exam ASC;
     """)
 
     rows = cursor.fetchall()

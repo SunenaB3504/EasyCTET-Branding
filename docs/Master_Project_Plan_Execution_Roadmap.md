@@ -10,14 +10,15 @@
 
 ## 1. Executive Summary & Strategic Objectives
 
-### 1.1 The Strategic Objective
-To build an unshakeable, profitable, bootstrapped software and digital presence across India that captures teacher trust organically—generating **$1M annual revenue at a 60%+ net profit margin** with zero external venture capital, zero debt, and zero tele-sales harassment.
+### 1.1 Financial Architecture & Milestones
+* **Near-Term Bootstrap Milestone (Year 1):** Acquire 5,000 to 10,000 paid qualifying teachers across CTET & KTET at ₹950 flat. Netting ~₹680 per sale (after 18% GST and Google Play's 15% tier), this generates **₹34,00,000 to ₹68,00,000 net profit** with zero external capital, zero debt, and negligible server overhead.
+* **Long-Term Compounding Vision:** $1M (~₹8.3 Crore) annual revenue at a 60%+ net profit margin across multi-exam offerings (18 Indian Central & State TETs) and subsequent quiet, offline K-12 learning companion tools.
 
 ### 1.2 Core Pillars of Execution
-1. **Stealth & Asymmetric Distribution:** Compete where venture-backed competitors cannot look (code-mixed long-tail queries, Dark Social WhatsApp sharing, and automated programmatic SEO).
-2. **Offline-First & Zero-Telemetry:** Leverage the Digital Personal Data Protection (DPDP) Act 2023 as an unassailable moral and technical moat.
-3. **The Teacher Trojan Horse:** Secure the lifelong trust of qualifying teachers through **EasyCTET** and **EasyKTET**, turning them into the primary unpaid distribution gatekeepers for future K-12 student applications.
-4. **Systems Discipline:** Maintain a strictly defined, relational data contract before touching scrapers or content generators.
+1. **Asymmetric Organic Distribution:** Compete where venture-backed competitors cannot look: code-mixed long-tail search queries, dark-social teacher WhatsApp sharing, and lean programmatic SEO hubs.
+2. **Zero-Data Privacy Standard:** We collect zero personal data, require no login or phone number, and store nothing remotely. We run no telemetry tracking.
+3. **Teacher-Centric Organic Goodwill:** Secure lifelong teacher trust through **EasyCTET** and **EasyKTET**. Educators who cleared their exams distraction-free naturally recommend our quiet utilities to peers and parents.
+4. **Systems Discipline:** Maintain a strictly defined relational schema and primary-source verification process before publishing any content or code.
 
 ---
 
@@ -27,15 +28,16 @@ To build an unshakeable, profitable, bootstrapped software and digital presence 
 | :--- | :---: | :---: | :---: |
 | **Architectural Specifications & SSD** | **Accountable (A)** | Consulted (C) | Responsible (R - Drafting) |
 | **Database & Schema Integrity** | **Accountable (A)** | Informed (I) | Responsible (R - Code) |
-| **Vernacular Phrasing & Empathy Review** | Consulted (C) | **Accountable (A)** | Responsible (R - Extraction) |
+| **App Engineering & Offline Engine** | **Accountable (A)** | Consulted (C) | Responsible (R - Architecture) |
+| **Vernacular Phrasing & Local Tone** | Consulted (C) | **Accountable (A)** | Responsible (R - Extraction) |
 | **Scraper & Ingestion Automation** | **Accountable (A)** | Informed (I) | Responsible (R - Execution) |
-| **Content Quality & Pedagogy Verification** | Accountable (A) | **Accountable (A)** | Responsible (R - Generation) |
-| **Dark Social & Community Infiltration** | Consulted (C) | **Accountable (A)** | Responsible (R - Assets) |
+| **Content Quality & Pedagogy Verification** | **Accountable (A)** | Consulted (C) | Responsible (R - Generation) |
+| **Community Distribution & Ground Outreach** | Consulted (C) | **Accountable (A)** | Responsible (R - Assets) |
 | **Conversion & In-App Paywall UX** | **Accountable (A)** | Consulted (C) | Responsible (R - Code) |
 
-* **Accountable (A):** The decision maker who owns the outcome.
+* **Accountable (A):** The single decision maker who owns the outcome (strictly 1 Accountable per workstream).
 * **Responsible (R):** The worker who executes the technical implementation.
-* **Consulted (C):** The advisor providing domain wisdom and feedback.
+* **Consulted (C):** The advisor providing domain wisdom and ground feedback.
 * **Informed (I):** Kept up to date on milestones.
 
 ---
@@ -87,81 +89,87 @@ To build an unshakeable, profitable, bootstrapped software and digital presence 
 
 ---
 
-### Phase 2: Classification, Language Tagging & Content Routing (Days 11–14)
-**Objective:** Transform raw query strings into structured, actionable content tickets.
+### Phase 2: Classification, Priority Scoring & Content Routing (Days 11–14)
+**Objective:** Transform raw query strings into mathematically prioritized, pillar-mapped content tickets.
 
 * **WBS 2.1: Automated Language Tagging:**
   * Tag queries as `ENGLISH`, `MANGLISH` (containing `ethra`, `aano`, `ezhuthamo`), or `HINGLISH` (containing `kitne`, `pass ya fail`, `kya b.ed`).
-* **WBS 2.2: Semantic Intent Clustering:**
-  * Run rule-based pattern matching to categorize every query into:
-    * `CLUSTER_A_CUTOFF` (Passing marks, qualifying rules)
-    * `CLUSTER_B_ELIGIBILITY` (B.Ed vs D.El.Ed, degree requirements)
-    * `CLUSTER_C_CDP_PEDAGOGY` (Theorists, child development, learning)
-    * `CLUSTER_D_PYQ_SYLLABUS` (Past papers, official answer keys)
-    * `CLUSTER_E_RECRUITMENT` (Job eligibility, state validity)
-* **WBS 2.3: Content Format Routing:**
-  * Assign each record its target production medium: `STATIC_HTML`, `REMOTION_SHORT`, `PDF_CHEAT_SHEET`, or `PILLAR_HUB`.
+* **WBS 2.2: Pattern Pillar Semantic Clustering:**
+  * Categorize every query into one of our 5 empirical patterns:
+    * `PILLAR_1_CUTOFF` (394 queries: 82 vs 90 marks, category relaxations)
+    * `PILLAR_2_ELIGIBILITY` (160 queries: B.Ed vs D.El.Ed, Supreme Court rulings)
+    * `PILLAR_3_RECRUITMENT_BRIDGE` (63 queries: BPSC, Super TET, KPSC, KVS validity)
+    * `PILLAR_4_SYLLABUS_OVERLAP` (587 queries: Paper 1 vs Paper 2 differences, syllabus PDFs)
+    * `PILLAR_5_CDP_PEDAGOGY` (270 queries: Theorists, Piaget, Vygotsky, Kohlberg)
+* **WBS 2.3: Search Frequency & Priority Scoring:**
+  * Calculate `priority_score = (hit_count * 10) + (11 - best_rank)` to rank high-focus keywords for production.
+* **WBS 2.4: Content Format Routing:**
+  * Assign each record its optimal production medium: `STATIC_HTML`, `REMOTION_SHORT`, `PDF_CHEAT_SHEET`, or `PILLAR_HUB`.
+* **WBS 2.5: App Architecture & Offline Question Engine:**
+  * Finalize local Android SQLite schema for storing 2,000+ past official exam questions.
+  * Implement zero-telemetry verification: app functions 100% offline with zero external network requests.
 * **Phase Gate 2 Definition of Done (DoD):**
-  * Zero records remain in `UNCLUSTERED` or `UNASSIGNED` status.
-  * 100% of records transition to `lifecycle_status = 'FORMAT_ASSIGNED'`.
+  * 100% of records mapped to a Pattern Pillar.
+  * Records ranked by `priority_score` in `all_india_tet_master.csv`.
+  * Status transitions to `lifecycle_status = 'FORMAT_ASSIGNED'`.
 
 ---
 
-### Phase 3: Automated Content Manufacturing (Days 15–30)
-**Objective:** Assemble the web, video, and PDF assets using automated, zero-marginal-cost software pipelines.
+### Phase 3: Automated Content Manufacturing & App Hardening (Days 15–30)
+**Objective:** Assemble the initial verified batch of web, video, and PDF assets and harden the offline mobile application.
 
-* **WBS 3.1: Programmatic Static HTML Assembly (`EasyCTET.com`):**
-  * Build the Python template generator feeding off `STATIC_HTML` records.
-  * Ensure every generated page includes:
-    * Under 35 KB total payload (zero framework JavaScript).
-    * Structured JSON-LD `FAQPage` schema.
-    * High-contrast CTA card driving to Google Play.
-    * Parent hub breadcrumb navigation.
-* **WBS 3.2: Automated Remotion Video Pipeline (`@easyctetofficial`):**
-  * Set up React/Remotion 9:16 templates with animated countdown timers and karaoke subtitles.
-  * Connect Azure Neural Speech TTS (Hindi/Malayalam) for automated voiceover rendering.
-  * Batch-render the first 30 daily vertical shorts.
-* **WBS 3.3: Trojan Horse PDF Cheat Sheets:**
-  * Generate 10 beautifully styled 2-page PDF revision sheets with embedded QR codes and offline app footers.
+* **WBS 3.1: Pillar 1 & 2 Static HTML Production (`EasyCTET.com`):**
+  * Generate category-wise cutoff tables (Pillar 1) highlighting the CBSE 60% rule vs state relaxation matrix.
+  * Generate B.Ed/D.El.Ed decision trees (Pillar 2) citing Supreme Court & NCTE notifications.
+  * Embed JSON-LD `FAQPage` schema and calm offline app CTA badges (under 35 KB page payload).
+* **WBS 3.2: Pillar 3 State Recruitment Bridge Hubs:**
+  * Deploy `compare-all-tets.html` and state sub-hubs (Bihar BPSC TRE, UP Super TET, Kerala KPSC).
+  * Address the Supreme Court Sept 2025 in-service teacher TET mandate.
+* **WBS 3.3: Pillar 4 High-Utility Printable Cheat Sheets:**
+  * Generate 5 printable 2-page syllabus difference sheets for WhatsApp/Telegram distribution with quiet offline footers.
+* **WBS 3.4: Pillar 5 Pedagogical Shorts (`@easyctetofficial`):**
+  * Render 10 vertical question drills (Vygotsky, Piaget, Kohlberg) using calm, thoughtful hooks and Azure Neural TTS voiceover. Strictly zero manufactured panic or heartbeat timers.
+* **WBS 3.5: Mobile App Billing & Offline Security:**
+  * Integrate Google Play In-App Billing for the single ₹950 lifetime pass.
+  * Verify offline license persistence and "Restore Purchase" functionality.
 * **Phase Gate 3 Definition of Done (DoD):**
-  * 100+ static HTML pages generated and tested locally.
-  * 30 vertical Remotion MP4 video files rendered and cataloged.
-  * 10 PDF cheat sheets compiled and verified.
+  * First wave of 10 flagship Intent Hub pages compiled and fact-checked against primary bulletins (`lifecycle_status = 'REVIEWED'`).
+  * 5 printable PDF cheat sheets compiled and verified.
+  * 10 pedagogical shorts rendered and cataloged.
+  * Android APK tested for 100% offline mock simulation and purchase restoration.
 
 ---
 
-### Phase 4: Stealth Multi-Channel Distribution & Indexing (Days 31–60)
-**Objective:** Launch distribution silently across organic search, social algorithms, and community dark social.
+### Phase 4: Quiet Organic Distribution & Indexing (Days 31–60)
+**Objective:** Launch distribution calmly across organic search, video search, and teacher communities.
 
 * **WBS 4.1: Web Hub Deployment & Search Console:**
-  * Push static HTML directory to GitHub Pages under `EasyCTET.com`.
+  * Deploy static HTML directory to GitHub Pages under `EasyCTET.com`.
   * Submit XML sitemaps to Google Search Console; verify mobile-friendly indexing.
-* **WBS 4.2: YouTube & Instagram Cadence:**
-  * Publish 1 Remotion short per day at peak commute hours (7:30 AM) or pre-sleep hours (9:30 PM).
-  * Structure videos into topic-specific playlists for algorithmic bingeing.
-* **WBS 4.3: Dark Social Community Seeding:**
-  * Distribute high-value PDF cheat sheets into 30–50 active WhatsApp and Telegram teacher study groups.
-  * Monitor footer-link clickthrough rates.
+* **WBS 4.2: YouTube & Instagram Educational Cadence:**
+  * Publish pedagogical shorts consistently at peak study hours (7:30 AM or 9:30 PM).
+  * Group videos into theorist playlists for calm, focused revision.
+* **WBS 4.3: Community Value Sharing:**
+  * Share high-value PDF cheat sheets in active WhatsApp and Telegram teacher study groups with admin permission.
 * **WBS 4.4: Owned WhatsApp Channel Activation:**
-  * Launch the **Official EasyCTET/EasyKTET WhatsApp Channel** for *"Daily Offline Drills"*, migrating borrowed community members into an owned broadcast audience.
+  * Launch the **Official EasyCTET/EasyKTET WhatsApp Channel** for *"Daily Offline Drills"*, migrating community members into an owned broadcast audience.
 * **Phase Gate 4 Definition of Done (DoD):**
-  * First 50+ URLs indexed on Google Search Console.
-  * 30 consecutive days of YouTube Shorts published with active Play Store links in comments.
-  * Initial 500+ members joined the Official WhatsApp Channel.
+  * First 25+ flagship URLs indexed on Google Search Console.
+  * Initial batch of YouTube Shorts published with clean Play Store links.
+  * First 250+ educators joined the Official WhatsApp Channel.
 
 ---
 
-### Phase 5: Conversion Optimization, Play Store Linking & Scaling (Days 61–90)
+### Phase 5: Conversion Optimization & Scale (Days 61–90)
 **Objective:** Convert organic web and video traffic into active, paying users of the offline mobile applications.
 
 * **WBS 5.1: The "Instant Win" Mobile Experience:**
-  * Ensure the EasyCTET / EasyKTET Android APK opens instantly into a **100% free, full 150-question mock exam** with zero login, zero phone number, and zero network dependency.
-  * Trigger the single ₹950 lifetime pass modal only upon scorecard completion.
+  * Android APK opens instantly into a **100% free, full 150-question mock exam** with zero login, zero phone number, and zero network dependency.
+  * Display the single ₹950 lifetime pass modal only upon scorecard completion.
 * **WBS 5.2: In-App Billing & License Restoration:**
   * Verify Google Play Billing API one-time purchase flow and the "Restore Purchase" one-click button for device migration.
 * **WBS 5.3: Search Console Intelligence Feedback Loop:**
-  * Analyze Search Console search queries generating high impressions but low clicks.
-  * Feed new high-performing search phrases back into Step 1 to expand the programmatic library.
+  * Analyze Search Console search queries generating high impressions to expand the programmatic library.
 * **Phase Gate 5 Definition of Done (DoD):**
   * End-to-end user path operational: Search query $\rightarrow$ `EasyCTET.com` $\rightarrow$ Google Play Store install $\rightarrow$ Free test $\rightarrow$ ₹950 Lifetime Pass conversion.
 
@@ -172,20 +180,28 @@ To build an unshakeable, profitable, bootstrapped software and digital presence 
 | Risk ID | Identified Risk Event | Probability | Impact | Mitigation Strategy |
 | :--- | :--- | :---: | :---: | :--- |
 | **RSK-01** | Google/YouTube API `HTTP 429` Rate Limiting during deep scraping. | High | Medium | Implement persistent `requests.Session()`, 0.3s jitter pauses, and exponential backoff retry loops (3s, 6s, 12s). |
-| **RSK-02** | Google "Scaled Content Abuse" penalty against thin programmatic pages. | Medium | High | Guarantee that every page includes a unique data table (cutoff marks breakdown), rich `FAQPage` schema, and links back to the pillar hub. |
+| **RSK-02** | Google "Scaled Content Abuse" penalty against thin programmatic pages. | Medium | High | Many-to-One Intent Clustering: group 20–50 long-tail queries under single authoritative hub pages with comprehensive data tables. |
 | **RSK-03** | Aspirant disputes answer keys leading to negative Play Store reviews. | High | Low | Explicitly cite official government final answer key bulletins (CBSE/Pareeksha Bhavan) in every explanation. |
-| **RSK-04** | Telegram/WhatsApp group admins ban account for link sharing. | High | Medium | Use "Trojan Horse PDFs" containing zero promotional body copy; app links reside strictly in academic footers. Pull traffic into our own owned WhatsApp Channel. |
+| **RSK-04** | Telegram/WhatsApp group admins ban account for link sharing. | High | Medium | Use printable cheat sheets with zero promotional body copy; app links reside strictly in academic footers. Pull traffic into our owned WhatsApp Channel. |
 | **RSK-05** | User changes phones and fears loss of ₹950 purchase without an account. | Medium | High | Utilize native Google Play In-App Billing with a prominent on-device "Restore Purchase" button. State this clearly in the app FAQ. |
+| **RSK-06** | Factual inaccuracies in state reservation or eligibility advice cause candidate harm. | Medium | High | Every page must cite specific official gazettes/bulletins, display a "Last Verified" date-stamp, and clarify that employer notices supersede CTET marksheets. Mandatory human sign-off (`REVIEWED`). |
+| **RSK-07** | Founder bandwidth bottleneck due to full-time field commitments. | High | High | Keep content manufacturing in manageable batches (10 pages per cycle) rather than mass unverified dumps. |
 
 ---
 
 ## 5. Success Metrics & Key Performance Indicators (KPIs)
 
-1. **Data Completeness:** $\ge 5,000$ unique, verified queries across all 18 Indian TET exams stored in `all_india_tet_master.db`.
-2. **Web Performance:** 100/100 Google Lighthouse score on `EasyCTET.com`, page size $< 35\text{ KB}$, $0\text{ms}$ JavaScript blocking time.
-3. **Organic Search Visibility:** $\ge 25,000$ monthly organic search impressions on Google Search Console within 60 days of sitemap submission.
-4. **Video Output:** 30 shorts published per month with zero manual video editing overhead.
-5. **Conversion Rate:** $3\%\text{ to }5\%$ of active app test-takers converting to the ₹950 Lifetime Pass.
+1. **Anonymous App Store Metrics (Google Play Console):**
+   * Monthly App Installs and Active Installs by Device.
+   * Play Store Rating: Maintain $\ge 4.7$ stars with zero complaints regarding data theft or ad intrusion.
+   * 30-Day Refund Rate: $< 1.5\%$.
+2. **Paid Conversions & Unit Economics:**
+   * Milestone 1 Target: 5,000 paid qualifying teachers at ₹950 (generating ~₹34 Lakhs net profit).
+3. **Web Performance & Search Health:**
+   * 100/100 Google Lighthouse score on `EasyCTET.com`, page size $< 35\text{ KB}$, $0\text{ms}$ JavaScript blocking time.
+   * Increasing organic clicks on Google Search Console for state relaxation and eligibility intent clusters.
+4. **Content Production Cadence:**
+   * 10 fully verified pillar pages, 5 community cheat sheets, and 10 calm shorts published per release cycle.
 
 ---
 
