@@ -22,6 +22,13 @@ nav.breadcrumbs{font-size:.88rem;color:var(--mut);margin-bottom:12px} nav.breadc
 @media (prefers-color-scheme:dark){.cta{color:#0b1e3f}}
 details{margin:12px 0} summary{cursor:pointer;font-weight:600}
 .scroll{overflow-x:auto}
+.dual-apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:20px 0 28px}
+.app-box{border:1px solid var(--line);background:var(--no);border-radius:12px;padding:20px;display:flex;flex-direction:column;justify-content:space-between}
+.app-tag{font-size:.75rem;font-weight:700;text-transform:uppercase;color:var(--acc);letter-spacing:.5px;margin-bottom:6px}
+.app-box h3{margin:0 0 8px;font-size:1.25rem}
+.app-box p{font-size:.9rem;color:var(--mut);line-height:1.55;margin:0 0 16px}
+.app-action{margin-top:auto;margin-bottom:12px}
+.app-perks{display:flex;flex-wrap:wrap;gap:12px;font-size:.78rem;color:var(--acc);font-weight:600}
 </style></head><body>
 <header class="site"><div><a class="brand" href="/">EasyCTET</a><a class="back-home" href="/">&larr; Back to Home</a></div></header>
 <main>
@@ -82,9 +89,38 @@ KTET Categories 3 and 4 are a different kind of exam and overlap very little.
 <li><strong>High school or specialist teachers:</strong> KTET Categories 3 and 4 need subject-level study that CTET does not cover.</li>
 </ul>
 
-<h2>Practise offline</h2>
-<p>Practise CTET past papers as full timed mock tests. EasyCTET works offline, with no sign-up and no phone number.</p>
-<p><span class="cta" style="opacity:0.85;cursor:default">Google Play (Coming Soon)</span></p>
+<h2>Practise offline with EasyCTET &amp; EasyKTET</h2>
+<p>Both applications are built on the same calm, distraction-free principles: 100% offline practice, zero advertisements, no phone number or login required, and full timed 150-minute exam simulations with instant score breakdowns.</p>
+
+<div class="dual-apps">
+  <div class="app-box">
+    <div class="app-tag">For Central Schools &amp; All-India Eligibility</div>
+    <h3>EasyCTET</h3>
+    <p>Calibrated for CTET Paper 1 (Primary I–V) and Paper 2 (Upper Primary VI–VIII). 1,800 verified questions, instant English/Hindi bilingual toggle, and 53 studio audio masterclasses for distraction-free commute study.</p>
+    <div class="app-action">
+      <span class="cta" style="opacity:0.85;cursor:default">EasyCTET on Google Play (Coming Soon)</span>
+    </div>
+    <div class="app-perks">
+      <span>✓ 1,800 Questions</span>
+      <span>✓ 100% Offline</span>
+      <span>✓ Bilingual EN/HI</span>
+    </div>
+  </div>
+
+  <div class="app-box">
+    <div class="app-tag">For Kerala Pareeksha Bhavan TET</div>
+    <h3>EasyKTET</h3>
+    <p>Calibrated specifically for Kerala TET Categories 1, 2, 3 &amp; 4. Detailed coverage of Kerala SCERT curriculum, child &amp; adolescent psychology, and pedagogy questions in Malayalam and English.</p>
+    <div class="app-action">
+      <span class="cta" style="opacity:0.85;cursor:default">EasyKTET on Google Play (Coming Soon)</span>
+    </div>
+    <div class="app-perks">
+      <span>✓ Categories 1, 2, 3 &amp; 4</span>
+      <span>✓ 100% Offline</span>
+      <span>✓ SCERT Kerala Aligned</span>
+    </div>
+  </div>
+</div>
 
 <h2>Frequently asked questions</h2>
 <details><summary>Is the CTET syllabus enough for KTET?</summary><p>Only partly. The child development, pedagogy and language-pedagogy sections overlap well, but KTET adds Kerala-specific content, a mother-tongue paper, and in some categories subject content that CTET does not test. Use the tables above to see exactly what is missing.</p></details>
