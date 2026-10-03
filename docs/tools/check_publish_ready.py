@@ -68,10 +68,18 @@ def parse(path):
 
 
 def norm(url):
-    """Comparable form of a URL: scheme-less host + path, no query or fragment, no index.html."""
+    """Comparable form of a URL: scheme-less host + path, no query or fragment, no index.html.
+    For query-keyed endpoints (like play.google.com?id=...), keep the primary id."""
     s = urlsplit(url)
     path = re.sub(r"/index\.html$", "/", s.path or "/")
-    return (s.netloc.lower() or urlsplit(SITE_ORIGIN).netloc) + path
+    host = s.netloc.lower() or urlsplit(SITE_ORIGIN).netloc
+    if "play.google.com" in host:
+        from urllib.parse import parse_qs
+        qs = parse_qs(s.query)
+        app_id = qs.get("id", [""])[0]
+        if app_id:
+            return f"{host}{path}?id={app_id}"
+    return host + path
 
 
 def http_status(url):
