@@ -1,0 +1,11 @@
+page_id,file,url,title,status,last_verified,source_ids,redirect_to,notes
+P000,,/,Home page,PLANNED,,,,Every page links here from the header and breadcrumb
+P001,,/ctet/,CTET hub page,PLANNED,,,,Breadcrumb target on all CTET pages
+P010,compare-all-tets.html,/compare-all-tets.html,Is CTET preparation enough for your state TET?,READY,2026-10-03,S001;S002;S003;S004;S005;S006;S008;S011;S015;S021;S025;S026;S027;S028;S029,,Final content (built by build_page_hub.py + patch_hub_final.py); waits on its link dependencies
+P011,ctet-vs-ktet.html,/ctet-vs-ktet.html,CTET vs KTET syllabus comparison,DRAFT,,S001;S002;S003;S006,,Has draft markers
+P020,ctet-passing-marks.html,/ctet/passing-marks/,CTET passing marks for OBC/SC/ST/PwD by employer,READY,2026-10-03,S001;S021;S022;S023;S024,,Final content; waits on its link dependencies
+P021,ctet-passing-marks-for-obc.html,/ctet/ctet-passing-marks-for-obc/,CTET passing marks for OBC (old keyword page),RETIRED,,,/ctet/passing-marks/,Contains the wrong '82 = pass' claim; never publish; redirect if the URL was ever shared
+P022,ktet-cat-2-pass-mark-ethra.html,/ktet/ktet-cat-2-pass-mark-ethra/,KTET pass mark ethra (keyword page),DRAFT,,,,Keyword-slug page; fold into a KTET passing-marks page; facts unverified
+P023,ctet-valid-for-bihar-bpsc-tre.html,/ctet/ctet-valid-for-bihar-bpsc-tre/,Is CTET valid for Bihar BPSC TRE 4.0?,DRAFT,,,,Re-check every number against S024 (BPSC Advt 15/2026)
+P024,is-b-ed-eligible-for-ctet-paper-1.html,/ctet/is-b-ed-eligible-for-ctet-paper-1/,Is B.Ed eligible for CTET Paper 1?,DRAFT,,,,Facts unverified
+X001,,https://play.google.com/store/apps/details?id=com.easyctet.app,EasyCTET on Google Play,PLANNED,,,,External: listing returned 404 on 2026-10-03; app not public yet

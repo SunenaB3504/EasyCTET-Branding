@@ -36,7 +36,6 @@ for name, c1, c2, _ in exams:
     p2 = share("ctet_p2", c2)[0] if c2 else None
     lab[name] = (label(p1), label(p2) if c2 else ("n/a" if name == "MPTET" else "Structure only"))
     print(name, lab[name], [round(v, 2) if v is not None else None for v in (p1, p2)])
-lab["HTET"] = ("Likely high", "Structure only")
 
 
 # ---------- section-level statuses (drive the bars and the heatmap) ----------
@@ -305,20 +304,12 @@ for name in ["KTET", "UPTET", "REET", "MPTET", "HTET"]:
 mrow = ""
 for key, idx in (("Structure", 0), ("Negative marking", 1), ("Pass mark (General)", 2), ("Certificate validity", 3), ("Next exam", 4)):
     mrow += f"<tr><th>{key}</th>" + "".join(f"<td>{html.escape(facts[e][idx])}</td>" for e in order) + "</tr>"
-accepted_row = ('<tr id="ctet-accepted"><th>Does CTET count here?</th>'
-    '<td>Accepted by central schools such as KVS and NVS. Marks needed by category: <a href="/ctet/passing-marks/">CTET passing marks by employer</a></td>'
-    '<td><strong>Partly.</strong> CTET Paper 1 replaces KTET Category 1 (LP posts) and Paper 2 replaces Category 2 (UP posts). Not accepted in place of Category 3.</td>'
-    '<td><strong>Yes, for primary.</strong> UP\'s 2026 assistant teacher (primary) recruitment accepts a TET held by the state or the Government of India, so UPTET or CTET for classes 1–5.</td>'
-    '<td><strong>No.</strong> RSSB\'s 2025 primary and upper primary teacher recruitment asked for REET (2022 or 2025).</td>'
-    '<td><strong>No, for fresh primary posts.</strong> The Primary Teacher Selection Test 2025 was open only to those who passed MP\'s own primary teacher eligibility test (2020 or 2024).</td>'
-    '<td><strong>Not in recent notices.</strong> HSSC\'s primary teacher recruitment (Advt. 05/2024) asked for HTET/STET.</td></tr>')
 overlap_row = "<tr><th>Syllabus carry-over from CTET</th><td>–</td>" + "".join(
     f"<td><strong>{lab[e][0]}</strong>{'' if lab[e][1] in ('n/a','Structure only') or lab[e][0]==lab[e][1] else ' / <strong>' + lab[e][1] + '</strong>'}</td>" for e in order[1:]) + "</tr>"
 
 page = f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Is CTET Preparation Enough for State TETs? Compared (2026)</title>
-<meta name="description" content="How much of CTET preparation carries over to KTET, UPTET, REET, MPTET and HTET, and what to add. Built from the official bulletins. Last checked 3 October 2026.">
-<link rel="canonical" href="https://easyctet.com/compare-all-tets.html">
+<meta name="description" content="How much of CTET preparation carries over to KTET, UPTET, REET, MPTET and HTET, and what to add. Built from the official bulletins. Last verified 1 October 2026.">
 <style>
 :root{{--bg:#fff;--fg:#1c1c1e;--mut:#5b6068;--line:#dde1e6;--soft:#f3f4f6;--acc:#0b57d0;--ok:#e6f4ea}}
 @media (prefers-color-scheme:dark){{:root{{--bg:#16181c;--fg:#ececee;--mut:#a3a8b0;--line:#363a41;--soft:#23262b;--acc:#8ab4f8;--ok:#16301f}}}}
@@ -351,27 +342,23 @@ th,td{{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-ali
 .meter .na{{color:var(--mut);font-weight:500}}
 .heat small{{display:block;font-weight:500;font-size:.72rem;opacity:.85}}
 .cat3{{border:1px solid var(--line);border-radius:10px;padding:12px 16px;background:var(--soft)}}
-header.site{{border-bottom:1px solid var(--line)}} header.site div{{max-width:900px;margin:0 auto;padding:12px 16px}} header.site a{{font-weight:800;font-size:1.05rem;color:var(--fg);text-decoration:none}}
-.cta{{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;padding:10px 22px;border-radius:8px;font-weight:700}}
-@media (prefers-color-scheme:dark){{.cta{{color:#0b1e3f}}}}
-</style></head><body>
-<header class="site"><div><a href="/">EasyCTET</a></div></header>
-<main>
+</style></head><body><main>
+<div class="draft"><strong>DRAFT v4, not for publishing.</strong> The overlap labels come from a first-pass mapping that has not been spot-checked. Remove this box and the [EDITOR] notes before publishing.</div>
 
 <h1>Is CTET preparation enough for your state TET?</h1>
-<p class="note">By EasyCTET Research Team · Last checked: 3 October 2026 · From the official bulletins, syllabus documents and recruitment notices of each exam board.</p>
+<p class="note">Last verified: 1 October 2026 · From the official bulletins and syllabus documents of each exam board.</p>
 
 <p class="lead"><strong>Short answer:</strong> mostly yes for the teaching part of the exam. A large share of every TET is pedagogy (how children learn and how to teach), and that is where CTET practice carries over. What you add is the state's own content: local language, local GK and grammar.</p>
 
 <h2>Where CTET practice pays off most: the pedagogy marks</h2>
 <p>Child development and pedagogy is the part most teachers find hardest, and it carries the most marks. This table shows how much of each exam's own topics your CTET practice already covers, split into the child-development part, the subject-pedagogy part and the content part.</p>
 {pedagogy_panel()}
-<p class="note">Each percentage is the share of the exam's topics that CTET practice also covers (a matching topic counts fully, a similar one counts half; topics only the exam has count as not covered), rounded to the nearest 5. They describe syllabus overlap, not the questions in the app and not a score prediction. * = some language sections not yet compared. HTET figures are indicative: they rest on one past Level 2 paper and an unverified syllabus summary, because the board publishes no topic list. Spot-check, 3 October 2026: every child-development topic for KTET Category 1, UPTET Paper 1 and REET Level 1, plus a random sample of subject topics, was re-read against the official syllabus; the mapping held, with one borderline call.</p>
-<p><strong>Theories and theorists:</strong> CTET lists Piaget, Kohlberg and Vygotsky. UPTET, MPTET and KTET also name the learning theorists Thorndike, Pavlov, Skinner and Kohler, and REET lists the theories of learning, so make sure your child-development practice includes those too. That is the main CDP gap between CTET and the state exams.</p>
+<p class="note">Each percentage is the share of the exam's topics that CTET practice also covers (a matching topic counts fully, a similar one counts half; topics only the exam has count as not covered), rounded to the nearest 5. They describe syllabus overlap, not the questions in the app and not a score prediction. * = some language sections not yet compared. HTET figures are indicative: they rest on one past Level 2 paper and an unverified syllabus summary, because the board publishes no topic list. [EDITOR: after the spot-check, re-run and re-check these numbers.]</p>
+<p><strong>Theories and theorists:</strong> CTET lists Piaget, Kohlberg and Vygotsky. UPTET, MPTET and KTET also name the learning theorists Thorndike, Pavlov, Skinner and Kohler, and REET lists the theories of learning, so make sure your child-development practice includes those too. That is the main CDP gap between CTET and the state exams. [EDITOR: add the survey line here only if you decide to cite it, for example "14 of 20 KTET teachers we surveyed named CDP as their hardest area".]</p>
 
 <h2>What CTET practice covers, exam by exam</h2>
 {heatmap()}{legend()}
-<p class="note">Each exam paper compared topic by topic with CTET, using the official syllabus. Open an exam card below to see its sections as a 150-mark bar.</p>
+<p class="note">Each exam paper compared topic by topic with CTET, using the official syllabus. First-pass labels. Open an exam card below to see its sections as a 150-mark bar.</p>
 
 <h2>How to use it</h2>
 <div class="steps">
@@ -384,13 +371,13 @@ header.site{{border-bottom:1px solid var(--line)}} header.site div{{max-width:90
 <div class="big">
 <div class="stat"><b>90 of 150</b>marks in CTET Paper 1 are pedagogy: child development (30) plus 15 pedagogy questions each in two languages, maths and EVS.</div>
 <div class="stat"><b>80 of 150</b>marks in CTET Paper 2 are pedagogy, whichever stream you take.</div>
-<div class="stat"><b>Same wording</b>KTET and MPTET reuse much of CTET's child-development text, and UPTET's learning section is a Hindi version of it. REET covers the same ground in its own words. Exceptions are noted below.</div>
+<div class="stat"><b>Most</b>of that pedagogy appears in near-identical wording in KTET, UPTET, REET and MPTET. Exceptions are noted below.</div>
 </div>
-<p class="note">Counts from CTET September 2026 Information Bulletin, Appendix I.</p>
+<p class="note">Counts from CTET September 2026 Information Bulletin, Appendix I. [EDITOR: re-check the "near-identical wording" claim after the spot-check.]</p>
 
 <h2>All exams at a glance</h2>
-<div class="scroll"><table><thead><tr><th></th>{''.join(f'<th>{e}</th>' for e in order)}</tr></thead><tbody>{accepted_row}{overlap_row}{mrow}</tbody></table></div>
-<p class="note">"Does CTET count here?" is taken from each state's latest teacher recruitment notice we could find (listed under Sources). Syllabus carry-over compares the topics we checked (Very high, High, Partial, Low). HTET is marked "Likely" because the board publishes no topic list. Eligibility rules differ by exam and change; read the official notice before you apply.</p>
+<div class="scroll"><table><thead><tr><th></th>{''.join(f'<th>{e}</th>' for e in order)}</tr></thead><tbody>{overlap_row}{mrow}</tbody></table></div>
+<p class="note">Syllabus carry-over compares the topics we checked (Very high, High, Partial, Low). Where a column says "Structure only", the board publishes no topic list. Eligibility rules differ by exam and change; read the official bulletin before you apply.</p>
 
 <h2>What to do for each exam</h2>
 {cards}
@@ -401,31 +388,17 @@ header.site{{border-bottom:1px solid var(--line)}} header.site div{{max-width:90
 <li>Take a mock test offline and note your weak topics.</li>
 <li>Add the state-specific items from the "Add on top" list for your exam.</li>
 </ol>
-<p>EasyCTET works offline, with no sign-up and no phone number. <a class="cta" href="https://play.google.com/store/apps/details?id=com.easyctet.app&amp;referrer=utm_source%3Dweb%26utm_medium%3Dseo%26utm_campaign%3Dcompare-all-tets">Get EasyCTET on Google Play</a></p>
+<p>[EDITOR: add the real app coverage per exam here once the question bank is tagged, for example "EasyCTET covers X of Y topics for UPTET Paper 1". Add the Play Store link with a tagged URL. No sign-up, no phone number, works offline.]</p>
 
 <h2>Preparing for KTET Category 3 or 4?</h2>
 <div class="cat3"><p><strong>These are different exams.</strong> Category 3 (high school) has 40 marks of adolescent psychology, learning theories and teaching aptitude, 30 marks of language, and 80 marks of subject content for classes 8 to 10. Category 4 is for language and specialist teachers. CTET practice helps with the psychology and teaching-aptitude part, but not with the subject content, which needs its own study.</p></div>
 
 <h2>Common questions</h2>
-<details><summary>Can I use the CTET certificate for a state job?</summary><p>It depends on the state. CTET counts for UP primary posts and, in Kerala, in place of KTET Category 1 and 2. Rajasthan, Madhya Pradesh and Haryana asked for their own TET in their latest recruitment. See the <a href="#ctet-accepted">"Does CTET count here?" row</a> above, and always check the recruitment notice you are applying under.</p></details>
+<details><summary>Can I use the CTET certificate for a state job?</summary><p>That depends on the state and the recruiting body. Each state decides which TET it accepts. Check the recruitment notice.</p></details>
 <details><summary>How accurate is this comparison?</summary><p>We read the official syllabus and bulletin of each exam and compared them topic by topic. The comparison is an independent study aid, not issued by any exam board, and syllabi change, so check the board's website before each exam.</p></details>
 
 <h2>Sources</h2>
-<p class="note"><strong>Syllabus and exam documents</strong></p>
-<ul class="note"><li>CBSE, <a href="https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf">CTET September 2026 Information Bulletin</a>.</li>
-<li>Kerala Pareeksha Bhavan, <a href="https://ktet.kerala.gov.in/downloads/sep2026/K-TET%20September%202026-Notification.pdf">K-TET September 2026 notification</a> and Category <a href="https://ktet.kerala.gov.in/syllabus/syllabus1.pdf">I</a>, <a href="https://ktet.kerala.gov.in/syllabus/syllabus2.pdf">II</a>, <a href="https://ktet.kerala.gov.in/syllabus/syllabus3.pdf">III</a> and <a href="https://ktet.kerala.gov.in/syllabus/syllabus4.pdf">IV</a> syllabus documents.</li>
-<li>UPESSC, UPTET syllabus documents, Primary and Upper Primary (<a href="https://upessc.up.gov.in/">upessc.up.gov.in</a>).</li>
-<li>Board of Secondary Education Rajasthan, <a href="https://rajeduboard.rajasthan.gov.in/reet2024final121224.PDF">REET-2024 notification</a> and syllabus files.</li>
-<li>MP Employees Selection Board, <a href="https://esb.mp.gov.in/rulebooks/RB_2026/MSPSTET_2026_RuleBookforTeachers_17082026.pdf">2026 eligibility test rulebook for in-service teachers</a>.</li>
-<li>Board of School Education Haryana, <a href="https://htet.eapplynow.com/HTET25_InfoBulletin.pdf">HTET-2025 Information Bulletin</a>.</li></ul>
-<p class="note"><strong>Recruitment notices behind "Does CTET count here?"</strong></p>
-<ul class="note"><li>Kerala PSC, <a href="https://keralapsc.gov.in/sites/default/files/2025-08/noti-239-241-25.pdf">L P School Teacher notification, Category No. 239–241/2025</a>, citing G.O.(P) No. 6/2024/G.Edn dated 01.02.2024.</li>
-<li>UPESSC, <a href="https://upessc.up.gov.in/Notice/a429-726e-4862-f3dc-8a6f.pdf">Assistant Teacher (Primary) Selection Examination 2026, Advt. No. 05/2026</a>, clause 7.</li>
-<li>Rajasthan Staff Selection Board, Primary and Upper Primary School Teacher recruitment 2025 (<a href="https://rssb.rajasthan.gov.in/">rssb.rajasthan.gov.in</a>).</li>
-<li>MP Employees Selection Board, <a href="https://esb.mp.gov.in/rulebooks/RB_2025/PSTST_2025_Final_RuleBook.pdf">Primary Teacher Selection Test 2025 rulebook</a>.</li>
-<li>Haryana Staff Selection Commission, Primary Teacher (Mewat cadre) recruitment, Advt. No. 05/2024 (<a href="https://hssc.gov.in/">hssc.gov.in</a>).</li>
-<li>Central schools: CBSE for KVS and NVS, <a href="https://www.cbse.gov.in/cbsenew/documents/Detailed_Notification_KVS_NVS_2025_13112025.pdf">Recruitment Notification 01/2025</a>.</li></ul>
-<p class="note">This page is an independent study aid and is not issued by any exam board.</p>
+<ul class="note"><li>CBSE, CTET September 2026 Information Bulletin.</li><li>Kerala Pareeksha Bhavan, K-TET September 2026 notification and Category I–IV syllabus documents.</li><li>UPESSC, UPTET syllabus documents (Primary and Upper Primary).</li><li>Board of Secondary Education Rajasthan, REET-2024 notification and syllabus files.</li><li>MP Employees Selection Board, 2026 eligibility test rulebook for in-service teachers.</li><li>Board of School Education Haryana, HTET-2025 Information Bulletin.</li></ul>
 </main></body></html>"""
 os.makedirs("../site-drafts", exist_ok=True)
 open("../site-drafts/compare-all-tets.html", "w", encoding="utf-8").write(page)
