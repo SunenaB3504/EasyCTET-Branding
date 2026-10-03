@@ -222,7 +222,30 @@
 
 ---
 
-## 6. Document Sign-off & Execution Readiness
+## 6. Pre-Flight & Launch Checklist for High SERP Placement
+
+To guarantee that real candidates searching on Google discover our pages ahead of bloated commercial portals, every release must pass this three-tier gate:
+
+### Tier A: Pre-Flight Static Quality & Link Audit
+- [ ] **Automated Static Audit (`check_publish_ready.py`):** 0 unresolved `[EDITOR]` or `TODO` tags, 0 dead `#anchor` fragments, and 0 links pointing to `PLANNED` or `DRAFT` assets.
+- [ ] **100/100 Core Web Vitals:** Mobile Lighthouse performance score of 100/100; total page weight $< 35\text{ KB}$; 0ms JavaScript execution blocking.
+- [ ] **Schema.org Validation:** Valid JSON-LD `@graph` (`Article`, `BreadcrumbList`, and `FAQPage`) tested on Google's Rich Results Testing tool.
+- [ ] **Meta & Canonical Hygiene:** `<link rel="canonical">` matches the exact route; `<title>` and `<meta name="description">` match real candidate long-tail queries.
+
+### Tier B: Production Deployment & Search Engine Ingestion
+- [ ] **Domain & SSL Deployment:** Production site live under HTTPS on `https://easyctet.com` with clean `robots.txt` (`Allow: /`).
+- [ ] **Sitemap Submission:** Generate and submit `https://easyctet.com/sitemap.xml` directly to Google Search Console.
+- [ ] **Accelerated URL Inspection Crawl:** Execute **URL Inspection $\rightarrow$ "Request Indexing"** in Google Search Console for all cluster pages to trigger immediate crawling.
+- [ ] **Active App Store URL Verification:** Confirm Google Play Store URL (`X001`) with UTM campaign tags is live and functional.
+
+### Tier C: Dark Social Seeding & Dwell-Time Flywheel
+- [ ] **Curated Community Seeding:** Share clean, helpful comparison tables in 5–10 active teacher WhatsApp/Telegram groups with admin permission.
+- [ ] **Video Algorithmic Reinforcement:** Publish matching calm Shorts on YouTube with pinned comments pointing back to the website table.
+- [ ] **Search Console Monitoring:** Monitor average position and CTR in GSC Performance reports to capture emerging search phrases.
+
+---
+
+## 7. Document Sign-off & Execution Readiness
 
 This Master Project Plan connects our corporate philosophy, technical specification, and daily operational steps into a unified system. 
 
