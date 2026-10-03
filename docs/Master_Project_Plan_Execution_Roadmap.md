@@ -132,8 +132,13 @@
 * **WBS 3.5: Mobile App Billing & Offline Security:**
   * Integrate Google Play In-App Billing for the single ₹950 lifetime pass.
   * Verify offline license persistence and "Restore Purchase" functionality.
+* **WBS 3.6: Publication Readiness & Link Dependency Verification:**
+  * Execute `docs/tools/check_publish_ready.py` against all candidate drafts.
+  * Eliminate all editor markers (`[EDITOR]`, `TODO`, `TBC`, draft banners).
+  * Validate anchor targets (e.g. `#ctet-accepted`) and verify linked pages in `docs/templates/pages.csv`.
 * **Phase Gate 3 Definition of Done (DoD):**
-  * First wave of 10 flagship Intent Hub pages compiled and fact-checked against primary bulletins (`lifecycle_status = 'REVIEWED'`).
+  * Initial wave of flagship Intent Hub pages compiled and fact-checked against primary bulletins (`lifecycle_status = 'REVIEWED'`).
+  * Pages pass static validation and transition to `status = 'READY'` in `pages.csv`.
   * 5 printable PDF cheat sheets compiled and verified.
   * 10 pedagogical shorts rendered and cataloged.
   * Android APK tested for 100% offline mock simulation and purchase restoration.
@@ -143,8 +148,17 @@
 ### Phase 4: Quiet Organic Distribution & Indexing (Days 31–60)
 **Objective:** Launch distribution calmly across organic search, video search, and teacher communities.
 
+* **WBS 4.0: Minimal Viable Launch Cluster (Synchronized Release):**
+  * Prevent broken navigation and orphan pages by deploying the interdependent flagship cluster simultaneously:
+    1. **Home Page (`P000`, `/`):** Navigation root and primary brand anchor.
+    2. **CTET Section Hub (`P001`, `/ctet/`):** Breadcrumb and category hub.
+    3. **All-India Comparison Hub (`P010`, `/compare-all-tets.html`):** Resolved editor notes and verified state anchors (`#ctet-accepted`).
+    4. **CTET vs KTET Comparison (`P011`, `/ctet-vs-ktet.html`):** Verified syllabus difference matrix.
+    5. **CTET Passing Marks Guide (`P020`, `/ctet/passing-marks/`):** Fully unblocked and publishable.
+    6. **Active Google Play Store Listing (`X001`):** Verified live app URL.
+  * Mandatory pre-flight condition: `python docs/tools/check_publish_ready.py` returns `PUBLISHABLE` for all release pages.
 * **WBS 4.1: Web Hub Deployment & Search Console:**
-  * Deploy static HTML directory to GitHub Pages under `EasyCTET.com`.
+  * Deploy verified static HTML cluster to GitHub Pages under `EasyCTET.com`.
   * Submit XML sitemaps to Google Search Console; verify mobile-friendly indexing.
 * **WBS 4.2: YouTube & Instagram Educational Cadence:**
   * Publish pedagogical shorts consistently at peak study hours (7:30 AM or 9:30 PM).
@@ -154,6 +168,7 @@
 * **WBS 4.4: Owned WhatsApp Channel Activation:**
   * Launch the **Official EasyCTET/EasyKTET WhatsApp Channel** for *"Daily Offline Drills"*, migrating community members into an owned broadcast audience.
 * **Phase Gate 4 Definition of Done (DoD):**
+  * Minimal Viable Launch Cluster live with 100% valid internal links and zero 404s.
   * First 25+ flagship URLs indexed on Google Search Console.
   * Initial batch of YouTube Shorts published with clean Play Store links.
   * First 250+ educators joined the Official WhatsApp Channel.
@@ -186,6 +201,8 @@
 | **RSK-05** | User changes phones and fears loss of ₹950 purchase without an account. | Medium | High | Utilize native Google Play In-App Billing with a prominent on-device "Restore Purchase" button. State this clearly in the app FAQ. |
 | **RSK-06** | Factual inaccuracies in state reservation or eligibility advice cause candidate harm. | Medium | High | Every page must cite specific official gazettes/bulletins, display a "Last Verified" date-stamp, and clarify that employer notices supersede CTET marksheets. Mandatory human sign-off (`REVIEWED`). |
 | **RSK-07** | Founder bandwidth bottleneck due to full-time field commitments. | High | High | Keep content manufacturing in manageable batches (10 pages per cycle) rather than mass unverified dumps. |
+| **RSK-08** | Broken internal links or premature deployment of orphan pages with draft dependencies. | High | High | Enforce pre-flight verification via `check_publish_ready.py`. No page may be published unless all linked targets are `READY` or `PUBLISHED`. |
+| **RSK-09** | Programmatic compilers accidentally overwrite verified editorial pages or recreate retired URLs. | Medium | High | Isolate compiler outputs into `docs/site-drafts/programmatic/`. Enforce `RETIRED` status in `pages.csv` to permanently block deprecated keyword files. |
 
 ---
 

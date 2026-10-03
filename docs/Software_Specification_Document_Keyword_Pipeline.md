@@ -164,10 +164,22 @@ Applies deterministic semantic rules to assign `intent_cluster` to one of the 5 
   * Outputs: State recruitment bridge pages cross-selling EasyCTET as the common pedagogy engine.
 * **`PILLAR_4_SYLLABUS_OVERLAP` (Format: `PDF_CHEAT_SHEET`):**
   * Matches queries containing `paper 1 paper 2 difference`, `syllabus pdf`, `malayalam medium`, `notes download`.
-  * Outputs: 2-page printable Trojan Horse PDF cheat sheets with offline app CTA footers.
+  * Outputs: 2-page printable syllabus difference sheets with offline app CTA footers.
 * **`PILLAR_5_CDP_PEDAGOGY` (Format: `REMOTION_SHORT`):**
   * Matches queries containing `pedagogy questions`, `vygotsky`, `piaget`, `kohlberg`, `thorndike`, `inclusive education`.
   * Outputs: 15-second vertical countdown quiz drills with Azure Neural TTS voiceover.
+
+### Module 5.3: Page Registry & Publish Readiness Verifier (`tools/check_publish_ready.py`)
+Enforces release discipline, link integrity, and source traceability across all web properties:
+1. **Page Register (`docs/templates/pages.csv`):** Master inventory of all web assets tracking `page_id` (e.g. `P000`, `P020`), `file`, `url`, `status`, `last_verified`, `source_ids`, and `redirect_to`.
+2. **Sources Register (`docs/templates/sources.csv`):** Master repository of primary government bulletins and notifications (e.g. `S001` to `S024`) with official PDF URLs.
+3. **Automated Publish Readiness Checker (`tools/check_publish_ready.py`):**
+   - Scans HTML files for leftover draft markers (`[EDITOR]`, `TODO`, `TBC`, draft banners).
+   - Validates every internal hyperlink and confirms the status of the target page in `pages.csv`.
+   - Verifies anchor targets (e.g., `#ctet-accepted`) exist in the referenced HTML document.
+   - Audits external dependencies (e.g., Google Play Store listing 200 OK vs 404).
+   - Generates dependency graph: `docs/templates/page-dependencies.csv`.
+   - **Publish Rule:** A page marked `READY` is **BLOCKED** from publication if it links to any resource with status `PLANNED` or `DRAFT`. Only pages verified as `PUBLISHABLE` may be deployed.
 
 ---
 
@@ -197,6 +209,12 @@ The video automation pipeline queries records where `content_format = 'REMOTION_
 ### 6.3 Spreadsheet Export Interface
 A command-line utility (`tools/export_to_csv.py`) exports all database records into `docs/research/all_india_tet_master.csv` formatted with `utf-8-sig` encoding, ensuring seamless opening in Microsoft Excel without character corruption.
 
+### 6.4 Directory Separation & Anti-Overwrite Safeguards
+To protect human-verified editorial content from automated overwrites:
+* **Canonical Drafts Directory (`docs/site-drafts/`):** Dedicated exclusively to production-ready, peer-reviewed cornerstone pages (`ctet-passing-marks.html`, `compare-all-tets.html`, etc.).
+* **Programmatic Scratch Directory (`docs/site-drafts/programmatic/`):** Isolated sandbox where bulk compilers write algorithmic test pages.
+* **Prohibition:** Scripts must never overwrite root `docs/site-drafts/` or regenerate pages marked `RETIRED` in `pages.csv`.
+
 ---
 
 ## 7. Operational Safety, Scalability & Lifecycle
@@ -208,8 +226,8 @@ A command-line utility (`tools/export_to_csv.py`) exports all database records i
    - `DISCOVERED`: Ingested into SQLite with raw and normalized text.
    - `CLUSTERED`: Semantic intent pillar and language mix assigned.
    - `FORMAT_ASSIGNED`: Target media format and priority score calculated.
-   - `GENERATED`: Static HTML, Remotion JSON, or PDF compiled by script.
-   - `REVIEWED`: Factual accuracy, official notification citations, and formatting signed off by human auditor.
+   - `GENERATED`: Static HTML, Remotion JSON, or PDF compiled by script into sandbox.
+   - `REVIEWED`: Factual accuracy, primary source audit (S001–S024), and link readiness verified (`READY`).
    - `PUBLISHED`: Deployed to production web server, YouTube channel, or distribution channel.
 
 ---
