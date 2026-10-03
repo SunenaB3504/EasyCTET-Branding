@@ -1,12 +1,13 @@
-page_id,file,url,title,status,last_verified,source_ids,redirect_to,notes
-P000,,/,Home page,PUBLISHED,2026-10-03,S001,,,Live home page on easyctet.com (EasyCTET-Branding/website/index.html)
-P001,ctet/index.html,/ctet/,CTET hub page,PUBLISHED,2026-10-03,S001;S002;S021;S025,,,CTET hub cornerstone page; published in Wave 1 cluster
-P010,compare-all-tets.html,/compare-all-tets.html,Is CTET preparation enough for your state TET?,PUBLISHED,2026-10-03,S001;S002;S003;S004;S005;S006;S008;S011;S015;S021;S025;S026;S027;S028;S029,,,Published in Wave 1 cluster
-P011,ctet-vs-ktet.html,/ctet-vs-ktet.html,CTET vs KTET syllabus comparison,PUBLISHED,2026-10-03,S001;S002;S003;S004;S005;S006;S025;S030,,,Published in Wave 1 cluster
-P020,ctet-passing-marks.html,/ctet/passing-marks/,CTET passing marks for OBC/SC/ST/PwD by employer,PUBLISHED,2026-10-03,S001;S021;S022;S023;S024,,,Published in Wave 1 cluster
-P021,ctet-passing-marks-for-obc.html,/ctet/ctet-passing-marks-for-obc/,CTET passing marks for OBC (old keyword page),RETIRED,,,/ctet/passing-marks/,Contains the wrong '82 = pass' claim; never publish; redirect if the URL was ever shared
-P022,ktet-cat-2-pass-mark-ethra.html,/ktet/ktet-cat-2-pass-mark-ethra/,KTET Category 1 2 3 pass mark ethra? Official Kerala Pareeksha Bhavan cutoff,PUBLISHED,2026-10-03,S006;S025;S030,,,Official Pareeksha Bhavan pass mark cutoff guide with Malayalam FAQ and EasyKTET app link
-P023,,/ctet/ctet-valid-for-bihar-bpsc-tre/,Is CTET valid for Bihar BPSC TRE 4.0?,RETIRED,,,/ctet/passing-marks/,Deleted draft; fully answered in /ctet/passing-marks/
+page_id,file,url,title,status,last_verified,source_ids,redirect_to,notes,
+P000,,/,Home page,PUBLISHED,2026-10-03,S001,,,['Live home page on easyctet.com (EasyCTET-Branding/website/index.html)']
+P001,ctet/index.html,/ctet/,CTET hub page,PUBLISHED,2026-10-03,S001;S002;S021;S025,,,['CTET hub cornerstone page; published in Wave 1 cluster']
+P010,compare-all-tets.html,/compare-all-tets.html,Is CTET preparation enough for your state TET?,PUBLISHED,2026-10-03,S001;S002;S003;S004;S005;S006;S008;S011;S015;S021;S025;S026;S027;S028;S029,,,['Published in Wave 1 cluster']
+P011,ctet-vs-ktet.html,/ctet-vs-ktet.html,CTET vs KTET syllabus comparison,PUBLISHED,2026-10-03,S001;S002;S003;S004;S005;S006;S025;S030,,,['Published in Wave 1 cluster']
+P020,ctet-passing-marks.html,/ctet/passing-marks/,CTET passing marks for OBC/SC/ST/PwD by employer,PUBLISHED,2026-10-03,S001;S021;S022;S023;S024,,,['Published in Wave 1 cluster']
+P021,ctet-passing-marks-for-obc.html,/ctet/ctet-passing-marks-for-obc/,CTET passing marks for OBC (old keyword page),RETIRED,,,/ctet/passing-marks/,Contains the wrong '82 = pass' claim; never publish; redirect if the URL was ever shared,
+P022,ktet-cat-2-pass-mark-ethra.html,/ktet/ktet-cat-2-pass-mark-ethra/,KTET Category 1 2 3 pass mark ethra? Official Kerala Pareeksha Bhavan cutoff,PUBLISHED,2026-10-03,S006;S025;S030,,"Corrected 2026-10-03 (pass-mark source p.16, validity via PIB, Cat 4, re-sit rule, FAQ schema); redeploy needed",['Official Pareeksha Bhavan pass mark cutoff guide with Malayalam FAQ and EasyKTET app link']
+P023,,/ctet/ctet-valid-for-bihar-bpsc-tre/,Is CTET valid for Bihar BPSC TRE 4.0?,RETIRED,,,/ctet/passing-marks/,Deleted draft; fully answered in /ctet/passing-marks/,
 P024,is-b-ed-eligible-for-ctet-paper-1.html,/ctet/is-b-ed-eligible-for-ctet-paper-1/,Is B.Ed eligible for CTET Paper 1?,PUBLISHED,2026-10-03,S001;S002;S031,,,Definitive guide to Supreme Court Devesh Sharma ruling and Paper 2 eligibility
-X001,,https://play.google.com/store/apps/details?id=com.easyctet.app,EasyCTET on Google Play,PLANNED,,,,External: Coming soon on Google Play; direct links disabled across drafts until public release
+P025,kerala-psc-lpst-upst-ktet-ctet-qualification.html,/ktet/kerala-psc-lpst-upst-qualification/,Kerala PSC LPST & UPST Qualification: KTET vs CTET Rules (G.O. 6/2024 Guide),PUBLISHED,2026-10-03,S001;S006;S025;S030;S031,,,Official Kerala PSC qualification guide explaining G.O.(P) No. 6/2024 CTET equivalency and EasyKTET app link
+X001,,https://play.google.com/store/apps/details?id=com.easyctet.app,EasyCTET on Google Play,PLANNED,,,,External: Coming soon on Google Play; direct links disabled across drafts until public release,
 X002,,https://play.google.com/store/apps/details?id=com.easyktet.app,EasyKTET on Google Play,PUBLISHED,2026-10-03,S025,,,External: EasyKTET Android application on Google Play Store
