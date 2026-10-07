@@ -248,69 +248,101 @@
     <div class="section-head">
       <span class="tag">Transparent Google Play Pricing</span>
       <h2>One-Time Purchase. Lifetime Access. Zero Subscriptions.</h2>
-      <p class="center">All purchases are processed securely through Google Play. Pick the license that fits your exam target.</p>
+      <p class="center">All purchases are processed securely through Google Play. Select your exam to view plan features.</p>
     </div>
 
-    <div class="pricing-grid-4">
+    <!-- Exam Switcher Toggle Tabs -->
+    <div class="exam-toggle-wrap" role="tablist" aria-label="Exam Selection">
+      <button class="exam-tab-btn active" id="tabBtnCtet" onclick="switchExamTab('ctet')" role="tab" aria-selected="true">
+        🇮🇳 CTET (All-India)
+      </button>
+      <button class="exam-tab-btn" id="tabBtnKtet" onclick="switchExamTab('ktet')" role="tab" aria-selected="false">
+        🌴 KTET (Kerala)
+      </button>
+    </div>
+
+    <!-- CTET Pricing Panel (Active by default) -->
+    <div class="pricing-panel active" id="pricingPanelCtet">
+      <!-- Card 1: Free Trial -->
       <div class="price-card">
-        <h3>Free Trial</h3>
-        <p class="card-subtitle">Explore before you buy</p>
-        <div class="price-row"><span class="price-new">₹0</span></div>
-        <p class="price-code">No credit card or login needed</p>
-        <ul>
-          <li>Sample practice sets across subjects</li>
-          <li>7 free preview audio masterclasses</li>
-          <li>Introductory study guides</li>
-          <li>Master CTET Glossary (691 terms)</li>
-        </ul>
+        <div>
+          <h3>Free Trial</h3>
+          <p class="card-subtitle">Explore before you buy</p>
+          <div class="lang-badge">🌐 Dual Language Default: English &amp; Hindi</div>
+          <div class="price-row"><span class="price-new">₹0</span></div>
+          <p class="price-code">No credit card or login needed</p>
+          <ul>
+            <li>Sample practice sets across all subjects</li>
+            <li>7 free preview audio masterclasses</li>
+            <li>Introductory pedagogical study guides</li>
+            <li>Master CTET Bilingual Glossary (691 terms)</li>
+            <li>100% offline practice · Zero data telemetry</li>
+          </ul>
+        </div>
+        <a href="sample-test.html" class="btn btn-ghost">Try Web Sample Test</a>
       </div>
 
-      <div class="price-card">
-        <h3>Paper 1 Pro</h3>
-        <p class="card-subtitle">Primary Teachers (Classes I–V)</p>
-        <div class="price-row"><span class="price-new">Pro Pass</span></div>
-        <p class="price-code">One-time Google Play purchase</p>
-        <ul>
-          <li>Full 750 questions (25 sets)</li>
-          <li>All 5 Paper 1 subjects (CDP, Math, EVS, Eng, Hin)</li>
-          <li>25 Paper 1 Audio Masterclasses</li>
-          <li>Full 150-Q Timed Mock Simulator</li>
-          <li>100% offline access forever</li>
-        </ul>
-      </div>
-
-      <div class="price-card">
-        <h3>Paper 2 Pro</h3>
-        <p class="card-subtitle">Upper Primary (Classes VI–VIII)</p>
-        <div class="price-row"><span class="price-new">Pro Pass</span></div>
-        <p class="price-code">One-time Google Play purchase</p>
-        <ul>
-          <li>Full 1,050 questions (35 sets)</li>
-          <li>Stream A (Math/Sci) &amp; Stream B (SST)</li>
-          <li>28 P2 Audio + 25 Foundational P1 Audio</li>
-          <li>Full 150-Q Timed Mock Simulator</li>
-          <li>100% offline access forever</li>
-        </ul>
-      </div>
-
+      <!-- Card 2: Complete Lifetime Pass -->
       <div class="price-card pro">
-        <h3>Combo Pass</h3>
-        <p class="card-subtitle">★ Best Value • Both Papers</p>
-        <div class="price-row"><span class="price-new">Combo Pass</span></div>
-        <p class="price-code">Complete dual-paper preparation</p>
-        <ul>
-          <li>All 1,800 questions across 60 sets</li>
-          <li>Paper 1 + Paper 2 (Stream A &amp; B)</li>
-          <li>All 53 Studio Audio Masterclasses</li>
-          <li>Both 150-Q Mock Exam Blueprints</li>
-          <li>Lifetime multi-paper access</li>
-        </ul>
+        <div>
+          <h3>Complete Lifetime Pass</h3>
+          <p class="card-subtitle">Paper 1 &amp; Paper 2 • Full Syllabus Mastery</p>
+          <div class="lang-badge">🌐 Dual Language Default: English &amp; Hindi</div>
+          <div class="price-row"><span class="price-new">₹950</span></div>
+          <p class="price-code">One-time Google Play purchase · Lifetime access</p>
+          <ul>
+            <li><strong>All 1,800 questions</strong> across 60 chapter-wise sets</li>
+            <li><strong>Complete Dual-Paper:</strong> Paper 1 (Primary I–V) &amp; Paper 2 (Maths/Sci &amp; Social Studies)</li>
+            <li><strong>All 53 Studio Audio Masterclasses</strong> for screen-free commute study</li>
+            <li><strong>Full 150-Q Timed Mock Simulator</strong> with detailed pedagogical rationales</li>
+            <li><strong>100% Offline Mode Forever:</strong> Works in flight mode with no internet</li>
+            <li>Zero advertisements, zero subscriptions, zero spam calls</li>
+          </ul>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.easyctet.app" class="btn btn-primary" target="_blank" rel="noopener">Get EasyCTET on Google Play</a>
       </div>
     </div>
 
-    <div class="propass-callout" style="margin-top: 16px;">
-      <span><strong>Already have a single paper pass?</strong> Upgrade to the All-in-One Combo Pass anytime in-app by paying only the ₹500 Step-Up difference!</span>
-      <a href="https://play.google.com/store/apps/details?id=com.easyctet.app" class="btn btn-ghost compact-btn" target="_blank" rel="noopener">Get EasyCTET on Google Play</a>
+    <!-- KTET Pricing Panel -->
+    <div class="pricing-panel" id="pricingPanelKtet">
+      <!-- Card 1: Free Trial -->
+      <div class="price-card">
+        <div>
+          <h3>Free Trial</h3>
+          <p class="card-subtitle">Explore before you buy</p>
+          <div class="lang-badge">🌐 Dual Language Default: Malayalam &amp; English</div>
+          <div class="price-row"><span class="price-new">₹0</span></div>
+          <p class="price-code">No credit card or login needed</p>
+          <ul>
+            <li>Sample Category 1 &amp; Category 2 mock practice sets</li>
+            <li>Preview Category 3 Adolescent Psychology questions</li>
+            <li>Kerala Pareeksha Bhavan syllabus orientation</li>
+            <li>Instant Malayalam &amp; English answer explanations</li>
+            <li>100% offline practice · Zero data telemetry</li>
+          </ul>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.easyktet.app" class="btn btn-ghost" target="_blank" rel="noopener">Try EasyKTET Free</a>
+      </div>
+
+      <!-- Card 2: Complete Lifetime Pass -->
+      <div class="price-card pro">
+        <div>
+          <h3>Complete Lifetime Pass</h3>
+          <p class="card-subtitle">Categories 1, 2 &amp; 3 • Complete Kerala Syllabus</p>
+          <div class="lang-badge">🌐 Dual Language Default: Malayalam &amp; English</div>
+          <div class="price-row"><span class="price-new">₹950</span></div>
+          <p class="price-code">One-time Google Play purchase · Lifetime access</p>
+          <ul>
+            <li><strong>Complete Category 1 (LPST) &amp; Category 2 (UPST)</strong> coverage across all subjects</li>
+            <li><strong>Category 3:</strong> Adolescent Psychology, Learning Theories &amp; Teaching Aptitude (40 marks)</li>
+            <li><strong>Previous Year Question Papers (PYQs)</strong> with detailed Malayalam rationales</li>
+            <li><strong>Full 150-Q Timed Mock Simulator</strong> with instant scorecard &amp; accuracy analysis</li>
+            <li><strong>100% Offline Mode Forever:</strong> Practice anywhere without an internet connection</li>
+            <li>Zero advertisements, zero subscriptions, zero spam calls</li>
+          </ul>
+        </div>
+        <a href="https://play.google.com/store/apps/details?id=com.easyktet.app" class="btn btn-primary" target="_blank" rel="noopener">Get EasyKTET on Google Play</a>
+      </div>
     </div>
   </div>
 </section>
@@ -344,7 +376,7 @@
     <p class="faq-category">Pricing, Licenses &amp; Google Play Billing</p>
     <div class="faq-item">
       <div class="faq-q"><span>How much does EasyCTET cost?</span><span class="plus">+</span></div>
-      <div class="faq-a">EasyCTET operates on a transparent, one-time lifetime purchase model with zero recurring monthly or annual subscriptions. All prices and promotional discounts are configured directly in Google Play Console. Once purchased, your license is permanently linked to your Google Account.</div>
+      <div class="faq-a">EasyCTET operates on a transparent, single one-time lifetime purchase model with zero recurring monthly or annual subscriptions. You can start completely free with our <strong>₹0 Free Trial</strong> to practice sample test sets, study guides, and preview masterclasses. Full curriculum mastery is unlocked through our <strong>Complete Lifetime Pass for ₹950</strong> (one-time Google Play purchase), giving permanent offline access to all 1,800 questions, Paper 1, Paper 2, and 53 audio masterclasses. <strong>Dual language is included by default in all tiers</strong> (English &amp; Hindi for EasyCTET; Malayalam &amp; English for EasyKTET). Once purchased, your pass is permanently tied to your Google Account for life.</div>
     </div>
     <div class="faq-item">
       <div class="faq-q"><span>What does the free trial tier include?</span><span class="plus">+</span></div>

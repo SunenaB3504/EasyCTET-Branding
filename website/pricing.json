@@ -1,36 +1,52 @@
 {
   "currency": "INR",
-  "billingProvider": "Google Play Billing v7",
-  "paymentModel": "One-time lifetime purchase (Zero subscriptions)",
-  "tiers": {
-    "freeTrial": {
-      "price": 0,
-      "formattedPrice": "₹0",
-      "description": "Sample test sets, summary study guides, 7 preview audio masterclasses"
+  "billingProvider": "Google Play Billing",
+  "paymentModel": "One-time lifetime purchase (Zero recurring subscriptions)",
+  "defaultLanguagePolicy": "Dual Language Default across all tiers",
+  "apps": {
+    "easyctet": {
+      "appId": "com.easyctet.app",
+      "exam": "CTET (Central Teacher Eligibility Test)",
+      "target": "Paper 1 & Paper 2 (All-India)",
+      "defaultLanguage": "Bilingual: English & Hindi",
+      "tiers": {
+        "freeTrial": {
+          "price": 0,
+          "formattedPrice": "₹0",
+          "title": "Free Trial",
+          "description": "Sample practice sets across all subjects, 7 preview audio masterclasses, introductory guides, 691-term bilingual glossary"
+        },
+        "lifetimePass": {
+          "sku": "easyctet_lifetime_pass",
+          "price": 950,
+          "formattedPrice": "₹950",
+          "title": "Complete Lifetime Pass",
+          "scope": "All-in-One Dual Paper: Paper 1 (Primary I–V) & Paper 2 (Maths/Sci & Social Studies), 1,800 Questions, 53 Studio Audio Masterclasses, 150-Q Timed Simulator, 100% Offline Forever",
+          "billing": "One-time Google Play purchase · Lifetime access"
+        }
+      }
     },
-    "paper1_pro_pass": {
-      "sku": "easyctet_p1_pro_pass",
-      "title": "Paper 1 Pro Pass",
-      "scope": "Primary Classes I–V (750 Qs, 25 Practice Sets, 25 Audio Masterclasses, Full 150-Q Mock)",
-      "billing": "One-time lifetime access"
-    },
-    "paper2_pro_pass": {
-      "sku": "easyctet_p2_pro_pass",
-      "title": "Paper 2 Pro Pass",
-      "scope": "Upper Primary Classes VI–VIII (1,050 Qs, Stream A & B, 28 Audio Masterclasses + 25 Foundational P1 Audio, Full 150-Q Mock)",
-      "billing": "One-time lifetime access"
-    },
-    "combo_pro_pass": {
-      "sku": "easyctet_combo_pro_pass",
-      "title": "All-in-One Combo Pass",
-      "scope": "Both Paper 1 & Paper 2 (1,800 Qs, 60 Sets, All 53 Audio Masterclasses, Both 150-Q Mock Blueprints)",
-      "billing": "One-time lifetime access"
-    },
-    "combo_upgrade": {
-      "sku": "easyctet_combo_stepup_upgrade",
-      "title": "Combo Step-Up Upgrade",
-      "scope": "Upgrade single-paper pass to full Combo Pass",
-      "billing": "One-time upgrade difference"
+    "easyktet": {
+      "appId": "com.easyktet.app",
+      "exam": "KTET (Kerala Teacher Eligibility Test)",
+      "target": "Category 1, Category 2 & Category 3 (Kerala Pareeksha Bhavan)",
+      "defaultLanguage": "Bilingual: Malayalam & English",
+      "tiers": {
+        "freeTrial": {
+          "price": 0,
+          "formattedPrice": "₹0",
+          "title": "Free Trial",
+          "description": "Category 1 & Category 2 sample tests, Category 3 psychology questions, syllabus orientation"
+        },
+        "lifetimePass": {
+          "sku": "easyktet_lifetime_pass",
+          "price": 950,
+          "formattedPrice": "₹950",
+          "title": "Complete Lifetime Pass",
+          "scope": "Category 1 (LPST), Category 2 (UPST), and Category 3 (High School CDP/Adolescent Psychology), PYQ vault with Malayalam rationales, 150-Q Timed Simulator, 100% Offline Forever",
+          "billing": "One-time Google Play purchase · Lifetime access"
+        }
+      }
     }
   }
 }

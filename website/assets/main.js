@@ -99,3 +99,25 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   }
 });
+
+// ---- Pricing Exam Switcher (CTET vs KTET) ----
+window.switchExamTab = function(tabName) {
+  const ctetBtn = document.getElementById("tabBtnCtet");
+  const ktetBtn = document.getElementById("tabBtnKtet");
+  const ctetPanel = document.getElementById("pricingPanelCtet");
+  const ktetPanel = document.getElementById("pricingPanelKtet");
+
+  if (!ctetBtn || !ktetBtn || !ctetPanel || !ktetPanel) return;
+
+  if (tabName === "ktet") {
+    ktetBtn.classList.add("active");
+    ctetBtn.classList.remove("active");
+    ktetPanel.classList.add("active");
+    ctetPanel.classList.remove("active");
+  } else {
+    ctetBtn.classList.add("active");
+    ktetBtn.classList.remove("active");
+    ctetPanel.classList.add("active");
+    ctetPanel.classList.remove("active");
+  }
+};
