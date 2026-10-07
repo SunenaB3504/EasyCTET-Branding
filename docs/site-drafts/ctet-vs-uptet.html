@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CTET vs UPTET Syllabus Comparison (2026): What Overlaps &amp; Super TET Rules — EasyCTET</title>
+  <meta name="description" content="Topic-by-topic comparison of CTET vs UPTET: 80% Paper 1 syllabus overlap, Hindi grammar differences, UP Super TET validity rules, and official UPESSC cutoff marks.">
+  <link rel="canonical" href="https://easyctet.com/ctet-vs-uptet.html">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1c1c1e;
+      --mut: #5b6068;
+      --line: #dde1e6;
+      --soft: #f4f5f7;
+      --acc: #0b57d0;
+      --acc-hover: #0842a0;
+      --on-acc: #ffffff;
+      --ok: #dafbe1;
+      --ok-fg: #1a7f37;
+      --warn: #fff8c5;
+      --warn-fg: #9a6700;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16181c;
+        --fg: #ececee;
+        --mut: #a3a8b0;
+        --line: #363a41;
+        --soft: #23262b;
+        --acc: #8ab4f8;
+        --acc-hover: #aecbfa;
+        --on-acc: #0b1e3f;
+        --ok: #1e3d29;
+        --ok-fg: #b2e5c1;
+        --warn: #3b2e04;
+        --warn-fg: #f3cf65;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    a { color: var(--acc); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    header.site {
+      border-bottom: 1px solid var(--line);
+    }
+    header.site div {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header.site .brand {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--fg);
+      text-decoration: none;
+    }
+    header.site .back-home {
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--acc);
+      text-decoration: none;
+      padding: 5px 12px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--soft);
+      transition: background 0.15s;
+    }
+    header.site .back-home:hover {
+      text-decoration: none;
+      filter: brightness(0.95);
+    }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 16px 80px;
+    }
+    nav.breadcrumbs {
+      font-size: 0.88rem;
+      color: var(--mut);
+      margin-bottom: 16px;
+    }
+    nav.breadcrumbs a { color: var(--mut); text-decoration: none; }
+    nav.breadcrumbs a:hover { color: var(--acc); text-decoration: underline; }
+    h1 {
+      font-size: 1.85rem;
+      line-height: 1.3;
+      margin: 8px 0 14px;
+      color: var(--fg);
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      line-height: 1.35;
+    }
+    h3 {
+      font-size: 1.1rem;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+    .byline {
+      font-size: 0.88rem;
+      color: var(--mut);
+      margin: 0 0 20px;
+    }
+    .lead-box {
+      font-size: 1.05rem;
+      border-left: 4px solid var(--acc);
+      padding: 14px 18px;
+      background: var(--soft);
+      border-radius: 0 8px 8px 0;
+      margin: 16px 0 24px;
+    }
+    .lead-box p { margin: 0 0 8px; }
+    .lead-box p:last-child { margin: 0; }
+    .hinglish-lead {
+      font-size: 1.02rem;
+      line-height: 1.65;
+      color: var(--fg);
+    }
+    
+    .scroll-table {
+      overflow-x: auto;
+      margin: 20px 0 28px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 640px;
+      font-size: 0.92rem;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+    thead th {
+      background: var(--soft);
+      font-weight: 700;
+    }
+    
+    .badge {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .badge-ok { background: var(--ok); color: var(--ok-fg); }
+    .badge-warn { background: var(--warn); color: var(--warn-fg); }
+
+    .callout {
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .callout p { margin: 0 0 10px; }
+    .callout p:last-child { margin: 0; }
+
+    /* 150-mark breakdown bar */
+    .bar-title { font-weight: 700; margin: 18px 0 6px; font-size: 0.98rem; }
+    .bar {
+      display: flex;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 8px;
+      height: 38px;
+    }
+    .blk {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.75rem;
+      padding: 2px 4px;
+      text-align: center;
+      border-right: 1px solid var(--line);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .blk:last-child { border-right: none; }
+    .blk b { font-size: 0.76rem; }
+    .blk span { font-size: 0.68rem; opacity: 0.85; }
+    .s-cov { background: #dafbe1; color: #1a7f37; }
+    .s-par { background: #fff8c5; color: #9a6700; }
+    .s-add { background: #ffebe9; color: #cf222e; }
+    @media (prefers-color-scheme: dark) {
+      .s-cov { background: #1e3d29; color: #b2e5c1; }
+      .s-par { background: #3b2e04; color: #f3cf65; }
+      .s-add { background: #4c1d1d; color: #ff8182; }
+    }
+    .mline { font-size: 0.88rem; color: var(--mut); margin: 4px 0 20px; }
+
+    .dual-apps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 32px 0 40px;
+    }
+    .app-box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      background: var(--bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .app-box h3 { margin: 0 0 8px; font-size: 1.25rem; }
+    .app-box p { font-size: 0.92rem; color: var(--mut); margin: 0 0 16px; flex-grow: 1; }
+    .app-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--acc);
+      margin-bottom: 6px;
+    }
+    .app-action { margin-top: 12px; }
+    .cta-btn {
+      display: inline-block;
+      width: 100%;
+      text-align: center;
+      background: var(--acc);
+      color: var(--on-acc);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 11px 16px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.15s ease;
+    }
+    .cta-btn:hover { background: var(--acc-hover); text-decoration: none; }
+    .cta-btn.coming-soon {
+      background: var(--soft);
+      color: var(--mut);
+      border: 1px solid var(--line);
+      cursor: default;
+    }
+    .app-perks {
+      margin-top: 14px;
+      font-size: 0.82rem;
+      color: var(--mut);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    details.faq-item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin-bottom: 12px;
+      padding: 12px 16px;
+      background: var(--bg);
+    }
+    details.faq-item summary {
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--fg);
+      outline: none;
+    }
+    details.faq-item p {
+      margin: 10px 0 0;
+      font-size: 0.95rem;
+      color: var(--mut);
+      line-height: 1.6;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      font-size: 0.88rem;
+      color: var(--mut);
+    }
+    footer ul { padding-left: 20px; }
+  </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "CTET vs UPTET Syllabus Comparison (2026): What Overlaps & Super TET Rules",
+      "description": "Exhaustive syllabus mapping between CTET and UPTET: 80% Paper 1 overlap, Hindi grammar differences, UP Super TET eligibility, and pass mark cutoff rules.",
+      "url": "https://easyctet.com/ctet-vs-uptet.html",
+      "datePublished": "2026-10-03",
+      "dateModified": "2026-10-03",
+      "author": { "@type": "Organization", "name": "EasyCTET Research Team" },
+      "publisher": { "@type": "Organization", "name": "EasyCTET", "url": "https://easyctet.com/" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://easyctet.com/" },
+        { "@type": "ListItem", "position": 2, "name": "TET Comparisons", "item": "https://easyctet.com/compare-all-tets.html" },
+        { "@type": "ListItem", "position": 3, "name": "CTET vs UPTET", "item": "https://easyctet.com/ctet-vs-uptet.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "क्या CTET पास करने के बाद UPTET देना जरूरी है?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "नहीं। उत्तर प्रदेश शिक्षा सेवा चयन आयोग (UPESSC) के सहायक अध्यापक (प्राइमरी सुपर टीईटी) भर्ती नियमों (Advt. No. 05/2026, Clause 7) के तहत केंद्र सरकार द्वारा आयोजित CTET और राज्य सरकार द्वारा आयोजित UPTET दोनों समान रूप से मान्य हैं। यदि आपने CTET Paper 1 पास कर लिया है, तो आप सीधे सुपर टीईटी के लिए पात्र हैं।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "CTET और UPTET के सिलेबस में मुख्य अंतर क्या है?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "मुख्य अंतर व्याकरण (Grammar) और बाल विकास (CDP) के सिद्धांतों में है। CTET में पेडागॉजी (शिक्षण शास्त्र) और अपठित गद्यांश प्रमुख होते हैं, जबकि UPTET में शुद्ध हिंदी व्याकरण (संधि, समास, अलंकार, रस, छंद, कवियों की रचनाएं) और अंग्रेजी व्याकरण के सीधे प्रश्न पूछे जाते हैं। साथ ही UPTET में थार्नडाइक, पावलव और स्किनर जैसे अधिगम सिद्धांतकारों पर विशेष जोर रहता है।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "UPTET में पासिंग मार्क्स कितने होते हैं?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "UPTET में कुल 150 अंकों में से सामान्य (General) वर्ग के लिए 60% (90 अंक) और OBC, SC, ST, PwD वर्ग के लिए 55% (82 अंक) क्वालिफाइंग मार्क निर्धारित हैं।"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "क्या B.Ed वाले UP Primary Teacher (सुपर टीईटी) के लिए पात्र हैं?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "नहीं। सुप्रीम कोर्ट के देवेश शर्मा बनाम भारत संघ फैसले के बाद उत्तर प्रदेश में प्राथमिक विद्यालयों (कक्षा 1 से 5) में शिक्षक बनने के लिए केवल D.El.Ed / BTC धारक ही पात्र हैं। B.Ed डिग्री धारक केवल उच्च प्राथमिक (UPTET Paper 2 / Junior) और टीजीटी पदों के लिए पात्र हैं।"
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+
+<header class="site">
+  <div>
+    <a class="brand" href="/">EasyCTET</a>
+    <a class="back-home" href="/">← Back to Home</a>
+  </div>
+</header>
+
+<main>
+  <nav class="breadcrumbs">
+    <a href="/">Home</a> &rsaquo;
+    <a href="/compare-all-tets.html">TET Comparisons</a> &rsaquo;
+    <span>CTET vs UPTET</span>
+  </nav>
+
+  <h1>CTET vs UPTET Syllabus Comparison: What Overlaps &amp; Super TET Rules</h1>
+  <p class="byline">Published: October 2026 &middot; Source: UPESSC UPTET Primary/Upper Primary Syllabi &amp; Advt. 05/2026 &middot; Verified by EasyCTET Research Team</p>
+
+  <div class="lead-box">
+    <p><strong>The Core Verdict:</strong> About <strong>80%</strong> of the CTET Paper 1 syllabus directly overlaps with UPTET Paper 1 (63 out of 79 topics match or are closely similar). For Paper 2, the overlap is <strong>76%</strong> (94 of 124 topics across streams). If you prepare for CTET, your core pedagogy, mathematics, and EVS foundational concepts are thoroughly covered. What you <em>must add</em> for UPTET is heavy, explicit Hindi and English grammar, classic learning theorists (Thorndike, Pavlov, Skinner), and UP state administration.</p>
+    <p class="hinglish-lead"><strong>संक्षेप में:</strong> अगर आप CTET की तैयारी कर रहे हैं, तो UPTET का 80% पाठ्यक्रम पहले से कवर हो जाता है। आपको केवल व्याकरण (संधि, समास, रस, छंद, अलंकार), अधिगम के शास्त्रीय सिद्धांत, और उत्तर प्रदेश सामान्य ज्ञान को अतिरिक्त रूप से पढ़ना होगा।</p>
+  </div>
+
+  <h2>Exam Facts Side-by-Side (CTET vs UPTET 2026)</h2>
+  <div class="scroll-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>CTET (Central)</th>
+          <th>UPTET (Uttar Pradesh)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Conducting Body</strong></td>
+          <td>Central Board of Secondary Education (CBSE)</td>
+          <td>UP Education Service Selection Commission (UPESSC)</td>
+        </tr>
+        <tr>
+          <td><strong>Papers Conducted</strong></td>
+          <td>Paper 1 (Classes 1–5), Paper 2 (Classes 6–8)</td>
+          <td>Paper 1 (Classes 1–5), Paper 2 (Classes 6–8)</td>
+        </tr>
+        <tr>
+          <td><strong>Total Questions &amp; Marks</strong></td>
+          <td>150 MCQs &middot; 150 Marks</td>
+          <td>150 MCQs &middot; 150 Marks</td>
+        </tr>
+        <tr>
+          <td><strong>Exam Duration</strong></td>
+          <td>150 Minutes (2 hours 30 mins)</td>
+          <td>150 Minutes (2 hours 30 mins)</td>
+        </tr>
+        <tr>
+          <td><strong>Negative Marking</strong></td>
+          <td><span class="badge badge-ok">No</span> (1 mark per correct answer)</td>
+          <td><span class="badge badge-ok">No</span> (1 mark per correct answer)</td>
+        </tr>
+        <tr>
+          <td><strong>Pedagogy vs Grammar Ratio</strong></td>
+          <td>Heavy Pedagogy (90/150 marks are pedagogical)</td>
+          <td>Heavy Grammar &amp; Theory (Factual recall &amp; rules)</td>
+        </tr>
+        <tr>
+          <td><strong>Qualifying Marks</strong></td>
+          <td>General: 60% (90 marks)<br>Reserved relaxations per employer policy: <a href="/ctet/passing-marks/">CTET Passing Marks Guide</a></td>
+          <td>General: 60% (90 marks)<br>OBC / SC / ST / PwD: 55% (82 marks)</td>
+        </tr>
+        <tr>
+          <td><strong>Certificate Validity</strong></td>
+          <td>Lifetime (per NCTE Notification 09.06.2021)</td>
+          <td>Lifetime (retrospective from 2011)</td>
+        </tr>
+        <tr>
+          <td><strong>Validity for UP Super TET</strong></td>
+          <td><span class="badge badge-ok">Fully Valid</span> (Accepted per Clause 7)</td>
+          <td><span class="badge badge-ok">Fully Valid</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Can You Apply for UP Super TET with CTET?</h2>
+  <p><strong>Yes, absolutely.</strong> Many Uttar Pradesh teaching aspirants worry whether they must clear UPTET specifically before sitting for the state's Assistant Teacher recruitment (commonly referred to as <em>UP Super TET</em>).</p>
+  
+  <div class="callout">
+    <p><strong>Official Statutory Position (UPESSC Advt. No. 05/2026, Clause 7):</strong></p>
+    <p>The recruitment rules for Assistant Teacher (Primary) in Uttar Pradesh specify that the candidate must have qualified in a Teacher Eligibility Test conducted by <strong>either the Government of Uttar Pradesh (UPTET) or the Government of India (CTET)</strong>.</p>
+    <p>If you have already scored qualifying marks in CTET Paper 1 (90 for General, 82 for UP OBC/SC/ST), you are 100% eligible to apply for UP Super TET without waiting for the next UPTET cycle.</p>
+  </div>
+
+  <h2>150-Mark Syllabus Breakdown</h2>
+  <p>Here is how your CTET preparation translates into marks across the five compulsory sections of UPTET:</p>
+
+  <div class="bar-title">UPTET Paper 1 (Primary: Classes 1–5) &mdash; 150 Marks</div>
+  <div class="bar">
+    <div class="blk s-par" style="flex:30 1 90px" title="Child Development & Pedagogy: Partly Covered (~75%)">
+      <b>Child Dev. &amp; Pedagogy</b>
+      <span>30 M &middot; Partly</span>
+    </div>
+    <div class="blk s-par" style="flex:30 1 90px" title="Language I (Hindi): Partly Covered (Pedagogy matches, add heavy grammar)">
+      <b>Language I (Hindi)</b>
+      <span>30 M &middot; Grammar Add-on</span>
+    </div>
+    <div class="blk s-add" style="flex:30 1 90px" title="Language II (English/Sanskrit/Urdu): Add-on needed for pure grammar">
+      <b>Language II</b>
+      <span>30 M &middot; Pure Grammar</span>
+    </div>
+    <div class="blk s-cov" style="flex:30 1 90px" title="Mathematics: Covered (~95%)">
+      <b>Mathematics</b>
+      <span>30 M &middot; Covered</span>
+    </div>
+    <div class="blk s-cov" style="flex:30 1 90px" title="Environmental Studies: Covered (~95%)">
+      <b>EVS</b>
+      <span>30 M &middot; Covered</span>
+    </div>
+  </div>
+  <p class="mline"><strong>60 marks</strong> in sections CTET covers thoroughly &middot; <strong>60 marks</strong> partly covered &middot; <strong>30 marks</strong> require explicit grammar add-ons.</p>
+
+  <div class="bar-title">UPTET Paper 2 (Upper Primary: Classes 6–8) &mdash; 150 Marks</div>
+  <div class="bar">
+    <div class="blk s-par" style="flex:30 1 90px" title="Child Development & Pedagogy: Partly Covered (~75%)">
+      <b>Child Dev. &amp; Pedagogy</b>
+      <span>30 M &middot; Partly</span>
+    </div>
+    <div class="blk s-par" style="flex:30 1 90px" title="Language I (Hindi): Partly Covered">
+      <b>Language I (Hindi)</b>
+      <span>30 M &middot; Grammar Add-on</span>
+    </div>
+    <div class="blk s-add" style="flex:30 1 90px" title="Language II: Pure Grammar">
+      <b>Language II</b>
+      <span>30 M &middot; Pure Grammar</span>
+    </div>
+    <div class="blk s-cov" style="flex:60 1 180px" title="Maths & Science OR Social Studies: Covered (~95%)">
+      <b>Maths &amp; Science / Social Studies</b>
+      <span>60 M &middot; Covered Thoroughly</span>
+    </div>
+  </div>
+  <p class="mline"><strong>60 marks</strong> in subject streams covered thoroughly &middot; <strong>60 marks</strong> partly covered &middot; <strong>30 marks</strong> require grammar add-ons.</p>
+
+  <h2>Subject-by-Subject Overlap Analysis</h2>
+
+  <h3>1. Child Development &amp; Pedagogy (30 Marks) &mdash; 75% Overlap</h3>
+  <p>The core conceptual framework of child growth, heredity, environment, and inclusive education is identical. However, UPTET places greater emphasis on rote theoretical definitions and named psychologists:</p>
+  <ul>
+    <li><strong>Common to both:</strong> Piaget, Kohlberg, Vygotsky, inclusive education for children with special needs (CWSN), learning factors, and motivation.</li>
+    <li><strong>What UPTET adds:</strong> Detailed questions on <strong>Thorndike's Connectionism</strong> (Trial and Error theory &amp; laws of learning), <strong>Pavlov's Classical Conditioning</strong>, <strong>Skinner's Operant Conditioning</strong>, and <strong>Kohler's Insight Learning</strong>. You must memorize specific experimental animals, reinforcement schedules, and learning curve types.</li>
+  </ul>
+
+  <h3>2. Language I: Hindi (30 Marks) &mdash; High Contrast</h3>
+  <p>This is where CTET and UPTET diverge the most:</p>
+  <ul>
+    <li><strong>In CTET:</strong> 15 marks are based on unseen comprehension prose/poetry, and 15 marks test language teaching methodology (LSRW skills, multilingualism, error analysis). Explicit grammar is rarely tested beyond basic contextual word meanings.</li>
+    <li><strong>In UPTET:</strong> Hindi is heavily grammar-driven. You must prepare <em>Varnamala</em> (swar, vyanjan, uccharan sthan), <em>Sandhi</em> (Swar, Vyanjan, Visarga), <em>Samas</em>, <em>Alankar</em>, <em>Ras</em>, <em>Chhand</em>, <em>Tatsam/Tadbhav</em>, idioms/proverbs (<em>Muhavare/Lokoktiyan</em>), and famous Hindi poets and their canonical works (<em>Kavi evam unki rachnayein</em>).</li>
+  </ul>
+
+  <h3>3. Language II: English / Sanskrit / Urdu (30 Marks)</h3>
+  <p>While CTET tests Language II through reading comprehension and 15 marks of pedagogy, the UPTET Language II syllabus lists content only:</p>
+  <ul>
+    <li>Parts of speech (Noun, Pronoun, Verb, Adverb, Preposition, Conjunction).</li>
+    <li>Active and Passive voice transformation.</li>
+    <li>Direct and Indirect speech (Narration).</li>
+    <li>Tenses, Articles, Punctuation, and Vocabulary (Synonyms, Antonyms, One-word substitution).</li>
+  </ul>
+
+  <h3>4. Mathematics (30 Marks in Paper 1; 60 in Paper 2 Stream) &mdash; 95% Overlap</h3>
+  <p>CTET mathematics preparation covers UPTET almost entirely. Number systems, basic operations, fractions, geometry, measurement, and data handling are common. In Paper 2, UPTET includes commercial mathematics (banking, simple &amp; compound interest, taxation) and basic probability, which require a quick formula review.</p>
+
+  <h3>5. Environmental Studies (30 Marks in Paper 1) &mdash; 95% Overlap</h3>
+  <p>The six NCERT themes (Family &amp; Friends, Food, Shelter, Water, Travel, Things We Make and Do) form the bulk of both exams. UPTET adds questions on Indian geography, Uttar Pradesh state geography, local fairs (<em>melas</em>), Panchayati Raj, and environmental conservation acts.</p>
+
+  <h2>B.Ed vs D.El.Ed Eligibility in Uttar Pradesh</h2>
+  <p>Following the Supreme Court of India's judgment in <em>Devesh Sharma v. Union of India</em> (Civil Appeal No. 5068/2023):</p>
+  <ul>
+    <li><strong>Primary Level (Classes 1–5):</strong> B.Ed graduates are <strong>completely disqualified</strong> from primary teacher recruitment in UP. Only 2-year Diploma in Elementary Education (D.El.Ed / BTC) holders can apply for Primary UPTET and Primary Super TET.</li>
+    <li><strong>Upper Primary Level (Classes 6–8):</strong> B.Ed degree holders remain eligible for UPTET Paper 2, Junior High School teacher posts, and UP TGT recruitment.</li>
+  </ul>
+  <p>For a detailed analysis of the Supreme Court ruling and transitional rules, read our <a href="/ctet/is-b-ed-eligible-for-ctet-paper-1/">Supreme Court B.Ed Eligibility Guide</a>.</p>
+
+  <h2>Practise Offline for Your Exam</h2>
+  <p>Prepare calmly without advertisements, internet distractions, or spam calls. Choose the dedicated application built for your exam:</p>
+
+  <div class="dual-apps">
+    <div class="app-box">
+      <div class="app-tag">For Central Schools &amp; All-India Eligibility</div>
+      <h3>EasyCTET</h3>
+      <p>Calibrated specifically for CTET Paper 1 and Paper 2. 1,800 calibrated questions, instant English/Hindi bilingual toggle, and 53 studio audio masterclasses for distraction-free commute practice. 100% offline with zero advertisements.</p>
+      <div class="app-action">
+        <span class="cta-btn coming-soon">Google Play (Coming Soon)</span>
+      </div>
+      <div class="app-perks">
+        <span>✓ 1,800 Calibrated Questions</span>
+        <span>✓ 100% Offline Practice</span>
+        <span>✓ Bilingual English / Hindi</span>
+      </div>
+    </div>
+
+    <div class="app-box">
+      <div class="app-tag">For Kerala Pareeksha Bhavan TET (Cat 1, 2 &amp; 3)</div>
+      <h3>EasyKTET</h3>
+      <p>Calibrated specifically for Kerala TET: full subject coverage for Category 1 and Category 2 (CDP, Languages, Maths, EVS, Science &amp; Social Studies), plus Adolescent Psychology &amp; Teaching Aptitude (CDP) for Category 3. 100% offline in Malayalam and English.</p>
+      <div class="app-action">
+        <a class="cta-btn" href="https://play.google.com/store/apps/details?id=com.easyktet.app&amp;referrer=utm_source%3Dweb%26utm_medium%3Dseo%26utm_campaign%3Dctet-vs-uptet" target="_blank" rel="noopener">Get EasyKTET on Google Play</a>
+      </div>
+      <div class="app-perks">
+        <span>✓ Cat 1 &amp; 2: All Subjects</span>
+        <span>✓ Cat 3: CDP &amp; Psychology</span>
+        <span>✓ 100% Offline &middot; Zero Ads</span>
+      </div>
+    </div>
+  </div>
+
+  <h2>Frequently Asked Questions</h2>
+  
+  <details class="faq-item">
+    <summary>क्या CTET पास करने के बाद UPTET देना जरूरी है?</summary>
+    <p>नहीं। उत्तर प्रदेश शिक्षा सेवा चयन आयोग (UPESSC) के सहायक अध्यापक (प्राइमरी सुपर टीईटी) भर्ती नियमों (Advt. No. 05/2026, Clause 7) के तहत केंद्र सरकार द्वारा आयोजित CTET और राज्य सरकार द्वारा आयोजित UPTET दोनों समान रूप से मान्य हैं। यदि आपने CTET Paper 1 पास कर लिया है, तो आप सीधे सुपर टीईटी के लिए पात्र हैं।</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>CTET और UPTET के सिलेबस में मुख्य अंतर क्या है?</summary>
+    <p>मुख्य अंतर व्याकरण (Grammar) और बाल विकास (CDP) के सिद्धांतों में है। CTET में पेडागॉजी (शिक्षण शास्त्र) और अपठित गद्यांश प्रमुख होते हैं, जबकि UPTET में शुद्ध हिंदी व्याकरण (संधि, समास, अलंकार, रस, छंद, कवियों की रचनाएं) और अंग्रेजी व्याकरण के सीधे प्रश्न पूछे जाते हैं। साथ ही UPTET में थार्नडाइक, पावलव और स्किनर जैसे अधिगम सिद्धांतकारों पर विशेष जोर रहता है।</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>UPTET में पासिंग मार्क्स कितने होते हैं?</summary>
+    <p>UPTET में कुल 150 अंकों में से सामान्य (General) वर्ग के लिए 60% (90 अंक) और OBC, SC, ST, PwD वर्ग के लिए 55% (82 अंक) क्वालिफाइंग मार्क निर्धारित हैं। विस्तृत विवरण के लिए देखें: <a href="/ctet/passing-marks/">CTET और TET पासिंग मार्क्स गाइड</a>।</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>क्या B.Ed वाले UP Primary Teacher (सुपर टीईटी) के लिए पात्र हैं?</summary>
+    <p>नहीं। सुप्रीम कोर्ट के देवेश शर्मा बनाम भारत संघ फैसले के बाद उत्तर प्रदेश में प्राथमिक विद्यालयों (कक्षा 1 से 5) में शिक्षक बनने के लिए केवल D.El.Ed / BTC धारक ही पात्र हैं। B.Ed डिग्री धारक केवल उच्च प्राथमिक (UPTET Paper 2 / Junior) और टीजीटी पदों के लिए पात्र हैं।</p>
+  </details>
+
+  <details class="faq-item">
+    <summary>Does CTET certificate have lifetime validity for UP recruitment?</summary>
+    <p>Yes. Per National Council for Teacher Education (NCTE) notification and Government of Uttar Pradesh orders, both CTET and UPTET certificates carry lifetime validity retrospective from 2011.</p>
+  </details>
+
+  <footer>
+    <p><strong>Official Statutory Citations:</strong></p>
+    <ul>
+      <li>Uttar Pradesh Education Service Selection Commission (UPESSC), <a href="https://upessc.up.gov.in/Notice/a429-726e-4862-f3dc-8a6f.pdf">Assistant Teacher (Primary) Selection Examination 2026, Advt. No. 05/2026</a> (Clause 7: CTET / UPTET validity).</li>
+      <li>UPESSC, Structure and Syllabus for UPTET (Primary Level: Classes I–V &amp; Upper Primary Level: Classes VI–VIII).</li>
+      <li>CBSE, <a href="https://cdnbbsr.s3waas.gov.in/s3443dec3062d0286986e21dc0631734c9/uploads/2026/05/202605111250310617.pdf">CTET September 2026 Information Bulletin</a>.</li>
+      <li>Supreme Court of India, Judgment in Devesh Sharma v. Union of India (Civil Appeal No. 5068/2023).</li>
+      <li>Ministry of Education, Government of India, <a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1723992">Extension of TET validity to lifetime</a> (PIB release, 3 June 2021).</li>
+    </ul>
+    <p class="byline">EasyCTET and EasyKTET are independent pedagogical preparation platforms.</p>
+  </footer>
+</main>
+
+</body>
+</html>

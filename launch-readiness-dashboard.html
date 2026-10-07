@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyCTET — App Launch Readiness & Status Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0a0e17;
+      --bg-surface: #121826;
+      --bg-card: #182234;
+      --bg-card-hover: #1e2b42;
+      --border-subtle: #24324a;
+      --border-accent: #3b82f6;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --brand-blue: #38bdf8;
+      --brand-accent: #6366f1;
+      --success: #10b981;
+      --success-glow: rgba(16, 185, 129, 0.2);
+      --warning: #f59e0b;
+      --warning-glow: rgba(245, 158, 11, 0.2);
+      --danger: #ef4444;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 24px;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header & Hero */
+    header {
+      background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 28px 32px;
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -10%;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .header-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .app-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .app-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #1e3a8a, #0284c7);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .app-package {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--brand-blue);
+      background: rgba(56, 189, 248, 0.1);
+      padding: 2px 8px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 4px;
+    }
+
+    /* Countdown Widget */
+    .countdown-widget {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 12px 20px;
+      text-align: right;
+    }
+
+    .countdown-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .countdown-timer {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #38bdf8;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .countdown-window {
+      font-size: 0.8rem;
+      color: var(--warning);
+      font-weight: 600;
+    }
+
+    /* Overall Progress Bar */
+    .progress-bar-container {
+      margin-top: 24px;
+      background: rgba(15, 23, 42, 0.6);
+      border-radius: 12px;
+      padding: 16px 20px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .progress-track {
+      height: 12px;
+      background: #1e293b;
+      border-radius: 999px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #3b82f6, #10b981);
+      width: 65%;
+      border-radius: 999px;
+      transition: width 0.4s ease;
+      box-shadow: 0 0 12px rgba(16, 185, 129, 0.5);
+    }
+
+    /* Grid Layout */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+
+    @media (max-width: 900px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-badge {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .badge-done {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .badge-pending {
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .badge-active {
+      background: rgba(56, 189, 248, 0.15);
+      color: #38bdf8;
+      border: 1px solid rgba(56, 189, 248, 0.3);
+    }
+
+    /* Checklist */
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    .check-item:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+
+    .check-item input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: 2px solid var(--text-dim);
+      border-radius: 6px;
+      background: transparent;
+      cursor: pointer;
+      margin-top: 2px;
+      position: relative;
+      flex-shrink: 0;
+      transition: all 0.2s;
+    }
+
+    .check-item input[type="checkbox"]:checked {
+      background: var(--success);
+      border-color: var(--success);
+    }
+
+    .check-item input[type="checkbox"]:checked::after {
+      content: '✓';
+      position: absolute;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 800;
+      left: 4px;
+      top: -1px;
+    }
+
+    .check-content {
+      flex: 1;
+    }
+
+    .check-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .check-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .check-item.completed .check-title {
+      text-decoration: line-through;
+      color: var(--text-dim);
+    }
+
+    /* Timeline Section */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      position: relative;
+      padding-left: 20px;
+      border-left: 2px solid var(--border-subtle);
+      margin-top: 8px;
+    }
+
+    .timeline-node {
+      position: relative;
+    }
+
+    .timeline-node::before {
+      content: '';
+      position: absolute;
+      left: -27px;
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--border-accent);
+      border: 2px solid var(--bg-primary);
+    }
+
+    .timeline-time {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--brand-blue);
+    }
+
+    .timeline-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    /* Copy Box */
+    .copy-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      margin-top: 12px;
+      position: relative;
+    }
+
+    .copy-text {
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      white-space: pre-wrap;
+      max-height: 140px;
+      overflow-y: auto;
+      font-family: inherit;
+    }
+
+    .copy-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #1e293b;
+      border: 1px solid var(--border-subtle);
+      color: var(--brand-blue);
+      padding: 4px 10px;
+      font-size: 0.75rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.2s;
+    }
+
+    .copy-btn:hover {
+      background: var(--brand-blue);
+      color: #0f172a;
+    }
+
+    /* Full Width Callout */
+    .callout {
+      background: linear-gradient(135deg, rgba(30, 58, 138, 0.3), rgba(15, 23, 42, 0.6));
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .callout-icon {
+      font-size: 32px;
+    }
+
+    .callout-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--brand-blue);
+    }
+
+    .callout-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 0;
+      color: var(--text-dim);
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Header & Live Counter -->
+    <header>
+      <div class="header-top">
+        <div class="app-meta">
+          <div class="app-icon">📚</div>
+          <div>
+            <h1>EasyCTET — Launch Readiness Dashboard</h1>
+            <span class="app-package">com.easyctet.app</span>
+          </div>
+        </div>
+
+        <div class="countdown-widget">
+          <div class="countdown-label">Target Launch Window</div>
+          <div class="countdown-window">Tomorrow: 11:45 AM – 12:30 PM IST</div>
+          <div class="countdown-timer" id="countdown">
+            ⏳ Calculating...
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Interactive Progress Bar -->
+      <div class="progress-bar-container">
+        <div class="progress-info">
+          <span>Overall Launch Preparedness</span>
+          <span id="progress-percent">0% Completed</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progress-bar"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Important Status Banner -->
+    <div class="callout">
+      <div class="callout-icon">💡</div>
+      <div>
+        <div class="callout-title">Payment & Production Status Notice</div>
+        <div class="callout-text">
+          Bank account details are <strong>not required</strong> to submit production access. Digital mock tests will use <strong>Google Play Native In-App Billing</strong> (Method 1: License Testing). Earnings accumulate securely in Google Payments in INR.
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Grid -->
+    <div class="dashboard-grid">
+
+      <!-- Column 1: Google Play Console Release Readiness -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">🚀 Google Play Console Status</div>
+          <span class="card-badge badge-active">Phase 1</span>
+        </div>
+        <ul class="checklist" id="list-console">
+          <li class="check-item completed">
+            <input type="checkbox" checked data-id="c1">
+            <div class="check-content">
+              <div class="check-title">Closed Testing 14-Day Cycle</div>
+              <div class="check-desc">12+ opted-in testers active for 14 continuous days (Achieved).</div>
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" data-id="c2">
+            <div class="check-content">
+              <div class="check-title">Submit "Apply for Production" Questionnaire</div>
+              <div class="check-desc">Fill out recruitment, tester feedback, and readiness answers in Play Console.</div>
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" data-id="c3">
+            <div class="check-content">
+              <div class="check-title">Enable Managed Publishing</div>
+              <div class="check-desc">Ensures the approved production release waits for your manual click at 11:45 AM.</div>
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" data-id="c4">
+            <div class="check-content">
+              <div class="check-title">Add License Tester for Free In-App Billing</div>
+              <div class="check-desc">Settings → License testing → Add your Gmail to verify zero-charge test card.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 2: App Technical & Quality Verification -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📱 App Build & User Flow Audit</div>
+          <span class="card-badge badge-active">Phase 2</span>
+        </div>
+        <ul class="checklist" id="list-app">
+          <li class="check-item">
+            <input type="checkbox" data-id="a1">
+            <div class="check-content">
+              <div class="check-title">100% Offline Mode Test</div>
+              <div class="check-desc">Verify 150-question mock test opens and scores smoothly in Flight Mode.</div>
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" data-id="a2">
+            <div class="check-content">
+              <div class="check-title">Zero Friction Onboarding</div>
+              <div class="check-desc">Confirm no phone number, OTP, or mandatory login walls disrupt first launch.</div>
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" data-id="a3">
+            <div class="check-content">
+              <div class="check-title">Test Purchase Retention</div>
+              <div class="check-desc">Simulate license purchase, close app completely, reopen to ensure content stays unlocked.</div>
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" data-id="a4">
+            <div class="check-content">
+              <div class="check-title">Android Vitals & Stability</div>
+              <div class="check-desc">Confirm 0% crash rate across Android 10, 11, 12, 13, and 14 devices.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Second Grid: Launch Day Timeline & Promotional Broadcasts -->
+    <div class="dashboard-grid">
+
+      <!-- Column 3: Launch Window Timeline -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">⏰ Launch Execution Window (Tomorrow)</div>
+          <span class="card-badge badge-pending">11:45 AM – 12:30 PM</span>
+        </div>
+        <div class="timeline">
+          <div class="timeline-node">
+            <div class="timeline-time">11:45 AM — GO LIVE</div>
+            <div class="timeline-desc">Release Managed Publishing batch. Verify public Play Store listing is accessible.</div>
+          </div>
+          <div class="timeline-node">
+            <div class="timeline-time">11:50 AM — TESTER 5-STAR REVIEWS</div>
+            <div class="timeline-desc">Notify existing 12+ testers to tap "Leave Beta" in Play Store and submit public 5-star reviews.</div>
+          </div>
+          <div class="timeline-node">
+            <div class="timeline-time">12:05 PM — COMMUNITY SEEDING</div>
+            <div class="timeline-desc">Distribute genuine, distraction-free messaging to CTET/KTET study WhatsApp & Telegram circles.</div>
+          </div>
+          <div class="timeline-node">
+            <div class="timeline-time">12:20 PM — DIGITAL ASSETS SYNC</div>
+            <div class="timeline-desc">Update website "Download on Google Play" button and post WhatsApp status flyer.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 4: Promotional Asset Copy Desk -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">📢 Ready-to-Send Promotional Broadcast</div>
+          <span class="card-badge badge-done">Copy Ready</span>
+        </div>
+
+        <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-bottom: 6px;">
+          WhatsApp / Telegram Malayalam Broadcast:
+        </div>
+        <div class="copy-box">
+          <button class="copy-btn" onclick="copyText('copy-malayalam')">Copy</button>
+          <pre class="copy-text" id="copy-malayalam">🎯 CTET / KTET പഠിക്കുന്ന കൂട്ടുകാരുടെ ശ്രദ്ധയ്ക്ക്!
+
+പരസ്യങ്ങളുടെ ശല്യമോ ഫോൺ വിളികളോ ഇല്ലാതെ, ഫുൾ ഓഫ്‍ലൈനായി പ്രാക്ടീസ് ചെയ്യാൻ ഒരു ആപ്പ്: EasyCTET ഇപ്പോൾ പ്ലേസ്റ്റോറിൽ ലഭ്യമാണ്.
+
+✨ എന്തുകൊണ്ട് EasyCTET?
+• 🚫 ഫോൺ നമ്പറോ ഒ.ടി.പിയോ ചോദിക്കുന്നില്ല.
+• ✈️ ഫ്ലൈറ്റ് മോഡിലിട്ടാലും (100% Offline) തടസ്സമില്ലാതെ വർക്കാവും.
+• ❌ അനാവശ്യ പരസ്യങ്ങളോ പ്രൊമോഷനുകളോ ഇല്ല.
+• 📚 ഏറ്റവും പുതിയ CBSE സിലബസ് അടിസ്ഥാനമാക്കിയുള്ള Pedagogy & Subject മോക്ക് ടെസ്റ്റുകൾ.
+
+ആദ്യത്തെ 150 ചോദ്യങ്ങളുടെ ഫുൾ മോക്ക് ടെസ്റ്റ് ഇപ്പോൾ തന്നെ സൗജന്യമായി പ്രാക്ടീസ് ചെയ്യാം 👇
+📲 ഡൗൺലോഡ് ലിങ്ക്: https://play.google.com/store/apps/details?id=com.easyctet.app</pre>
+        </div>
+
+        <div style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted); margin-top: 14px; margin-bottom: 6px;">
+          Tester Instruction (Switching from Beta to Public Review):
+        </div>
+        <div class="copy-box">
+          <button class="copy-btn" onclick="copyText('copy-tester')">Copy</button>
+          <pre class="copy-text" id="copy-tester">Hi Team! Please open our app on Play Store: https://play.google.com/store/apps/details?id=com.easyctet.app
+1. Scroll down to "You're a beta tester" and tap "Leave".
+2. Refresh the page.
+3. You will now see the public "Rate this app" (★★★★★) section! Please leave a 5-star rating and quick feedback. Thank you!</pre>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Promotional Kit Resource Shelf -->
+    <div class="card" style="margin-bottom: 24px;">
+      <div class="card-header">
+        <div class="card-title">📁 Launch Promotional Kit Files</div>
+        <span class="card-badge badge-done">promotional-kit/</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px;">
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px;">
+          <div style="font-weight: 700; color: var(--brand-blue); font-size: 0.9rem;">01_whatsapp_telegram_broadcasts.md</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Malayalam, English & compact broadcast templates for study groups & colleges.</div>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px;">
+          <div style="font-weight: 700; color: var(--brand-blue); font-size: 0.9rem;">02_social_media_status_posts.md</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">WhatsApp status 3-slide story, Instagram/Facebook captions & LinkedIn post.</div>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px;">
+          <div style="font-weight: 700; color: var(--brand-blue); font-size: 0.9rem;">03_tester_review_conversion.md</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Direct messages to 12+ testers to tap "Leave Beta" and post 5-star public reviews.</div>
+        </div>
+        <div style="background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px;">
+          <div style="font-weight: 700; color: var(--brand-blue); font-size: 0.9rem;">04_visual_assets/</div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin-top: 4px;">Central folder for app icons, screenshots, QR codes, and promotional banners.</div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      EasyCTET Ecosystem • Launch Operations Center • Confidential Internal Dashboard
+    </footer>
+
+  </div>
+
+  <script>
+    // Live Countdown Timer targeting tomorrow 11:45 AM IST
+    function updateCountdown() {
+      const now = new Date();
+      // Calculate target tomorrow at 11:45 AM
+      let target = new Date();
+      target.setDate(target.getDate() + 1);
+      target.setHours(11, 45, 0, 0);
+
+      const diff = target - now;
+
+      if (diff <= 0) {
+        document.getElementById('countdown').innerHTML = '🚀 LAUNCH WINDOW ACTIVE!';
+        return;
+      }
+
+      const hours = Math.floor(diff / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('countdown').innerHTML = 
+        `${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Interactive Checkboxes with LocalStorage & Progress Calculation
+    const checkboxes = document.querySelectorAll('.check-item input[type="checkbox"]');
+    
+    function updateProgress() {
+      const total = checkboxes.length;
+      let checked = 0;
+      checkboxes.forEach(cb => {
+        const parent = cb.closest('.check-item');
+        if (cb.checked) {
+          checked++;
+          parent.classList.add('completed');
+        } else {
+          parent.classList.remove('completed');
+        }
+      });
+
+      const percentage = Math.round((checked / total) * 100);
+      document.getElementById('progress-bar').style.width = percentage + '%';
+      document.getElementById('progress-percent').innerText = `${percentage}% (${checked}/${total} Tasks Done)`;
+    }
+
+    checkboxes.forEach(cb => {
+      // Load saved state
+      const saved = localStorage.getItem('easyctet_launch_' + cb.dataset.id);
+      if (saved !== null) {
+        cb.checked = saved === 'true';
+      }
+
+      cb.addEventListener('change', () => {
+        localStorage.setItem('easyctet_launch_' + cb.dataset.id, cb.checked);
+        updateProgress();
+      });
+    });
+
+    updateProgress();
+
+    // Copy Text to Clipboard Helper
+    function copyText(elementId) {
+      const text = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Copied to clipboard!');
+      }).catch(() => {
+        alert('Please manually copy the text.');
+      });
+    }
+  </script>
+</body>
+</html>
