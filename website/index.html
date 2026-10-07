@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EasyCTET — CTET Bilingual Prep (Paper 1 &amp; 2), 100% Offline &amp; Private</title>
 <meta name="description" content="Serious CTET preparation across Paper 1 (Primary I–V) and Paper 2 (Upper Primary VI–VIII). 1,800 questions, 53 studio audio masterclasses, bilingual English &amp; Hindi, 100% offline with zero analytics or ad trackers.">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=20261007b">
 <style>
   .btn-playstore {
     display: inline-flex;
@@ -42,6 +42,57 @@
     font-weight: 700;
     margin-left: 6px;
   }
+
+  /* Robust Exam Switcher Styles (guaranteed display even if external css is cached) */
+  .exam-toggle-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 28px;
+    gap: 8px;
+    background: var(--navy-900);
+    padding: 6px;
+    border-radius: 999px;
+    border: 1px solid var(--navy-800);
+    max-width: 460px;
+  }
+  .exam-tab-btn {
+    flex: 1;
+    padding: 10px 18px;
+    border-radius: 999px;
+    border: none;
+    background: transparent;
+    color: var(--ink-400);
+    font-weight: 600;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: all .2s ease;
+    font-family: inherit;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .exam-tab-btn.active {
+    background: var(--amber) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(203,108,31,.35);
+  }
+  .exam-tab-btn:hover:not(.active) {
+    color: var(--ink-100);
+    background: rgba(255,255,255,.05);
+  }
+  .pricing-panel {
+    display: none !important;
+  }
+  .pricing-panel.active {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 768px) {
+    .pricing-panel.active {
+      grid-template-columns: 1fr !important;
+    }
+  }
 </style>
 </head>
 <body>
@@ -63,10 +114,10 @@
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-cta">
-      <span class="btn btn-primary compact-btn btn-playstore" style="opacity:0.85;cursor:default;">
+      <a href="https://play.google.com/store/apps/details?id=com.easyctet.app" target="_blank" rel="noopener" class="btn btn-primary compact-btn btn-playstore">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 0 1-.61-.92L3 21.2v-18.4l.004-.066c.07-.48.28-.93.605-1.32zM15.207 13.414l2.586 2.586-12.75 7.355 10.164-9.941zm0-2.828L5.043.645l12.75 7.355-2.586 2.586zm1.414 1.414l3.774-2.179a1.5 1.5 0 0 1 0 2.584l-3.774 2.179z"/></svg>
-        Coming Soon
-      </span>
+        Get on Google Play
+      </a>
       <button class="menu-toggle" aria-label="Menu">☰</button>
     </div>
   </div>
@@ -253,13 +304,57 @@
 
     <!-- Exam Switcher Toggle Tabs -->
     <div class="exam-toggle-wrap" role="tablist" aria-label="Exam Selection">
-      <button class="exam-tab-btn active" id="tabBtnCtet" onclick="switchExamTab('ctet')" role="tab" aria-selected="true">
+      <button type="button" class="exam-tab-btn active" id="tabBtnCtet" onclick="switchExamTab('ctet')" role="tab" aria-selected="true">
         🇮🇳 CTET (All-India)
       </button>
-      <button class="exam-tab-btn" id="tabBtnKtet" onclick="switchExamTab('ktet')" role="tab" aria-selected="false">
+      <button type="button" class="exam-tab-btn" id="tabBtnKtet" onclick="switchExamTab('ktet')" role="tab" aria-selected="false">
         🌴 KTET (Kerala)
       </button>
     </div>
+
+    <script>
+      function switchExamTab(tabName) {
+        var ctetBtn = document.getElementById("tabBtnCtet");
+        var ktetBtn = document.getElementById("tabBtnKtet");
+        var ctetPanel = document.getElementById("pricingPanelCtet");
+        var ktetPanel = document.getElementById("pricingPanelKtet");
+
+        if (!ctetBtn || !ktetBtn || !ctetPanel || !ktetPanel) return;
+
+        if (tabName === "ktet") {
+          ktetBtn.classList.add("active");
+          ktetBtn.setAttribute("aria-selected", "true");
+          ctetBtn.classList.remove("active");
+          ctetBtn.setAttribute("aria-selected", "false");
+          ktetPanel.classList.add("active");
+          ctetPanel.classList.remove("active");
+        } else {
+          ctetBtn.classList.add("active");
+          ctetBtn.setAttribute("aria-selected", "true");
+          ktetBtn.classList.remove("active");
+          ktetBtn.setAttribute("aria-selected", "false");
+          ctetPanel.classList.add("active");
+          ctetPanel.classList.remove("active");
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function() {
+        var ctetBtn = document.getElementById("tabBtnCtet");
+        var ktetBtn = document.getElementById("tabBtnKtet");
+        if (ctetBtn) {
+          ctetBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+            switchExamTab('ctet');
+          });
+        }
+        if (ktetBtn) {
+          ktetBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+            switchExamTab('ktet');
+          });
+        }
+      });
+    </script>
 
     <!-- CTET Pricing Panel (Active by default) -->
     <div class="pricing-panel active" id="pricingPanelCtet">
@@ -463,6 +558,6 @@
   </div>
 </footer>
 
-<script src="assets/main.js"></script>
+<script src="assets/main.js?v=20261007b"></script>
 </body>
 </html>
