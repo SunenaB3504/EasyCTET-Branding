@@ -118,6 +118,6 @@ window.switchExamTab = function(tabName) {
     ctetBtn.classList.add("active");
     ktetBtn.classList.remove("active");
     ctetPanel.classList.add("active");
-    ctetPanel.classList.remove("active");
+    ktetPanel.classList.remove("active");
   }
 };
