@@ -31,6 +31,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://easyctet.com/states-accepting-ctet/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://easyctet.com/ctet-vs-ktet.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>

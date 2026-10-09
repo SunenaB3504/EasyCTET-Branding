@@ -429,6 +429,95 @@
       color: var(--text-muted);
     }
 
+    .video-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .video-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      transition: all 0.2s ease;
+    }
+
+    .video-card:hover {
+      background: var(--bg-card-hover);
+      border-color: rgba(56, 189, 248, 0.4);
+    }
+
+    .video-info {
+      flex: 1;
+    }
+
+    .video-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .video-meta {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .video-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-studio {
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--brand-blue);
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 5px 11px;
+      border-radius: 6px;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .btn-studio:hover {
+      background: var(--brand-blue);
+      color: #0f172a;
+    }
+
+    .tag-lang {
+      font-size: 0.7rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .tag-playlist {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      color: #94a3b8;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
     footer {
       text-align: center;
       padding: 24px 0;
@@ -565,7 +654,176 @@
 
     </div>
 
-    <!-- Second Grid: Launch Day Timeline & Promotional Broadcasts -->
+    <!-- Video Marketing & Web Authority Grid -->
+    <div class="dashboard-grid">
+
+      <!-- Column A: YouTube Shorts Video Suite -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">🎬 YouTube Shorts Marketing Suite (@easyctetofficial)</div>
+          <span class="card-badge badge-done">6/6 Uploaded (Private) ✓</span>
+        </div>
+        <div class="video-grid">
+
+          <!-- Video 1 -->
+          <div class="video-card">
+            <div class="video-info">
+              <div class="video-title">
+                <span>1. The 90-Mark Secret That Decides Your Score</span>
+              </div>
+              <div class="video-meta">
+                <span class="tag-lang">Hinglish</span>
+                <span>⏱️ 51.9s</span>
+                <span class="tag-playlist">CTET Strategy &amp; Exam Secrets</span>
+                <span style="font-family: 'JetBrains Mono', monospace; color: var(--text-dim);">ID: GsVC7ejC6S4</span>
+              </div>
+            </div>
+            <div class="video-actions">
+              <a href="https://studio.youtube.com/video/GsVC7ejC6S4/edit" target="_blank" class="btn-studio">Open in Studio ↗</a>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="video-card">
+            <div class="video-info">
+              <div class="video-title">
+                <span>2. TET Practice That Never Hangs (100% Offline)</span>
+              </div>
+              <div class="video-meta">
+                <span class="tag-lang">Hinglish</span>
+                <span>⏱️ 46.5s</span>
+                <span class="tag-playlist">CTET Strategy &amp; Exam Secrets</span>
+                <span style="font-family: 'JetBrains Mono', monospace; color: var(--text-dim);">ID: rHeBpKOGOaA</span>
+              </div>
+            </div>
+            <div class="video-actions">
+              <a href="https://studio.youtube.com/video/rHeBpKOGOaA/edit" target="_blank" class="btn-studio">Open in Studio ↗</a>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="video-card">
+            <div class="video-info">
+              <div class="video-title">
+                <span>3. 5 States Where CTET Equals State TET</span>
+              </div>
+              <div class="video-meta">
+                <span class="tag-lang">Hinglish</span>
+                <span>⏱️ 49.9s</span>
+                <span class="tag-playlist">CTET Strategy &amp; Exam Secrets</span>
+                <span style="font-family: 'JetBrains Mono', monospace; color: var(--text-dim);">ID: VdDWRpnW1Eg</span>
+              </div>
+            </div>
+            <div class="video-actions">
+              <a href="https://studio.youtube.com/video/VdDWRpnW1Eg/edit" target="_blank" class="btn-studio">Open in Studio ↗</a>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="video-card">
+            <div class="video-info">
+              <div class="video-title">
+                <span>4. Kerala PSC LPST/UPST: CTET Exemption (G.O. 6/2024)</span>
+              </div>
+              <div class="video-meta">
+                <span class="tag-lang" style="background: rgba(16, 185, 129, 0.15); color: #34d399; border-color: rgba(16, 185, 129, 0.3);">Malayalam</span>
+                <span>⏱️ 57.9s</span>
+                <span class="tag-playlist">Kerala PSC &amp; KTET Preparation</span>
+                <span style="font-family: 'JetBrains Mono', monospace; color: var(--text-dim);">ID: u9M-mnzUMdM</span>
+              </div>
+            </div>
+            <div class="video-actions">
+              <a href="https://studio.youtube.com/video/u9M-mnzUMdM/edit" target="_blank" class="btn-studio">Open in Studio ↗</a>
+            </div>
+          </div>
+
+          <!-- Video 5 -->
+          <div class="video-card">
+            <div class="video-info">
+              <div class="video-title">
+                <span>5. The Dual-Qualification Strategy (B.Ed/D.El.Ed)</span>
+              </div>
+              <div class="video-meta">
+                <span class="tag-lang">Hinglish</span>
+                <span>⏱️ 47.1s</span>
+                <span class="tag-playlist">CTET Strategy &amp; Exam Secrets</span>
+                <span style="font-family: 'JetBrains Mono', monospace; color: var(--text-dim);">ID: 1LnPRStz0uc</span>
+              </div>
+            </div>
+            <div class="video-actions">
+              <a href="https://studio.youtube.com/video/1LnPRStz0uc/edit" target="_blank" class="btn-studio">Open in Studio ↗</a>
+            </div>
+          </div>
+
+          <!-- Video 6 -->
+          <div class="video-card">
+            <div class="video-info">
+              <div class="video-title">
+                <span>6. The "Negative Word" Elimination Hack</span>
+              </div>
+              <div class="video-meta">
+                <span class="tag-lang">Hinglish</span>
+                <span>⏱️ 53.9s</span>
+                <span class="tag-playlist">CTET Strategy &amp; Exam Secrets</span>
+                <span style="font-family: 'JetBrains Mono', monospace; color: var(--text-dim);">ID: fMOYlFyEZiU</span>
+              </div>
+            </div>
+            <div class="video-actions">
+              <a href="https://studio.youtube.com/video/fMOYlFyEZiU/edit" target="_blank" class="btn-studio">Open in Studio ↗</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Column B: Web Infrastructure & SEO Cornerstone Authority -->
+      <div class="card">
+        <div class="card-header">
+          <div class="card-title">🌐 Web Platform &amp; SEO Cornerstone Authority</div>
+          <span class="card-badge badge-done">100% Harmonized ✓</span>
+        </div>
+        <ul class="checklist" id="list-web">
+          <li class="check-item completed">
+            <input type="checkbox" checked data-id="w1">
+            <div class="check-content">
+              <div class="check-title">Cornerstone Authority Guide Published</div>
+              <div class="check-desc">Live at <code style="color: var(--brand-blue);">easyctet.com/states-accepting-ctet/</code> covering Maharashtra, UP, Bihar, Assam &amp; Kerala G.O. 6/2024.</div>
+            </div>
+          </li>
+          <li class="check-item completed">
+            <input type="checkbox" checked data-id="w2">
+            <div class="check-content">
+              <div class="check-title">Multi-State TET Comparison Harmonized</div>
+              <div class="check-desc">Live at <code style="color: var(--brand-blue);">easyctet.com/compare-all-tets.html</code> updated with LPST/UPST equivalency &amp; offline reliability.</div>
+            </div>
+          </li>
+          <li class="check-item completed">
+            <input type="checkbox" checked data-id="w3">
+            <div class="check-content">
+              <div class="check-title">Brand Bible Design System Overhaul</div>
+              <div class="check-desc">Heritage Gold (<code style="color: #fbbf24;">#f59e0b</code>), Midnight Navy (<code style="color: #38bdf8;">#0a1120</code>), and Outfit/Inter typography deployed.</div>
+            </div>
+          </li>
+          <li class="check-item completed">
+            <input type="checkbox" checked data-id="w4">
+            <div class="check-content">
+              <div class="check-title">Statutory Legal Disclaimers (§3.3)</div>
+              <div class="check-desc">Active on all web footers: clearly states independent educational prep tool status per NCTE/CBSE norms.</div>
+            </div>
+          </li>
+          <li class="check-item completed">
+            <input type="checkbox" checked data-id="w5">
+            <div class="check-content">
+              <div class="check-title">State Ledger Persistence Sync</div>
+              <div class="check-desc">All 6 videos tracked in <code style="color: var(--brand-blue);">easyctet-video/data/state_ledger.json</code> with active YouTube IDs &amp; metadata.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Third Grid: Launch Day Timeline & Promotional Broadcasts -->
     <div class="dashboard-grid">
 
       <!-- Column 3: Launch Window Timeline -->

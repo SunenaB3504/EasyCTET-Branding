@@ -57,7 +57,7 @@ rules = {
     "MATH-PED-LANGUAGE": (S, S, NF, NF),
     "MATH-PED-COMMUNITY": (NF, NF, NF, NF),
     "MATH-PED-EVAL": (S, S, NF, NF),
-    "MATH-PED-PROBLEMS": (SIM, SIM, NF, NF),
+    "MATH-PED-PROBLEMS": (SIM, NF, NF, NF),  # Cat II: verified 2026-10-03, no such topic in KTET Cat II maths pedagogy
     "MATH-PED-REMEDIAL": (S, S, NF, NF),
     "MATH-PED-ERROR": (S, S, NF, NF),
 }
@@ -85,13 +85,14 @@ for k, c1, c3, c4 in (("ACQ", S, NF, SIM), ("PRINC", S, NF, SIM), ("LISTEN-SPEAK
 # Refinements after reading Cat II social science, science and maths sections in full (c3 = Cat III covers
 # these subjects at secondary level, so "Different")
 D = "Different"
-hist = {1: SIM, 2: SIM, 3: SIM, 4: SIM, 17: SIM, 18: SIM, 19: SIM, 20: S, 21: SIM, 22: SIM, 23: S}
+hist = {2: SIM,  # 1 (When, where and how) verified Not found in Cat II, 2026-10-03
+         3: SIM, 4: SIM, 17: SIM, 18: SIM, 19: SIM, 20: S, 21: SIM, 22: SIM, 23: S}
 for i in range(1, 25):
     rules[f"SST-HIST-{i:02d}"] = (NF, hist.get(i, NF), D, NF)
 geo = {2: S, 3: S, 4: SIM, 5: SIM, 7: SIM, 8: SIM, 9: SIM}
 for i in range(1, 10):
     rules[f"SST-GEO-{i:02d}"] = (NF, geo.get(i, NF), D, NF)
-pol = {2: SIM, 3: S, 5: S, 6: S}
+pol = {2: SIM, 3: S, 5: S, 6: S, 10: SIM}  # 10: Cat II lists election process/Election Commission (verified 2026-10-03)
 for i in range(1, 13):
     rules[f"SST-POL-{i:02d}"] = (NF, pol.get(i, NF), D, NF)
 ped = {1: S, 2: SIM, 8: S}

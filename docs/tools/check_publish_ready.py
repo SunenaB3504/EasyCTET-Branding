@@ -161,6 +161,12 @@ def main():
             else:
                 tid, tstatus = target["page_id"], target["status"]
                 anchor_ok = ""
+                # A registered external target (e.g. a Play listing) marked PUBLISHED must actually be live.
+                if check_external and not internal and tstatus in OK_TARGET:
+                    if absolute not in ext_cache:
+                        ext_cache[absolute] = http_status(absolute)
+                    if ext_cache[absolute] != 200:
+                        blockers.append(f"{tid} is marked {tstatus} but returns {ext_cache[absolute]}: {href}")
                 if frag:
                     tparsed = own_ids if tid == pid else (parsed.get(tid) or (None, None, set()))[2]
                     anchor_ok = "yes" if tparsed and frag in tparsed else "NO"

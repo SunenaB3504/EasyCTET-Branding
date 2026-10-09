@@ -6,270 +6,7 @@
   <title>Central Teacher Eligibility Test (CTET) 2026: Blueprint, Rules &amp; Syllabus Guide — EasyCTET</title>
   <meta name="description" content="Authoritative CTET 2026 reference guide. Paper 1 &amp; 2 exam blueprints, CBSE 60% passing mark rules, state TET carry-over analysis, Supreme Court eligibility judgments, and offline prep architecture.">
   <link rel="canonical" href="https://easyctet.com/ctet/">
-  <style>
-    :root {
-      --bg: #ffffff;
-      --fg: #1f2328;
-      --mut: #59636e;
-      --line: #d1d9e0;
-      --soft: #f6f8fa;
-      --card-bg: #ffffff;
-      --acc: #0969da;
-      --acc-hover: #0856b5;
-      --on-acc: #ffffff;
-      --ok: #dafbe1;
-      --ok-fg: #1a7f37;
-      --warn: #fff8c5;
-      --warn-fg: #9a6700;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0d1117;
-        --fg: #e6edf3;
-        --mut: #8d96a0;
-        --line: #30363d;
-        --soft: #161b22;
-        --card-bg: #161b22;
-        --acc: #58a6ff;
-        --acc-hover: #aecbfa;
-        --on-acc: #0b1e3f;
-        --ok: #1e3d29;
-        --ok-fg: #b2e5c1;
-        --warn: #3b2e04;
-        --warn-fg: #f3cf65;
-      }
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font: 16px/1.6 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Nirmala UI", sans-serif;
-    }
-    a { color: var(--acc); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    header.site {
-      border-bottom: 1px solid var(--line);
-    }
-    header.site div {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 12px 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header.site .brand {
-      font-weight: 800;
-      font-size: 1.05rem;
-      color: var(--fg);
-      text-decoration: none;
-    }
-    header.site .back-home {
-      font-size: 0.86rem;
-      font-weight: 600;
-      color: var(--acc);
-      text-decoration: none;
-      padding: 5px 12px;
-      border: 1px solid var(--line);
-      border-radius: 6px;
-      background: var(--soft);
-      transition: background 0.15s;
-    }
-    header.site .back-home:hover {
-      text-decoration: none;
-      filter: brightness(0.95);
-    }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 24px 16px 80px;
-    }
-    nav.breadcrumbs {
-      font-size: 0.88rem;
-      color: var(--mut);
-      margin-bottom: 14px;
-    }
-    nav.breadcrumbs a { color: var(--mut); }
-    nav.breadcrumbs a:hover { color: var(--acc); }
-    h1 {
-      font-size: 1.85rem;
-      line-height: 1.25;
-      margin: 8px 0 12px;
-    }
-    h2 {
-      font-size: 1.35rem;
-      margin-top: 36px;
-      margin-bottom: 12px;
-      line-height: 1.35;
-    }
-    h3 {
-      font-size: 1.1rem;
-      margin: 0 0 6px;
-    }
-    .byline {
-      font-size: 0.88rem;
-      color: var(--mut);
-      margin: 0 0 20px;
-    }
-    .lead-box {
-      font-size: 1.05rem;
-      border-left: 4px solid var(--acc);
-      padding: 14px 18px;
-      background: var(--soft);
-      border-radius: 0 8px 8px 0;
-      margin: 16px 0 28px;
-    }
-    .lead-box p { margin: 0 0 8px; }
-    .lead-box p:last-child { margin: 0; }
-    
-    .grid-guides {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 16px;
-      margin: 24px 0 36px;
-    }
-    .guide-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      border: 1px solid var(--line);
-      background: var(--card-bg);
-      border-radius: 12px;
-      padding: 18px;
-      transition: transform 0.15s ease, border-color 0.15s ease;
-      color: inherit;
-    }
-    .guide-card:hover {
-      text-decoration: none;
-      border-color: var(--acc);
-      transform: translateY(-2px);
-    }
-    .guide-card-tag {
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: var(--acc);
-      margin-bottom: 8px;
-    }
-    .guide-card h3 {
-      color: var(--fg);
-      font-size: 1.12rem;
-      margin-bottom: 8px;
-    }
-    .guide-card p {
-      font-size: 0.9rem;
-      color: var(--mut);
-      margin: 0 0 14px;
-      line-height: 1.5;
-    }
-    .guide-card-action {
-      font-size: 0.88rem;
-      font-weight: 700;
-      color: var(--acc);
-      margin-top: auto;
-    }
-    
-    .scroll-table {
-      overflow-x: auto;
-      margin: 16px 0 20px;
-    }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      min-width: 640px;
-      font-size: 0.92rem;
-    }
-    th, td {
-      border: 1px solid var(--line);
-      padding: 10px 12px;
-      text-align: left;
-      vertical-align: top;
-    }
-    th { background: var(--soft); font-weight: 700; }
-    
-    .app-card {
-      border: 2px solid var(--acc);
-      border-radius: 12px;
-      padding: 24px 20px;
-      text-align: center;
-      margin: 40px 0;
-      background: var(--soft);
-    }
-    .app-card h3 {
-      font-size: 1.25rem;
-      margin: 0 0 8px;
-    }
-    .app-card p {
-      font-size: 0.95rem;
-      color: var(--mut);
-      max-width: 620px;
-      margin: 0 auto 18px;
-    }
-    .cta-btn {
-      display: inline-block;
-      background: var(--acc);
-      color: var(--on-acc);
-      padding: 12px 28px;
-      border-radius: 8px;
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-    .cta-btn.coming-soon {
-      background: var(--line);
-      color: var(--mut);
-      cursor: default;
-    }
-    .badge-pill {
-      display: inline-block;
-      font-size: 0.8rem;
-      background: var(--ok);
-      color: var(--ok-fg);
-      padding: 3px 10px;
-      border-radius: 99px;
-      margin: 12px 4px 0;
-      font-weight: 600;
-    }
-    
-    .callout {
-      border-left: 3px solid var(--warn-fg);
-      background: var(--warn);
-      color: var(--fg);
-      padding: 12px 16px;
-      border-radius: 0 8px 8px 0;
-      margin: 18px 0;
-      font-size: 0.92rem;
-    }
-    .callout p { margin: 0 0 6px; }
-    .callout p:last-child { margin: 0; }
-    
-    .faq-item {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      margin: 10px 0;
-      padding: 12px 16px;
-    }
-    .faq-item summary {
-      cursor: pointer;
-      font-weight: 700;
-    }
-    .faq-item p {
-      margin: 8px 0 0;
-      font-size: 0.94rem;
-      color: var(--mut);
-    }
-    
-    footer {
-      margin-top: 48px;
-      border-top: 1px solid var(--line);
-      padding-top: 20px;
-      font-size: 0.85rem;
-      color: var(--mut);
-    }
-    footer ul { padding-left: 20px; }
-    footer li { margin-bottom: 4px; }
-  </style>
+  <link rel="stylesheet" href="/assets/style.css?v=20261007d">
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -325,14 +62,31 @@
 </head>
 <body>
 
-<header class="site">
-  <div>
-    <a class="brand" href="/">EasyCTET</a>
-    <a class="back-home" href="/">&larr; Back to Home</a>
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="/" class="brand">
+      <div class="brand-icon">
+        <img src="/assets/easyctet-mark-gold.svg" alt="EasyCTET Logo">
+      </div>
+      <span class="brand-name">EasyCTET</span>
+    </a>
+    <nav class="links">
+      <a href="/#whats-inside">Curriculum</a>
+      <a href="/ctet/">CTET Guide</a>
+      <a href="/compare-all-tets.html">TET Comparisons</a>
+      <a href="/ctet/passing-marks/">Passing Marks</a>
+      <a href="/#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="https://play.google.com/store/apps/details?id=com.easyctet.app" target="_blank" rel="noopener" class="btn btn-primary compact-btn btn-playstore">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 0 1-.61-.92L3 21.2v-18.4l.004-.066c.07-.48.28-.93.605-1.32zM15.207 13.414l2.586 2.586-12.75 7.355 10.164-9.941zm0-2.828L5.043.645l12.75 7.355-2.586 2.586zm1.414 1.414l3.774-2.179a1.5 1.5 0 0 1 0 2.584l-3.774 2.179z"/></svg>
+        Get on Google Play
+      </a>
+    </div>
   </div>
 </header>
 
-<main>
+<main class="guide-container">
   <nav class="breadcrumbs">
     <a href="/">Home</a> &raquo; <span>CTET</span>
   </nav>
@@ -489,9 +243,28 @@
       <li>National Council for Teacher Education (NCTE), Lifetime Validity Resolution, No. 76-4/2010/NCTE/Acad dated 09.06.2021.</li>
       <li>Supreme Court of India, Civil Appeal No. 5068 of 2023 (<em>Devesh Sharma v. Union of India</em>), August 2023.</li>
     </ul>
-    <p class="byline">EasyCTET is an independent pedagogical platform. CTET&reg; is a registered testing program of the Central Board of Secondary Education.</p>
   </footer>
 </main>
+
+<footer>
+  <div class="wrap footer-row">
+    <div class="footer-copy">&copy; 2026 EasyCTET &bull; SunCube AI. All rights reserved.</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/ctet/">CTET Guide</a>
+      <a href="/compare-all-tets.html">TET Comparisons</a>
+      <a href="/ctet/passing-marks/">Passing Marks</a>
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="/terms-of-service.html">Terms</a>
+      <a href="mailto:support@easyctet.com">Support</a>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="footer-disclaimer">
+      <strong>Government Non-Affiliation Disclaimer:</strong> EasyCTET is an independent educational preparatory platform developed privately by SunCube AI. It is <strong>NOT</strong> affiliated with, endorsed by, or connected to the Central Board of Secondary Education (CBSE), the National Council for Teacher Education (NCTE), or the Ministry of Education, Government of India. All question banks, blueprints, and trend analyses are calibrated independently for educational purposes.
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
